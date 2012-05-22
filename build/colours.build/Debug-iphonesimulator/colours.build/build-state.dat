@@ -1,0 +1,563 @@
+Tcolours
+v7
+r0
+t357140540.981720
+cCheck dependencies
+cProcessInfoPlistFile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/Info.plist colours-Info.plist
+cCompileXIB /Users/Renard/Documents/workspace/colours/MainWindow.xib
+cCompileXIB /Users/Renard/Documents/workspace/colours/RootViewController.xib
+cCompileXIB /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.xib
+cCpResource build/Debug-iphonesimulator/colours.app/tower_R.png ../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png
+cCpResource build/Debug-iphonesimulator/colours.app/bannierekai.jpg ../../Elsa/Bamboo/bannierekai.jpg
+cCpResource build/Debug-iphonesimulator/colours.app/squares1.jpg ../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg
+cCpResource build/Debug-iphonesimulator/colours.app/squares2.jpg ../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg
+cCompileXIB /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.xib
+cCpResource build/Debug-iphonesimulator/colours.app/horizontal.png ../../../Desktop/horizontal.png
+cCpResource build/Debug-iphonesimulator/colours.app/mosaic.png ../../../Desktop/mosaic.png
+cCpResource build/Debug-iphonesimulator/colours.app/vertical.png ../../../Desktop/vertical.png
+cProcessPCH /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch.gch colours_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/main.o /Users/Renard/Documents/workspace/colours/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/coloursAppDelegate.o /Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/RootViewController.o /Users/Renard/Documents/workspace/colours/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColoursViewController.o /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/WallpaperViewController.o /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/Utils.o /Users/Renard/Documents/workspace/colours/Classes/Utils.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours normal i386
+cGenerateDSYMFile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app.dSYM /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours
+cTouch /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D2DD00000000000000C4
+t1297404637
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/Availability.h
+c000000004D4F7A2B0000000000001B19
+t1297054251
+s6937
+
+N/Users/Renard/Documents/workspace/colours/../../../Desktop/horizontal.png
+c000000004F97C4160000000000000E17
+t1335346198
+s3607
+
+N/Users/Renard/Documents/workspace/colours/../../../Desktop/mosaic.png
+c000000004F97C41E0000000000000FC9
+t1335346206
+s4041
+
+N/Users/Renard/Documents/workspace/colours/../../../Desktop/vertical.png
+c000000004F97C4300000000000000DB6
+t1335346224
+s3510
+
+N/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg
+c000000004F87E5EE0000000000006B44
+t1334306286
+s27460
+
+N/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg
+c000000004F87E5E60000000000006BF8
+t1334306278
+s27640
+
+N/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png
+c000000004F1EBB1F00000000000195EB
+t1327414047
+s103915
+
+N/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/bannierekai.jpg
+c000000004B9366A8000000000003E851
+t1267951272
+s256081
+
+N/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.h
+c000000004F8703470000000000000115
+t1334248263
+s277
+i<Foundation/Foundation.h>
+
+N/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m
+c000000004F87034200000000000001A8
+t1334248258
+s424
+i"ColourPicker.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.h
+c000000004F97CCFA00000000000002EC
+t1335348474
+s748
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"WallpaperViewController.h"
+i"Utils.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m
+c000000004F995157000000000000141B
+t1335447895
+s5147
+i"ColoursViewController.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.xib
+c000000004F86E843000000000000187A
+t1334241347
+s6266
+
+N/Users/Renard/Documents/workspace/colours/Classes/RootViewController.h
+c000000004F87E95B00000000000001D1
+t1334307163
+s465
+i<UIKit/UIKit.h>
+i"ColoursViewController.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/RootViewController.m
+c000000004F881D5E0000000000000C5E
+t1334320478
+s3166
+i"RootViewController.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/Utils.h
+c000000004F97CA9000000000000001A4
+t1335347856
+s420
+i<Foundation/Foundation.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/Renard/Documents/workspace/colours/Classes/Utils.m
+c000000004F97CAC60000000000000574
+t1335347910
+s1396
+i"Utils.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.h
+c000000004F97D4E40000000000000333
+t1335350500
+s819
+i<UIKit/UIKit.h>
+i"Utils.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m
+c000000004F97FBC600000000000018B6
+t1335360454
+s6326
+i"WallpaperViewController.h"
+
+N/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.xib
+c000000004F97AD480000000000001880
+t1335340360
+s6272
+
+N/Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.h
+c000000004F86E2AC00000000000001E0
+t1334239916
+s480
+i<UIKit/UIKit.h>
+
+N/Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m
+c000000004F86E2AC0000000000000ACC
+t1334239916
+s2764
+i"coloursAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/Renard/Documents/workspace/colours/MainWindow.xib
+c000000004F86E2AC0000000000005FF4
+t1334239916
+s24564
+
+N/Users/Renard/Documents/workspace/colours/RootViewController.xib
+c000000004F86E2C40000000000003B76
+t1334239940
+s15222
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app
+t1335447740
+s544
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app.dSYM
+t1335447740
+s102
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/ColoursViewController.nib
+t1334241429
+s1231
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/Info.plist
+t1334239962
+s591
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/MainWindow.nib
+t1334239962
+s2456
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/PkgInfo
+t1334239962
+s8
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/RootViewController.nib
+t1334239962
+s1231
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/WallpaperViewController.nib
+t1335340559
+s1231
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/bannierekai.jpg
+t1334246586
+s256081
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours
+t1335447740
+s43440
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/horizontal.png
+t1335346251
+s3607
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/mosaic.png
+t1335346251
+s4041
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/squares1.jpg
+t1334306656
+s27460
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/squares2.jpg
+t1334306656
+s27640
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/tower_R.png
+t1334246414
+s103915
+
+N/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/vertical.png
+t1335346251
+s3510
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColourPicker.o
+t1334248550
+s7500
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColoursViewController.o
+t1335447740
+s59644
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/RootViewController.o
+t1335350532
+s48848
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/Utils.o
+t1335347912
+s41868
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/WallpaperViewController.o
+t1335360463
+s66064
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/colours.LinkFileList
+c000000004F97B2C3000000000000032F
+t1335341763
+s815
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/coloursAppDelegate.o
+t1335350532
+s53628
+
+N/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/main.o
+t1334239964
+s6316
+
+N/Users/Renard/Documents/workspace/colours/colours_Prefix.pch
+c000000004F86E2AC0000000000000140
+t1334239916
+s320
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Renard/Documents/workspace/colours/main.m
+c000000004F86E2AC0000000000000176
+t1334239916
+s374
+i<UIKit/UIKit.h>
+
+N/var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch.gch
+t1334239964
+s15814064
+
+Ncolours-Info.plist
+c000000004F86E2AC000000000000038D
+t1334239916
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies357140540#357140540#0(0"0(0#1#0"8632018880#0"0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColourPicker.o /Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s355941350.795442
+e355941350.871380
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColourPicker.o
+x/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m: In function '-[ColourPicker generateColour]':
+o/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m:20: warning: initialization makes pointer from integer without a cast
+lSLF07#2@72"Compile /Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m355941350#355941350#0(247"/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m: In function '-[ColourPicker generateColour]':/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m:20: warning: initialization makes pointer from integer without a cast1(22@56"Initialization makes pointer from integer without a cast355941350#112#135#0(6@64"/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m355941058#20#0#20#0#0"0(0#0#64"/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m8602819808#1971"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColourPicker.o0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColoursViewController.o /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s357140540.594543
+e357140540.917055
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColoursViewController.o
+x/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m357140540#357140540#0(0"0(0#0#73"/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m8627176320#1989"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/ColoursViewController.o0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/RootViewController.o /Users/Renard/Documents/workspace/colours/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s357043332.592318
+e357043332.732819
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/RootViewController.o
+x/Users/Renard/Documents/workspace/colours/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/Renard/Documents/workspace/colours/Classes/RootViewController.m357043332#357043332#0(0"0(0#0#70"/Users/Renard/Documents/workspace/colours/Classes/RootViewController.m8630077344#1983"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/Classes/RootViewController.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/Utils.o /Users/Renard/Documents/workspace/colours/Classes/Utils.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s357040712.450067
+e357040712.616201
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/Utils.o
+x/Users/Renard/Documents/workspace/colours/Classes/Utils.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/Renard/Documents/workspace/colours/Classes/Utils.m357040712#357040712#0(0"0(0#0#57"/Users/Renard/Documents/workspace/colours/Classes/Utils.m8608129248#1957"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/Classes/Utils.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/Utils.o0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/WallpaperViewController.o /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s357053262.798963
+e357053263.029687
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/WallpaperViewController.o
+x/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m357053262#357053263#0(0"0(0#0#75"/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m8614919424#1993"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/WallpaperViewController.o0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/coloursAppDelegate.o /Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s357043332.591208
+e357043332.715318
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/coloursAppDelegate.o
+x/Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m357043332#357043332#0(0"0(0#0#70"/Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m8608693952#1983"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/Classes/coloursAppDelegate.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/coloursAppDelegate.o0#
+
+CCompileC build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/main.o /Users/Renard/Documents/workspace/colours/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s355932764.262833
+e355932764.326102
+r1
+xCompileC
+xbuild/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/main.o
+x/Users/Renard/Documents/workspace/colours/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/Renard/Documents/workspace/colours/main.m355932764#355932764#0(0"0(0#0#48"/Users/Renard/Documents/workspace/colours/main.m8604159904#1947"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -include /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch -c /Users/Renard/Documents/workspace/colours/main.m -o /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.xib
+s355934228.695357
+e355934229.166662
+r1
+xCompileXIB
+x/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.xib
+lSLF07#2@44"CompileXIB Classes/ColoursViewController.xib355934228#355934229#0(0"0(0#0#75"/Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.xib8617923584#609"    cd /Users/Renard/Documents/workspace/colours    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/ColoursViewController.nib /Users/Renard/Documents/workspace/colours/Classes/ColoursViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.xib
+s357033357.465404
+e357033359.972235
+r1
+xCompileXIB
+x/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.xib
+lSLF07#2@46"CompileXIB Classes/WallpaperViewController.xib357033357#357033359#0(0"0(0#0#77"/Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.xib8615220000#613"    cd /Users/Renard/Documents/workspace/colours    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/WallpaperViewController.nib /Users/Renard/Documents/workspace/colours/Classes/WallpaperViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/Renard/Documents/workspace/colours/MainWindow.xib
+s355932762.424478
+e355932762.996579
+r1
+xCompileXIB
+x/Users/Renard/Documents/workspace/colours/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib355932762#355932762#0(0"0(0#0#56"/Users/Renard/Documents/workspace/colours/MainWindow.xib8605765504#579"    cd /Users/Renard/Documents/workspace/colours    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/MainWindow.nib /Users/Renard/Documents/workspace/colours/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/Renard/Documents/workspace/colours/RootViewController.xib
+s355932762.425302
+e355932762.969675
+r1
+xCompileXIB
+x/Users/Renard/Documents/workspace/colours/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib355932762#355932762#0(0"0(0#0#64"/Users/Renard/Documents/workspace/colours/RootViewController.xib8604222720#595"    cd /Users/Renard/Documents/workspace/colours    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/RootViewController.nib /Users/Renard/Documents/workspace/colours/RootViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/bannierekai.jpg ../../Elsa/Bamboo/bannierekai.jpg
+s355939386.619334
+e355939386.630364
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/bannierekai.jpg
+x../../Elsa/Bamboo/bannierekai.jpg
+lSLF07#2@38"Copy ../../Elsa/Bamboo/bannierekai.jpg355939386#355939386#0(0"0(0#0#75"/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/bannierekai.jpg8619016800#500"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/bannierekai.jpg /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/horizontal.png ../../../Desktop/horizontal.png
+s357039051.141382
+e357039051.195966
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/horizontal.png
+x../../../Desktop/horizontal.png
+lSLF07#2@36"Copy ../../../Desktop/horizontal.png357039051#357039051#0(0"0(0#0#73"/Users/Renard/Documents/workspace/colours/../../../Desktop/horizontal.png8617048160#498"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../../Desktop/horizontal.png /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/mosaic.png ../../../Desktop/mosaic.png
+s357039051.143648
+e357039051.196108
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/mosaic.png
+x../../../Desktop/mosaic.png
+lSLF07#2@32"Copy ../../../Desktop/mosaic.png357039051#357039051#0(0"0(0#0#69"/Users/Renard/Documents/workspace/colours/../../../Desktop/mosaic.png8617009696#494"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../../Desktop/mosaic.png /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/squares1.jpg ../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg
+s355999456.322170
+e355999456.390352
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/squares1.jpg
+x../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg
+lSLF07#2@48"Copy ../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg355999456#355999456#0(0"0(0#0#85"/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg29555366482477168#510"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/squares2.jpg ../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg
+s355999456.362538
+e355999456.390521
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/squares2.jpg
+x../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg
+lSLF07#2@48"Copy ../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg355999456#355999456#0(0"0(0#0#85"/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg8590176992#510"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/tower_R.png ../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png
+s355939214.551020
+e355939214.624957
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/tower_R.png
+x../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png
+lSLF07#2@47"Copy ../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png355939214#355939214#0(0"0(0#0#84"/Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png29555366482477168#509"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CCpResource build/Debug-iphonesimulator/colours.app/vertical.png ../../../Desktop/vertical.png
+s357039051.166866
+e357039051.197516
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/colours.app/vertical.png
+x../../../Desktop/vertical.png
+lSLF07#2@34"Copy ../../../Desktop/vertical.png357039051#357039051#0(0"0(0#0#71"/Users/Renard/Documents/workspace/colours/../../../Desktop/vertical.png8627866880#496"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Renard/Documents/workspace/colours/../../../Desktop/vertical.png /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+
+CGenerateDSYMFile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app.dSYM /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours
+s357140540.951395
+e357140540.978504
+r1
+xGenerateDSYMFile
+x/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app.dSYM
+x/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/colours.app.dSYM build/Debug-iphonesimulator/colours.app/colours357140540#357140540#0(0"0(0#0#89"/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours8627418720#392"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours -o /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app.dSYM0#
+
+CLd /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours normal i386
+s357140540.917154
+e357140540.951268
+r1
+xLd
+x/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours
+xnormal
+xi386
+lSLF07#2@94"Link /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours357140540#357140540#0(0"0(0#0#0"8628029952#915"    cd /Users/Renard/Documents/workspace/colours    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -filelist /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/Objects-normal/i386/colours.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/colours0#
+
+CProcessInfoPlistFile /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/Info.plist colours-Info.plist
+s355932762.420447
+e355932762.424392
+r1
+xProcessInfoPlistFile
+x/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/Info.plist
+xcolours-Info.plist
+lSLF07#2@26"Process colours-Info.plist355932762#355932762#0(0"0(0#0#60"/Users/Renard/Documents/workspace/colours/colours-Info.plist8606858496#488"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility colours-Info.plist -genpkginfo /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app/Info.plist0#
+
+CProcessPCH /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch.gch colours_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s355932762.996722
+e355932764.262638
+r1
+xProcessPCH
+x/var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch.gch
+xcolours_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile colours_Prefix.pch355932762#355932764#0(0"0(0#0#60"/Users/Renard/Documents/workspace/colours/colours_Prefix.pch8611414816#1836"    cd /Users/Renard/Documents/workspace/colours    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-generated-files.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-own-target-headers.hmap -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-all-target-headers.hmap -iquote /Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/colours-project-headers.hmap -F/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator -I/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/include -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources/i386 -I/Users/Renard/Documents/workspace/colours/build/colours.build/Debug-iphonesimulator/colours.build/DerivedSources -c /Users/Renard/Documents/workspace/colours/colours_Prefix.pch -o /var/folders/QH/QH8LRxW2HH8XLkKc-jmyNk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/colours_Prefix-gpfwuxkvtjetgoeimhwibypgmzwm/colours_Prefix.pch.gch0#
+
+CTouch /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app
+s357140540.978611
+e357140540.981670
+r1
+xTouch
+x/Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app
+lSLF07#2@87"Touch /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app357140540#357140540#0(0"0(0#0#0"8627353792#284"    cd /Users/Renard/Documents/workspace/colours    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Renard/Documents/workspace/colours/build/Debug-iphonesimulator/colours.app0#
+

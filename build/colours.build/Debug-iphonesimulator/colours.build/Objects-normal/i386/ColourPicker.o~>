@@ -1,0 +1,3 @@
+/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m: In function '-[ColourPicker generateColour]':
+/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m:18: warning: incompatible Objective-C types initializing 'struct NSArray *', expected 'struct NSString *'
+/Users/Renard/Documents/workspace/colours/Classes/ColourPicker.m:20: warning: initialization makes pointer from integer without a cast

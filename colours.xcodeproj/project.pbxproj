@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* coloursAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* coloursAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		B21AE66815668B23004039DF /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66715668B23004039DF /* crosshair.png */; };
+		B21AE66A15668B8C004039DF /* bar_select.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66915668B8C004039DF /* bar_select.png */; };
+		B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262184A1547E4C80078D4C5 /* WallpaperViewController.m */; };
+		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
+		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
+		B26219391547FBC40078D4C5 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B26219361547FBC40078D4C5 /* horizontal.png */; };
+		B262193A1547FBC40078D4C5 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B26219371547FBC40078D4C5 /* mosaic.png */; };
+		B262193B1547FBC40078D4C5 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B26219381547FBC40078D4C5 /* vertical.png */; };
+		B26C9E5A15641A5000FFC28B /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5515641A5000FFC28B /* colormap.png */; };
+		B26C9E5C15641A5000FFC28B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Default.png */; };
+		B26C9E5D15641A5000FFC28B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Icon.png */; };
+		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
+		B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2997027156BCE8B00BED0D9 /* ColourUnitView.m */; };
+		B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85415643354005147FA /* ColorMatrixView.m */; };
+		B2A2E86515643354005147FA /* ColorPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85615643354005147FA /* ColorPickerAppDelegate.m */; };
+		B2A2E86615643354005147FA /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85815643354005147FA /* ColorPickerView.m */; };
+		B2A2E86715643354005147FA /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85A15643354005147FA /* ColorPickerViewController.m */; };
+		B2A2E86815643354005147FA /* ColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85C15643354005147FA /* ColorSwatchView.m */; };
+		B2A2E86915643354005147FA /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85F15643354005147FA /* GradientView.m */; };
+		B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86115643354005147FA /* UIColor-Expanded.m */; };
+		B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */; };
+		B2BE00E315381DA90096818B /* squares1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2BE00E215381DA90096818B /* squares1.jpg */; };
+		B2BE00E515381DB00096818B /* squares2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2BE00E415381DB00096818B /* squares2.jpg */; };
+		B2D1F24215371FC300B32038 /* ColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D1F24015371FC300B32038 /* ColoursViewController.m */; };
+		B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F24115371FC300B32038 /* ColoursViewController.xib */; };
+		B2D1F2B91537337C00B32038 /* tower_R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F2B81537337C00B32038 /* tower_R.png */; };
+		B2D1F2C71537343300B32038 /* bannierekai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F2C61537343300B32038 /* bannierekai.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* coloursAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coloursAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* coloursAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coloursAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* colours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colours.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* colours_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colours_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* colours-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colours-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B21AE66715668B23004039DF /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
+		B21AE66915668B8C004039DF /* bar_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_select.png; sourceTree = "<group>"; };
+		B26218491547E4C80078D4C5 /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
+		B262184A1547E4C80078D4C5 /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
+		B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WallpaperViewController.xib; path = Classes/WallpaperViewController.xib; sourceTree = "<group>"; };
+		B26218651547E8330078D4C5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		B26218661547E8330078D4C5 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		B26219361547FBC40078D4C5 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = ../../../Desktop/horizontal.png; sourceTree = SOURCE_ROOT; };
+		B26219371547FBC40078D4C5 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = ../../../Desktop/mosaic.png; sourceTree = SOURCE_ROOT; };
+		B26219381547FBC40078D4C5 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = ../../../Desktop/vertical.png; sourceTree = SOURCE_ROOT; };
+		B26C9E5515641A5000FFC28B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		B26C9E5715641A5000FFC28B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
+		B2997026156BCE8B00BED0D9 /* ColourUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourUnitView.h; sourceTree = "<group>"; };
+		B2997027156BCE8B00BED0D9 /* ColourUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourUnitView.m; sourceTree = "<group>"; };
+		B2A2E85315643354005147FA /* ColorMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorMatrixView.h; path = /Users/Renard/Documents/workspace/colours/Classes/ColorMatrixView.h; sourceTree = "<absolute>"; };
+		B2A2E85415643354005147FA /* ColorMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorMatrixView.m; path = Classes/ColorMatrixView.m; sourceTree = "<group>"; };
+		B2A2E85515643354005147FA /* ColorPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerAppDelegate.h; path = Classes/ColorPickerAppDelegate.h; sourceTree = "<group>"; };
+		B2A2E85615643354005147FA /* ColorPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPickerAppDelegate.m; path = Classes/ColorPickerAppDelegate.m; sourceTree = "<group>"; };
+		B2A2E85715643354005147FA /* ColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerView.h; path = Classes/ColorPickerView.h; sourceTree = "<group>"; };
+		B2A2E85815643354005147FA /* ColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPickerView.m; path = Classes/ColorPickerView.m; sourceTree = "<group>"; };
+		B2A2E85915643354005147FA /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerViewController.h; path = Classes/ColorPickerViewController.h; sourceTree = "<group>"; };
+		B2A2E85A15643354005147FA /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPickerViewController.m; path = Classes/ColorPickerViewController.m; sourceTree = "<group>"; };
+		B2A2E85B15643354005147FA /* ColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorSwatchView.h; path = Classes/ColorSwatchView.h; sourceTree = "<group>"; };
+		B2A2E85C15643354005147FA /* ColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorSwatchView.m; path = Classes/ColorSwatchView.m; sourceTree = "<group>"; };
+		B2A2E85D15643354005147FA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
+		B2A2E85E15643354005147FA /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = Classes/GradientView.h; sourceTree = "<group>"; };
+		B2A2E85F15643354005147FA /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientView.m; path = Classes/GradientView.m; sourceTree = "<group>"; };
+		B2A2E86015643354005147FA /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-Expanded.h"; path = "Classes/UIColor-Expanded.h"; sourceTree = "<group>"; };
+		B2A2E86115643354005147FA /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "Classes/UIColor-Expanded.m"; sourceTree = "<group>"; };
+		B2A2E86215643354005147FA /* UIColor-HSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-HSVAdditions.h"; path = "Classes/UIColor-HSVAdditions.h"; sourceTree = "<group>"; };
+		B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-HSVAdditions.m"; path = "Classes/UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
+		B2BE00E215381DA90096818B /* squares1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = squares1.jpg; path = ../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg; sourceTree = SOURCE_ROOT; };
+		B2BE00E415381DB00096818B /* squares2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = squares2.jpg; path = ../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg; sourceTree = SOURCE_ROOT; };
+		B2D1F23F15371FC300B32038 /* ColoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoursViewController.h; sourceTree = "<group>"; };
+		B2D1F24015371FC300B32038 /* ColoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoursViewController.m; sourceTree = "<group>"; };
+		B2D1F24115371FC300B32038 /* ColoursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ColoursViewController.xib; path = Classes/ColoursViewController.xib; sourceTree = "<group>"; };
+		B2D1F2B81537337C00B32038 /* tower_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tower_R.png; path = ../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png; sourceTree = SOURCE_ROOT; };
+		B2D1F2C61537343300B32038 /* bannierekai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bannierekai.jpg; path = ../../Elsa/Bamboo/bannierekai.jpg; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B26218651547E8330078D4C5 /* Utils.h */,
+				B26218661547E8330078D4C5 /* Utils.m */,
+				B2997026156BCE8B00BED0D9 /* ColourUnitView.h */,
+				B2997027156BCE8B00BED0D9 /* ColourUnitView.m */,
+				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
+				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
+				B2D1F23F15371FC300B32038 /* ColoursViewController.h */,
+				B2D1F24015371FC300B32038 /* ColoursViewController.m */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* coloursAppDelegate.h */,
+				1D3623250D0F684500981E51 /* coloursAppDelegate.m */,
+				B26C9E39156419CD00FFC28B /* ColorPicker */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* colours.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */,
+				B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */,
+				B2D1F24115371FC300B32038 /* ColoursViewController.xib */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* colours_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B26C9E5315641A5000FFC28B /* UI Parts */,
+				B26219361547FBC40078D4C5 /* horizontal.png */,
+				B26219371547FBC40078D4C5 /* mosaic.png */,
+				B26219381547FBC40078D4C5 /* vertical.png */,
+				B2BE00E215381DA90096818B /* squares1.jpg */,
+				B2BE00E415381DB00096818B /* squares2.jpg */,
+				B2D1F2C61537343300B32038 /* bannierekai.jpg */,
+				B2D1F2B81537337C00B32038 /* tower_R.png */,
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* colours-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26C9E39156419CD00FFC28B /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B2A2E85315643354005147FA /* ColorMatrixView.h */,
+				B2A2E85415643354005147FA /* ColorMatrixView.m */,
+				B2A2E85515643354005147FA /* ColorPickerAppDelegate.h */,
+				B2A2E85615643354005147FA /* ColorPickerAppDelegate.m */,
+				B2A2E85715643354005147FA /* ColorPickerView.h */,
+				B2A2E85815643354005147FA /* ColorPickerView.m */,
+				B2A2E85915643354005147FA /* ColorPickerViewController.h */,
+				B2A2E85A15643354005147FA /* ColorPickerViewController.m */,
+				B2A2E85B15643354005147FA /* ColorSwatchView.h */,
+				B2A2E85C15643354005147FA /* ColorSwatchView.m */,
+				B2A2E85D15643354005147FA /* Constants.h */,
+				B2A2E85E15643354005147FA /* GradientView.h */,
+				B2A2E85F15643354005147FA /* GradientView.m */,
+				B2A2E86015643354005147FA /* UIColor-Expanded.h */,
+				B2A2E86115643354005147FA /* UIColor-Expanded.m */,
+				B2A2E86215643354005147FA /* UIColor-HSVAdditions.h */,
+				B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */,
+			);
+			name = ColorPicker;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B26C9E5315641A5000FFC28B /* UI Parts */ = {
+			isa = PBXGroup;
+			children = (
+				B21AE66915668B8C004039DF /* bar_select.png */,
+				B21AE66715668B23004039DF /* crosshair.png */,
+				B26C9E5515641A5000FFC28B /* colormap.png */,
+				B26C9E5715641A5000FFC28B /* Default.png */,
+				B26C9E5815641A5000FFC28B /* Icon.png */,
+			);
+			path = "UI Parts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* colours */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "colours" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = colours;
+			productName = colours;
+			productReference = 1D6058910D05DD3D006BFB54 /* colours.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "colours" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* colours */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+				B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */,
+				B2D1F2B91537337C00B32038 /* tower_R.png in Resources */,
+				B2D1F2C71537343300B32038 /* bannierekai.jpg in Resources */,
+				B2BE00E315381DA90096818B /* squares1.jpg in Resources */,
+				B2BE00E515381DB00096818B /* squares2.jpg in Resources */,
+				B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */,
+				B26219391547FBC40078D4C5 /* horizontal.png in Resources */,
+				B262193A1547FBC40078D4C5 /* mosaic.png in Resources */,
+				B262193B1547FBC40078D4C5 /* vertical.png in Resources */,
+				B26C9E5A15641A5000FFC28B /* colormap.png in Resources */,
+				B26C9E5C15641A5000FFC28B /* Default.png in Resources */,
+				B26C9E5D15641A5000FFC28B /* Icon.png in Resources */,
+				B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */,
+				B21AE66815668B23004039DF /* crosshair.png in Resources */,
+				B21AE66A15668B8C004039DF /* bar_select.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* coloursAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				B2D1F24215371FC300B32038 /* ColoursViewController.m in Sources */,
+				B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */,
+				B26218671547E8330078D4C5 /* Utils.m in Sources */,
+				B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */,
+				B2A2E86515643354005147FA /* ColorPickerAppDelegate.m in Sources */,
+				B2A2E86615643354005147FA /* ColorPickerView.m in Sources */,
+				B2A2E86715643354005147FA /* ColorPickerViewController.m in Sources */,
+				B2A2E86815643354005147FA /* ColorSwatchView.m in Sources */,
+				B2A2E86915643354005147FA /* GradientView.m in Sources */,
+				B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */,
+				B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */,
+				B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = colours_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "colours-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = colours;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = colours_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "colours-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = colours;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "colours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "colours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
