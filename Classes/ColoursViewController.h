@@ -10,6 +10,7 @@
 #include <QuartzCore/QuartzCore.h>
 #import "WallpaperViewController.h"
 #import "Utils.h"
+#import "ColourUnitView.h"
 
 
 @interface ColoursViewController : UIViewController {
