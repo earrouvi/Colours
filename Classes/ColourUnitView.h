@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Utils.h"
 
-@interface ColourUnitView : UIView
+@interface ColourUnitView : UIView {
+
+    NSMutableString *hexCode;
+    UIButton *deleteColour;
+    UIButton *pickColour;
+    UIButton *changeColour;
+    UIView *colourBlock;
+    
+}
+
+- (id)initWithColour:(NSString*)colour rank:(int)rank andHeight:(int)height;
+-(void) changeRank:(int)rank andHeight:(int)height;
+-(void) changeColour:(NSString*)hexString;
 
 @end

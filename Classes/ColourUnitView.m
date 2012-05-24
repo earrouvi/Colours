@@ -10,22 +10,22 @@
 
 @implementation ColourUnitView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
+- (id)initWithColour:(NSString*)hexString rank:(int)rank andHeight:(int)height {
+    self = [super initWithFrame:CGRectMake(0, rank, 300, height)];
     if (self) {
-        // Initialization code
+        // init buttons and block colour
+        [colourBlock initWithFrame:CGRectMake(20, 0, 260, height)];
+        colourBlock.backgroundColor = [Utils convertHexToRGB:hexString];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+-(void) changeRank:(int)rank andHeight:(int)height {
+    self.frame = CGRectMake(0, rank, 300, height);
 }
-*/
+
+-(void) changeColour:(NSString*)hexString {
+    colourBlock.backgroundColor = [Utils convertHexToRGB:hexString];
+}
 
 @end

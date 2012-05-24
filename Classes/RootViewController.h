@@ -13,8 +13,8 @@
 
 @interface RootViewController : UIViewController <ColorPickerViewControllerDelegate> {
 	
-	UIButton * button;
-	UISegmentedControl * control;
+	UIButton *button;
+	UISegmentedControl *control;
 	UIColor *colorSwatch;
     
 }
@@ -25,7 +25,7 @@
 -(void) addPickerButton;
 -(void) pickerPressed;
 //
-- (void)colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color;
+- (void)colorPickerViewController:(ColorPickerViewController*)colorPicker didSelectColor:(UIColor*)color;
 //
 -(void) addSegmentedControl;
 

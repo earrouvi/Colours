@@ -7,18 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StandinViewController.h"
 
 @interface coloursAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
     UINavigationController *navigationController;
-    StandinViewController *pickerController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-@property (nonatomic, retain) IBOutlet StandinViewController *pickerController;
 
 @end
 

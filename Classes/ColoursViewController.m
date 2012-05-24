@@ -88,7 +88,6 @@
 	[self.view addSubview:button];
 }
 
-// cannot test on simulator
 -(void) sendButtonPressed {
     NSMutableString * body = [NSMutableString stringWithFormat:@"Here is a wonderful colour combo:"];
     for (int i=0; i<[colours count]; i++) {
@@ -173,18 +172,22 @@
 
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withWidth:(int)width andBlank:(int)blank {
     // create views for screen
-    UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(i*width+blank, 90, width-blank, 240)];
-    colourView.backgroundColor = [Utils convertHexToRGB:hexString];
-    [comboView addSubview:colourView];
+    //UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(i*width+blank, 90, width-blank, 240)];
+    //colourView.backgroundColor = [Utils convertHexToRGB:hexString];
+    //[comboView addSubview:colourView];
+    
+    ColourUnitView *unit = [[ColourUnitView alloc] initWithColour:hexString rank:i andHeight:width];
+    [comboView addSubview:unit];
+    [unit release];
     
     // create views for saved file
-    colourView = [[UIView alloc] initWithFrame:CGRectMake(i*320.0/nbColours, 0, 320.0/nbColours, 460)];
-    colourView.backgroundColor = [Utils convertHexToRGB:hexString];
+//    UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(i*320.0/nbColours, 0, 320.0/nbColours, 460)];
+//    colourView.backgroundColor = [Utils convertHexToRGB:hexString];
+//    
+//    // store hex code in string array
+//    [colours addObject:hexString];
     
-    // store hex code in string array
-    [colours addObject:hexString];
-    
-    [colourView release];
+//    [colourView release];
 }
 
 -(void) createChangeButton:(NSString*)hexString atIndex:(int)i withWidth:(int)width andBlank:(int)blank {

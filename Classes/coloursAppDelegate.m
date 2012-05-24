@@ -14,7 +14,6 @@
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize pickerController;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -82,7 +81,6 @@
 
 - (void)dealloc {
 	[navigationController release];
-    [pickerController release];
 	[window release];
 	[super dealloc];
 }

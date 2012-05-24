@@ -29,7 +29,6 @@
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
 		B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2997027156BCE8B00BED0D9 /* ColourUnitView.m */; };
 		B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85415643354005147FA /* ColorMatrixView.m */; };
-		B2A2E86515643354005147FA /* ColorPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85615643354005147FA /* ColorPickerAppDelegate.m */; };
 		B2A2E86615643354005147FA /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85815643354005147FA /* ColorPickerView.m */; };
 		B2A2E86715643354005147FA /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85A15643354005147FA /* ColorPickerViewController.m */; };
 		B2A2E86815643354005147FA /* ColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85C15643354005147FA /* ColorSwatchView.m */; };
@@ -76,8 +75,6 @@
 		B2997027156BCE8B00BED0D9 /* ColourUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourUnitView.m; sourceTree = "<group>"; };
 		B2A2E85315643354005147FA /* ColorMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorMatrixView.h; path = /Users/Renard/Documents/workspace/colours/Classes/ColorMatrixView.h; sourceTree = "<absolute>"; };
 		B2A2E85415643354005147FA /* ColorMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorMatrixView.m; path = Classes/ColorMatrixView.m; sourceTree = "<group>"; };
-		B2A2E85515643354005147FA /* ColorPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerAppDelegate.h; path = Classes/ColorPickerAppDelegate.h; sourceTree = "<group>"; };
-		B2A2E85615643354005147FA /* ColorPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPickerAppDelegate.m; path = Classes/ColorPickerAppDelegate.m; sourceTree = "<group>"; };
 		B2A2E85715643354005147FA /* ColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerView.h; path = Classes/ColorPickerView.h; sourceTree = "<group>"; };
 		B2A2E85815643354005147FA /* ColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPickerView.m; path = Classes/ColorPickerView.m; sourceTree = "<group>"; };
 		B2A2E85915643354005147FA /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerViewController.h; path = Classes/ColorPickerViewController.h; sourceTree = "<group>"; };
@@ -117,12 +114,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
+				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
 				B26218651547E8330078D4C5 /* Utils.h */,
 				B26218661547E8330078D4C5 /* Utils.m */,
 				B2997026156BCE8B00BED0D9 /* ColourUnitView.h */,
 				B2997027156BCE8B00BED0D9 /* ColourUnitView.m */,
-				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
-				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
 				B2D1F23F15371FC300B32038 /* ColoursViewController.h */,
 				B2D1F24015371FC300B32038 /* ColoursViewController.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
@@ -199,8 +196,6 @@
 			children = (
 				B2A2E85315643354005147FA /* ColorMatrixView.h */,
 				B2A2E85415643354005147FA /* ColorMatrixView.m */,
-				B2A2E85515643354005147FA /* ColorPickerAppDelegate.h */,
-				B2A2E85615643354005147FA /* ColorPickerAppDelegate.m */,
 				B2A2E85715643354005147FA /* ColorPickerView.h */,
 				B2A2E85815643354005147FA /* ColorPickerView.m */,
 				B2A2E85915643354005147FA /* ColorPickerViewController.h */,
@@ -318,7 +313,6 @@
 				B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */,
 				B26218671547E8330078D4C5 /* Utils.m in Sources */,
 				B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */,
-				B2A2E86515643354005147FA /* ColorPickerAppDelegate.m in Sources */,
 				B2A2E86615643354005147FA /* ColorPickerView.m in Sources */,
 				B2A2E86715643354005147FA /* ColorPickerViewController.m in Sources */,
 				B2A2E86815643354005147FA /* ColorSwatchView.m in Sources */,

@@ -16,13 +16,13 @@
 @interface ColoursViewController : UIViewController {
 	
 	int nbColours;
-    UIColor * firstColour;
-	UIButton * button;
-	UIView * comboView;
-    UIView *hexView;
-    UIView *buttonsView;
-	NSMutableArray * colours;
-    int change;
+    UIColor *firstColour;//plus besoin
+	UIButton *button;
+	UIView *comboView;
+    UIView *hexView;//plus besoin
+    UIView *buttonsView;//plus besoin
+	NSMutableArray *colours;
+    int change;//plus besoin
 
 }
 
