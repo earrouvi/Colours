@@ -99,20 +99,42 @@
     }
 }
 
--(void) addMinusButtonAtY:(int)y {
-    UIButton *plus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    plus.frame = CGRectMake(300, y, 20, 20);
-    [plus setTitle:@"-" forState:UIControlStateNormal];
-    [plus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:plus];
+-(void) addMinusButtonAtIndex:(int)i andHeight:(int)height {
+    // minus button
+    UIButton *minus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    minus.frame = CGRectMake(300, 60+i*height, 20, 20);
+    [minus setTitle:@"-" forState:UIControlStateNormal];
+    [minus addTarget:self action:@selector(minusButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    minus.tag = i;
+    [self.view addSubview:minus];
+    
+    // picker button
+    UIButton *pick = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    pick.frame = CGRectMake(250, 60+i*height, 30, 20);
+    [pick setTitle:@"Pick" forState:UIControlStateNormal];
+    [pick addTarget:self action:@selector(pickColour:) forControlEvents:UIControlEventTouchUpInside];
+    pick.tag = i;
+    [self.view addSubview:pick];
 }
 
--(void) minusButtonPressed {
-    if (nbColours>2) {
+-(void) minusButtonPressed:(id)sender {
+    int index = ((UIControl*)sender).tag;
+    if (nbColours>3) {
         nbColours--;
-        // delete corresponding view
+        [((UIView*)[[comboView subviews] objectAtIndex:index]) removeFromSuperview];
         [self comboLayout];
     }
+}
+
+-(void) pickColour:(id)sender {
+    int index = ((UIControl*)sender).tag;
+    colourReceiver = index;
+    NSLog(@"%d",index);
+    // Pass the selected object to the color picker view controller
+    ColorPickerViewController *cp = [[ColorPickerViewController alloc] initWithNibName:@"ColorPickerViewController" bundle:nil];
+    cp.delegate = self;
+    cp.defaultsColor = [UIColor redColor];
+    [self presentModalViewController:cp animated:YES];
 }
 
 #pragma mark -
@@ -130,12 +152,13 @@
     ColourUnitView *unit = [[ColourUnitView alloc] initWithColour:hexString rank:i andHeight:height];
     [comboView addSubview:unit];
     [unit release];
-    [self addMinusButtonAtY:60+i*height];
+    [self addMinusButtonAtIndex:i andHeight:height];
 }
 
 -(void) comboLayout {
     for (int i=0;i<nbColours;i++) {
         [[[comboView subviews] objectAtIndex:i] changeRank:i andHeight:316/nbColours];
+        // rearrange buttons
     }
 }
 
@@ -152,6 +175,19 @@
 					   [subject stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding],
 					   [body stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:mail]];
+}
+
+#pragma mark -
+#pragma mark Color Picker
+
+- (void)colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor*)color {
+    
+    const CGFloat *c = CGColorGetComponents(color.CGColor);
+    NSString *hex = [Utils convertRed:c[0] green:c[1] blue:c[2]];
+    
+    [((ColourUnitView*)[[comboView subviews] objectAtIndex:colourReceiver]) changeColour:hex];
+    [colorPicker dismissModalViewControllerAnimated:YES];
+    colourReceiver = -1;
 }
 
 #pragma mark -
@@ -180,7 +216,7 @@
 
 
 - (void)dealloc {
-    [colorSwatch release];
+    [comboView release];
 	[colours release];
     [super dealloc];
 }

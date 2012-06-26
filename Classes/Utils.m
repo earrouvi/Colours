@@ -38,7 +38,7 @@
 	return [UIColor colorWithRed:r green:g blue:b alpha:1];
 }
 
-// Convert hex colour to RGB floats, return UIColor
+// Convert RGB floats to hex, return string
 +(NSString*) convertRed:(float)r green:(float)g blue:(float)b {	
     int hr,hg,hb;
 	hr = 255*r; hg = 255*g; hb = 255*b;

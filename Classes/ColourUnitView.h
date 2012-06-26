@@ -28,6 +28,6 @@
 -(void) changeColour:(NSString*)hexString;
 -(void) changeButtonPressed;
 
-- (void)colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color;
+-(void) colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color;
 
 @end

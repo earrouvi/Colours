@@ -53,6 +53,7 @@
 
 #pragma mark -
 #pragma mark Color Picker
+
 - (void)colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
     if (color!=colorSwatch) {
         [colorSwatch release];
