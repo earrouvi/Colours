@@ -17,6 +17,9 @@
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 		B21AE66815668B23004039DF /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66715668B23004039DF /* crosshair.png */; };
 		B21AE66A15668B8C004039DF /* bar_select.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66915668B8C004039DF /* bar_select.png */; };
+		B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D01599DA2000CA9CF1 /* horizontal.png */; };
+		B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D11599DA2000CA9CF1 /* mosaic.png */; };
+		B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D21599DA2000CA9CF1 /* vertical.png */; };
 		B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262184A1547E4C80078D4C5 /* WallpaperViewController.m */; };
 		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
 		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
@@ -56,6 +59,9 @@
 		8D1107310486CEB800E47090 /* colours-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colours-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B21AE66715668B23004039DF /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 		B21AE66915668B8C004039DF /* bar_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_select.png; sourceTree = "<group>"; };
+		B240B0D01599DA2000CA9CF1 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = "UI Parts/horizontal.png"; sourceTree = "<group>"; };
+		B240B0D11599DA2000CA9CF1 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = "UI Parts/mosaic.png"; sourceTree = "<group>"; };
+		B240B0D21599DA2000CA9CF1 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = "UI Parts/vertical.png"; sourceTree = "<group>"; };
 		B26218491547E4C80078D4C5 /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
 		B262184A1547E4C80078D4C5 /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
 		B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WallpaperViewController.xib; path = Classes/WallpaperViewController.xib; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B240B0D01599DA2000CA9CF1 /* horizontal.png */,
+				B240B0D11599DA2000CA9CF1 /* mosaic.png */,
+				B240B0D21599DA2000CA9CF1 /* vertical.png */,
 				B26C9E5315641A5000FFC28B /* UI Parts */,
 				B2BE00E215381DA90096818B /* squares1.jpg */,
 				B2BE00E415381DB00096818B /* squares2.jpg */,
@@ -284,6 +293,9 @@
 				B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */,
 				B21AE66815668B23004039DF /* crosshair.png in Resources */,
 				B21AE66A15668B8C004039DF /* bar_select.png in Resources */,
+				B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */,
+				B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */,
+				B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
