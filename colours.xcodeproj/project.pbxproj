@@ -64,9 +64,9 @@
 		B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WallpaperViewController.xib; path = Classes/WallpaperViewController.xib; sourceTree = "<group>"; };
 		B26218651547E8330078D4C5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		B26218661547E8330078D4C5 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		B26219361547FBC40078D4C5 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = ../../../Desktop/horizontal.png; sourceTree = SOURCE_ROOT; };
-		B26219371547FBC40078D4C5 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = ../../../Desktop/mosaic.png; sourceTree = SOURCE_ROOT; };
-		B26219381547FBC40078D4C5 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = ../../../Desktop/vertical.png; sourceTree = SOURCE_ROOT; };
+		B26219361547FBC40078D4C5 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = "UI Parts/horizontal.png"; sourceTree = SOURCE_ROOT; };
+		B26219371547FBC40078D4C5 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = "UI Parts/mosaic.png"; sourceTree = SOURCE_ROOT; };
+		B26219381547FBC40078D4C5 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = "UI Parts/vertical.png"; sourceTree = SOURCE_ROOT; };
 		B26C9E5515641A5000FFC28B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 		B26C9E5715641A5000FFC28B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -114,14 +114,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B2D1F23F15371FC300B32038 /* ColoursViewController.h */,
+				B2D1F24015371FC300B32038 /* ColoursViewController.m */,
 				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
 				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
 				B26218651547E8330078D4C5 /* Utils.h */,
 				B26218661547E8330078D4C5 /* Utils.m */,
 				B2997026156BCE8B00BED0D9 /* ColourUnitView.h */,
 				B2997027156BCE8B00BED0D9 /* ColourUnitView.m */,
-				B2D1F23F15371FC300B32038 /* ColoursViewController.h */,
-				B2D1F24015371FC300B32038 /* ColoursViewController.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* coloursAppDelegate.h */,

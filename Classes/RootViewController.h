@@ -7,26 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ColoursViewController.h"
-#import "ColorPickerViewController.h"
 #import "Utils.h"
+#import "WallpaperViewController.h"
+#import "ColourUnitView.h"
 
-@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate> {
+@interface RootViewController : UIViewController {
 	
-	UIButton *button;
-	UISegmentedControl *control;
-	UIColor *colorSwatch;
+	int nbColours;
+	UIView *comboView;
+	NSMutableArray *colours;
+    UIColor *colorSwatch;
     
 }
 
--(void) addBorderAtY:(int)y withName:(NSString*)filename;
+-(void) addSaveButton;
+-(void) saveButtonPressed;
 -(void) addNewButton;
--(void) buttonPressed;
--(void) addPickerButton;
--(void) pickerPressed;
-//
-- (void)colorPickerViewController:(ColorPickerViewController*)colorPicker didSelectColor:(UIColor*)color;
-//
--(void) addSegmentedControl;
+-(void) newButtonPressed;
+-(void) addPlusButton;
+-(void) plusButtonPressed;
+-(void) addMinusButtonAtY:(int)y;
+-(void) minusButtonPressed;
+//---
+-(void) generateCombo;
+-(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height;
+-(void) comboLayout;
+//---
+-(void) writeEmail;
+-(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body;
 
 @end

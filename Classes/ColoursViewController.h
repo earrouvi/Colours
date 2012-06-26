@@ -22,7 +22,6 @@
     UIView *hexView;//plus besoin
     UIView *buttonsView;//plus besoin
 	NSMutableArray *colours;
-    int change;//plus besoin
 
 }
 
@@ -37,8 +36,7 @@
 -(void) changeButtonPressed:(id)sender;
 //---
 -(void) generateCombo;
--(void) createColourBlock:(NSString*)hexString atIndex:(int)i withWidth:(int)width andBlank:(int)blank;
--(void) createChangeButton:(NSString*)hexString atIndex:(int)i withWidth:(int)width andBlank:(int)blank;
+-(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height;
 //---
 -(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body;
 

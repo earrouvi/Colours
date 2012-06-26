@@ -14,9 +14,8 @@
 #pragma mark View lifecycle
 
 -(id) initWithNumberOfColours:(int)col andFirstColour:(UIColor*)first {
-    change = 0;
 	nbColours = col;
-    comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, 320, 316)];
     hexView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
     buttonsView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
 	colours = [[NSMutableArray alloc] init];
@@ -34,11 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self.view addSubview:comboView];
-    [self.view addSubview:hexView];
-    [self.view addSubview:buttonsView];
 	
-	[self addSaveButton];
-	[self addSendButton];
 	[self addNewButton];
 	[self generateCombo];
 }
@@ -52,10 +47,10 @@
 	button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	
 	//set the position of the button
-	button.frame = CGRectMake(70, 380, 180, 30);
+	button.frame = CGRectMake(70, 366, 50, 30);
 	
 	//set the button's title
-	[button setTitle:@"Save this as image" forState:UIControlStateNormal];
+	[button setTitle:@"Save!" forState:UIControlStateNormal];
 	
 	//listen for clicks
 	[button addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -118,12 +113,9 @@
 -(void) newButtonPressed {
     for (int i=0;i<nbColours;i++) {
         [[[comboView subviews] objectAtIndex:0] removeFromSuperview];
-        [[[hexView subviews] objectAtIndex:0] removeFromSuperview];
-        [[[buttonsView subviews] objectAtIndex:0] removeFromSuperview];
     }
 	[colours release];
 	colours = [[NSMutableArray alloc] init];
-    change = 0;
 	[self generateCombo];
 }
 
@@ -148,67 +140,17 @@
 #pragma mark Combo generation and image processing
 
 -(void) generateCombo {
-    int start = 0;
-    int blank = 10;
-    int width = (320-blank)/nbColours;
-    if (firstColour!=nil) {
-        start = 1;
-        const CGFloat *c = CGColorGetComponents(firstColour.CGColor);
-        NSString *hex = [Utils convertRed:c[0] green:c[1] blue:c[2]];
-        [self createColourBlock:hex atIndex:0 withWidth:width andBlank:blank];
-        if (change!=3) {
-            [self createChangeButton:hex atIndex:0 withWidth:width andBlank:blank];
-        }
-    }
-	for (int i=start; i<nbColours; i++) {
+    int height = (316)/nbColours;
+	for (int i=0; i<nbColours; i++) {
 		NSString * hexString = [Utils generateColour];
-		
-        [self createColourBlock:hexString atIndex:i withWidth:width andBlank:blank];
-        if (change!=3) {
-            [self createChangeButton:hexString atIndex:i withWidth:width andBlank:blank];
-        }
+        [self createColourBlock:hexString atIndex:i withHeight:height];
 	}
 }
 
--(void) createColourBlock:(NSString*)hexString atIndex:(int)i withWidth:(int)width andBlank:(int)blank {
-    // create views for screen
-    //UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(i*width+blank, 90, width-blank, 240)];
-    //colourView.backgroundColor = [Utils convertHexToRGB:hexString];
-    //[comboView addSubview:colourView];
-    
-    ColourUnitView *unit = [[ColourUnitView alloc] initWithColour:hexString rank:i andHeight:width];
+-(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height {
+    ColourUnitView *unit = [[ColourUnitView alloc] initWithColour:hexString rank:i andHeight:height];
     [comboView addSubview:unit];
     [unit release];
-    
-    // create views for saved file
-//    UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(i*320.0/nbColours, 0, 320.0/nbColours, 460)];
-//    colourView.backgroundColor = [Utils convertHexToRGB:hexString];
-//    
-//    // store hex code in string array
-//    [colours addObject:hexString];
-    
-//    [colourView release];
-}
-
--(void) createChangeButton:(NSString*)hexString atIndex:(int)i withWidth:(int)width andBlank:(int)blank {
-    // change buttons
-    button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.tag = i;
-    [button setTitle:@"Change" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(changeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    button.frame = CGRectMake(i*width+blank, 60, width-blank, 25);
-    [buttonsView addSubview:button];
-    
-    // text fields for hex codes
-    UITextField *code = [[UITextField alloc] init];
-    NSMutableString *hexcode = [NSMutableString stringWithString:@"#"];
-    [hexcode appendFormat:hexString];
-    code.text = hexcode;
-    code.frame = CGRectMake(i*width+blank, 310, width-blank, 20);
-    code.textAlignment = UITextAlignmentCenter;
-    [hexView addSubview:code];
-    [code release];
-    change++;
 }
 
 #pragma mark -
