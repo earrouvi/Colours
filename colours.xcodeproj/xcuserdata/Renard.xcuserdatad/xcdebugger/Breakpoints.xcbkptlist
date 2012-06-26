@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes/ColoursViewController.m"
-         timestampString = "359055664.570267"
+         timestampString = "359987335.295808"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "25"
-         endingLineNumber = "25"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
          landmarkName = "-initWithNumberOfColours:andFirstColour:"
          landmarkType = "5">
       </FileBreakpoint>
