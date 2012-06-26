@@ -20,9 +20,6 @@
 		B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262184A1547E4C80078D4C5 /* WallpaperViewController.m */; };
 		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
 		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
-		B26219391547FBC40078D4C5 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B26219361547FBC40078D4C5 /* horizontal.png */; };
-		B262193A1547FBC40078D4C5 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B26219371547FBC40078D4C5 /* mosaic.png */; };
-		B262193B1547FBC40078D4C5 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B26219381547FBC40078D4C5 /* vertical.png */; };
 		B26C9E5A15641A5000FFC28B /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5515641A5000FFC28B /* colormap.png */; };
 		B26C9E5C15641A5000FFC28B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Default.png */; };
 		B26C9E5D15641A5000FFC28B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Icon.png */; };
@@ -64,9 +61,6 @@
 		B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WallpaperViewController.xib; path = Classes/WallpaperViewController.xib; sourceTree = "<group>"; };
 		B26218651547E8330078D4C5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		B26218661547E8330078D4C5 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		B26219361547FBC40078D4C5 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = "UI Parts/horizontal.png"; sourceTree = SOURCE_ROOT; };
-		B26219371547FBC40078D4C5 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = "UI Parts/mosaic.png"; sourceTree = SOURCE_ROOT; };
-		B26219381547FBC40078D4C5 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = "UI Parts/vertical.png"; sourceTree = SOURCE_ROOT; };
 		B26C9E5515641A5000FFC28B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 		B26C9E5715641A5000FFC28B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -167,9 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				B26C9E5315641A5000FFC28B /* UI Parts */,
-				B26219361547FBC40078D4C5 /* horizontal.png */,
-				B26219371547FBC40078D4C5 /* mosaic.png */,
-				B26219381547FBC40078D4C5 /* vertical.png */,
 				B2BE00E215381DA90096818B /* squares1.jpg */,
 				B2BE00E415381DB00096818B /* squares2.jpg */,
 				B2D1F2C61537343300B32038 /* bannierekai.jpg */,
@@ -287,9 +278,6 @@
 				B2BE00E315381DA90096818B /* squares1.jpg in Resources */,
 				B2BE00E515381DB00096818B /* squares2.jpg in Resources */,
 				B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */,
-				B26219391547FBC40078D4C5 /* horizontal.png in Resources */,
-				B262193A1547FBC40078D4C5 /* mosaic.png in Resources */,
-				B262193B1547FBC40078D4C5 /* vertical.png in Resources */,
 				B26C9E5A15641A5000FFC28B /* colormap.png in Resources */,
 				B26C9E5C15641A5000FFC28B /* Default.png in Resources */,
 				B26C9E5D15641A5000FFC28B /* Icon.png in Resources */,
