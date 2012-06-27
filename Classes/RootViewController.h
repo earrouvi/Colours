@@ -16,9 +16,9 @@
 	int nbColours;
 	UIView *comboView;
 	NSMutableArray *colours;
-    int colourReceiver;
     UIView *minusButtons;
     UIView *pickButtons;
+    ColourUnitView *colourReceiver;
     
 }
 
@@ -28,7 +28,6 @@
 -(void) newButtonPressed;
 -(void) addPlusButton;
 -(void) plusButtonPressed;
--(void) pickColour:(id)sender;
 //---
 -(void) generateCombo;
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height;

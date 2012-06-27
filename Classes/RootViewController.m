@@ -86,14 +86,6 @@
     }
 }
 
--(void) pickColour:(id)sender {
-    // Pass the selected object to the color picker view controller
-    ColorPickerViewController *cp = [[ColorPickerViewController alloc] initWithNibName:@"ColorPickerViewController" bundle:nil];
-    cp.delegate = self;
-    cp.defaultsColor = [UIColor redColor];
-    [self presentModalViewController:cp animated:YES];
-}
-
 #pragma mark -
 #pragma mark Combo view
 
@@ -143,9 +135,9 @@
     const CGFloat *c = CGColorGetComponents(color.CGColor);
     NSString *hex = [Utils convertRed:c[0] green:c[1] blue:c[2]];
     
-    [((ColourUnitView*)[[comboView subviews] objectAtIndex:colourReceiver]) changeColour:hex];
+    [colourReceiver changeColour:hex];
     [colorPicker dismissModalViewControllerAnimated:YES];
-    colourReceiver = -1;
+    [colourReceiver release];
 }
 
 #pragma mark -
@@ -160,7 +152,12 @@
 }
 
 -(void) didClickOnColorPicker:(ColourUnitView*)unit {
-    [self pickColour:unit];
+    // Pass the selected object to the color picker view controller
+    ColorPickerViewController *cp = [[ColorPickerViewController alloc] initWithNibName:@"ColorPickerViewController" bundle:nil];
+    cp.delegate = self;
+    cp.defaultsColor = [UIColor redColor];
+    colourReceiver = [unit retain];
+    [self presentModalViewController:cp animated:YES];
 }
 
 #pragma mark -
