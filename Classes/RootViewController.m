@@ -23,7 +23,12 @@
     comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, 320, 316)];
     colours = [[NSMutableArray alloc] init];
     
+    minusButtons = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 316)];
+    pickButtons = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 316)];
+    
 	[self.view addSubview:comboView];
+    //[self.view addSubview:pickButtons];
+    //[self.view addSubview:minusButtons];
 	[self addNewButton];
     [self addPlusButton];
 	[self generateCombo];
@@ -34,19 +39,10 @@
 
 // Button for saving image
 -(void) addSaveButton {
-	//create the button
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	
-	//set the position of the button
 	button.frame = CGRectMake(70, 366, 50, 30);
-	
-	//set the button's title
 	[button setTitle:@"Save!" forState:UIControlStateNormal];
-	
-	//listen for clicks
 	[button addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-	
-	//add the button to the view
 	[self.view addSubview:button];
 }
 
@@ -58,19 +54,10 @@
 
 // Button for new colour combo
 -(void) addNewButton {
-	//create the button
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	
-	//set the position of the button
 	button.frame = CGRectMake(70, 10, 180, 30);
-	
-	//set the button's title
 	[button setTitle:@"New combo!" forState:UIControlStateNormal];
-	
-	//listen for clicks
 	[button addTarget:self action:@selector(newButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-	
-	//add the button to the view
 	[self.view addSubview:button];
 }
 
@@ -92,44 +79,14 @@
 }
 
 -(void) plusButtonPressed {
-    if (nbColours<9) {
+    if (nbColours<7) {
         nbColours++;
         [self createColourBlock:[Utils generateColour] atIndex:nbColours-1 withHeight:316/nbColours];
         [self comboLayout];
     }
 }
 
--(void) addMinusButtonAtIndex:(int)i andHeight:(int)height {
-    // minus button
-    UIButton *minus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    minus.frame = CGRectMake(300, 60+i*height, 20, 20);
-    [minus setTitle:@"-" forState:UIControlStateNormal];
-    [minus addTarget:self action:@selector(minusButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    minus.tag = i;
-    [self.view addSubview:minus];
-    
-    // picker button
-    UIButton *pick = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    pick.frame = CGRectMake(250, 60+i*height, 30, 20);
-    [pick setTitle:@"Pick" forState:UIControlStateNormal];
-    [pick addTarget:self action:@selector(pickColour:) forControlEvents:UIControlEventTouchUpInside];
-    pick.tag = i;
-    [self.view addSubview:pick];
-}
-
--(void) minusButtonPressed:(id)sender {
-    int index = ((UIControl*)sender).tag;
-    if (nbColours>3) {
-        nbColours--;
-        [((UIView*)[[comboView subviews] objectAtIndex:index]) removeFromSuperview];
-        [self comboLayout];
-    }
-}
-
 -(void) pickColour:(id)sender {
-    int index = ((UIControl*)sender).tag;
-    colourReceiver = index;
-    NSLog(@"%d",index);
     // Pass the selected object to the color picker view controller
     ColorPickerViewController *cp = [[ColorPickerViewController alloc] initWithNibName:@"ColorPickerViewController" bundle:nil];
     cp.delegate = self;
@@ -150,15 +107,16 @@
 
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height {
     ColourUnitView *unit = [[ColourUnitView alloc] initWithColour:hexString rank:i andHeight:height];
+    unit.delegate = self;
     [comboView addSubview:unit];
     [unit release];
-    [self addMinusButtonAtIndex:i andHeight:height];
 }
 
 -(void) comboLayout {
-    for (int i=0;i<nbColours;i++) {
-        [[[comboView subviews] objectAtIndex:i] changeRank:i andHeight:316/nbColours];
-        // rearrange buttons
+    int i=0;
+    for (ColourUnitView *view in [comboView subviews]) {
+        [view changeRank:i andHeight:316/nbColours];
+        i++;
     }
 }
 
@@ -178,7 +136,7 @@
 }
 
 #pragma mark -
-#pragma mark Color Picker
+#pragma mark Color Picker delegate methods
 
 - (void)colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor*)color {
     
@@ -188,6 +146,21 @@
     [((ColourUnitView*)[[comboView subviews] objectAtIndex:colourReceiver]) changeColour:hex];
     [colorPicker dismissModalViewControllerAnimated:YES];
     colourReceiver = -1;
+}
+
+#pragma mark -
+#pragma mark Colour Unit View delegate methods
+
+-(void) didClickOnDelete:(ColourUnitView*)unit {
+    if (nbColours>3) {
+        nbColours--;
+        [unit removeFromSuperview];
+        [self comboLayout];
+    }
+}
+
+-(void) didClickOnColorPicker:(ColourUnitView*)unit {
+    [self pickColour:unit];
 }
 
 #pragma mark -
@@ -212,11 +185,12 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     [comboView release];
+    [minusButtons release];
+    [pickButtons release];
 }
 
 
 - (void)dealloc {
-    [comboView release];
 	[colours release];
     [super dealloc];
 }

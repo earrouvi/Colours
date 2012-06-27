@@ -11,12 +11,14 @@
 #import "WallpaperViewController.h"
 #import "ColourUnitView.h"
 
-@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate> {
+@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate> {
 	
 	int nbColours;
 	UIView *comboView;
 	NSMutableArray *colours;
     int colourReceiver;
+    UIView *minusButtons;
+    UIView *pickButtons;
     
 }
 
@@ -26,8 +28,6 @@
 -(void) newButtonPressed;
 -(void) addPlusButton;
 -(void) plusButtonPressed;
--(void) addMinusButtonAtIndex:(int)i andHeight:(int)height;
--(void) minusButtonPressed:(id)sender;
 -(void) pickColour:(id)sender;
 //---
 -(void) generateCombo;
