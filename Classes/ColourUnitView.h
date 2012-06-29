@@ -24,11 +24,9 @@
     id<ColourUnitViewDelegate> delegate;
     
     NSMutableString *hexCode;
-    //UIButton *deleteColour;
-    //UIButton *pickColour;
-    //UIButton *changeColour;
     UIView *colourBlock;
     UIColor *colorSwatch;
+    UITextView *code;
     
 }
 
