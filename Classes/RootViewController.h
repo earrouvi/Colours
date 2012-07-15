@@ -23,11 +23,11 @@
 }
 
 -(void) addSaveButton;
--(void) saveButtonPressed;
 -(void) addNewButton;
 -(void) newButtonPressed;
 -(void) addPlusButton;
 -(void) plusButtonPressed;
+-(void) alert;
 //---
 -(void) generateCombo;
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height;

@@ -18,10 +18,11 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"Colourandom"];
+    [self.view setBackgroundColor:[UIColor viewFlipsideBackgroundColor]];
     
     nbColours = 3;
     comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, 320, 316)];
-    colours = [[NSMutableArray alloc] init];
     
     minusButtons = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 316)];
     pickButtons = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 316)];
@@ -31,6 +32,7 @@
     //[self.view addSubview:minusButtons];
 	[self addNewButton];
     [self addPlusButton];
+    [self addSaveButton];
 	[self generateCombo];
 }
 
@@ -40,16 +42,39 @@
 // Button for saving image
 -(void) addSaveButton {
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	button.frame = CGRectMake(70, 366, 50, 30);
+	button.frame = CGRectMake(130, 366, 60, 30);
 	[button setTitle:@"Save!" forState:UIControlStateNormal];
-	[button addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:self action:@selector(alert) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:button];
 }
 
--(void) saveButtonPressed {
-	// Pass the selected object to the new view controller.
-	WallpaperViewController *wallpaperViewController = [[WallpaperViewController alloc] initWithArrayOfColours:colours];
-	[self.navigationController pushViewController:wallpaperViewController animated:YES];
+-(void) alert {
+    // Store codes in "colours" (we'll need it for first and second button anyway)
+    [colours release];
+    colours = [[NSMutableArray alloc] init];
+    for (ColourUnitView *unit in [comboView subviews]) {
+        [colours addObject:unit.hexCode];
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] init];
+	[alert setTitle:@"Save this image to your Photos Album?"];
+	[alert setMessage:@"You will then be able to set is as wallpaper."];
+	[alert setDelegate:self];
+	[alert addButtonWithTitle:@"Make a wallpaper"];
+	[alert addButtonWithTitle:@"Send by email"];
+    [alert addButtonWithTitle:@"Cancel"];
+	[alert show];
+	[alert release];
+}
+
+-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 0) {
+		// Pass the selected object to the new view controller.
+        WallpaperViewController *wallpaperViewController = [[WallpaperViewController alloc] initWithArrayOfColours:colours];
+        [self.navigationController pushViewController:wallpaperViewController animated:YES];
+	} else if (buttonIndex == 1) {
+        [self writeEmail];
+    }
 }
 
 // Button for new colour combo
@@ -72,14 +97,14 @@
 
 -(void) addPlusButton {
     UIButton *plus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    plus.frame = CGRectMake(20, 30, 20, 20);
+    plus.frame = CGRectMake(30, 10, 30, 30);
     [plus setTitle:@"+" forState:UIControlStateNormal];
     [plus addTarget:self action:@selector(plusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:plus];
 }
 
 -(void) plusButtonPressed {
-    if (nbColours<7) {
+    if (nbColours<6) {
         nbColours++;
         [self createColourBlock:[Utils generateColour] atIndex:nbColours-1 withHeight:316/nbColours];
         [self comboLayout];
@@ -116,7 +141,13 @@
 #pragma mark Sending Emails
 
 -(void) writeEmail {
-    
+    NSMutableString * body = [NSMutableString stringWithFormat:@"Here is a wonderful colour combo I created with Colourapp:\n"];
+    for (int i=0; i<[colours count]; i++) {
+        [body appendString:@"\n#"];
+        [body appendString:([colours objectAtIndex:i])];
+    }
+    [body appendString:@"Get Colourapp on http://www.colourapp.com\n"];
+	[self sendEmailTo:@"" withSubject:@"My colour combo on Colourapp" andBody:body];
 }
 
 -(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body {
@@ -144,7 +175,7 @@
 #pragma mark Colour Unit View delegate methods
 
 -(void) didClickOnDelete:(ColourUnitView*)unit {
-    if (nbColours>3) {
+    if (nbColours>2) {
         nbColours--;
         [unit removeFromSuperview];
         [self comboLayout];

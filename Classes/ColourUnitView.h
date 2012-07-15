@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Utils.h"
 #import "ColorPickerViewController.h"
+#import "UILabel+CopyLabel.h"
 
 @class ColourUnitView;
 
@@ -26,11 +27,12 @@
     NSMutableString *hexCode;
     UIView *colourBlock;
     UIColor *colorSwatch;
-    UITextView *code;
+    UITextField *code;
     
 }
 
 @property(assign) id<ColourUnitViewDelegate> delegate;
+@property(retain) NSMutableString *hexCode;
 
 - (id)initWithColour:(NSString*)colour rank:(int)rank andHeight:(int)height;
 -(void) addButtons;

@@ -11,6 +11,7 @@
 @implementation ColourUnitView
 
 @synthesize delegate;
+@synthesize hexCode;
 
 #pragma mark Init & building the view
 
@@ -33,33 +34,37 @@
     
     // change button
     UIButton *change = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    change.frame = CGRectMake(100, height*0.3, 80, 20);
+    change.frame = CGRectMake(100, height*0.2, 80, 20);
     [change setTitle:@"Change" forState:UIControlStateNormal];
     [change addTarget:self action:@selector(changeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [change setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin];
     [colourBlock addSubview:change];
     
     // minus button
     UIButton *minus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    minus.frame = CGRectMake(200, 15, 20, 20);
+    minus.frame = CGRectMake(30, height*0.2, 20, 20);
     [minus setTitle:@"-" forState:UIControlStateNormal];
     [minus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [minus setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin];
     [colourBlock addSubview:minus];
     
     // picker button
     UIButton *pick = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    pick.frame = CGRectMake(230, 15, 20, 20);
+    pick.frame = CGRectMake(230, height*0.2, 20, 20);
     [pick setTitle:@"P" forState:UIControlStateNormal];
     [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
-    [pick setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin];
     [colourBlock addSubview:pick];
     
     // hex code
-    code = [[UITextView alloc] initWithFrame:CGRectMake(5, bottom-15, 70, 15)];
-    NSString *sharp = [NSString stringWithFormat:@"%@%@", @"#", hexCode];
+    code = [[UITextField alloc] initWithFrame:CGRectMake(0, bottom-19, 70, 15)];
+//    code.editable = NO;
+//    code.scrollEnabled = NO;
+//    BOOL luc = [code canBecomeFirstResponder];
+//    NSLog(@"%d",luc);
+    NSString *sharp = [NSString stringWithFormat:@"%@%@", @" #", hexCode];
     code.text = sharp;
-    [code setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin];
+    code.font = [UIFont systemFontOfSize:14];
+    code.inputView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
+    code.backgroundColor = [UIColor viewFlipsideBackgroundColor];
+    code.textColor = [UIColor whiteColor];
     [colourBlock addSubview:code];
 }
 
@@ -69,6 +74,14 @@
 -(void) changeRank:(int)rank andHeight:(int)height {
     self.frame = CGRectMake(20, 0+rank*height, 280, height);
     colourBlock.frame = CGRectMake(0, height*0.05, 280, height*0.9);
+    
+    int bottom = colourBlock.frame.origin.y+colourBlock.frame.size.height;
+    for (int i=0;i<3;i++) {
+        UIView *v = [[colourBlock subviews] objectAtIndex:i];
+        [v setFrame:CGRectMake(v.frame.origin.x, height*0.2, v.frame.size.width, 20)];
+    }
+    UIView *v = [[colourBlock subviews] objectAtIndex:3];
+    [v setFrame:CGRectMake(0, bottom-19, 70, 15)];
 }
 
 -(void) changeColour:(NSString*)hexString {

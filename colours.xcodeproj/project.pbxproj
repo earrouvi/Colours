@@ -27,6 +27,8 @@
 		B26C9E5C15641A5000FFC28B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Default.png */; };
 		B26C9E5D15641A5000FFC28B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Icon.png */; };
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
+		B27FAD6515B083F8007A4341 /* UILabel+CopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B27FAD6415B083F8007A4341 /* UILabel+CopyLabel.m */; };
+		B2969F4215B319F800229E73 /* SmallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2969F4115B319F800229E73 /* SmallButton.m */; };
 		B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2997027156BCE8B00BED0D9 /* ColourUnitView.m */; };
 		B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85415643354005147FA /* ColorMatrixView.m */; };
 		B2A2E86615643354005147FA /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85815643354005147FA /* ColorPickerView.m */; };
@@ -71,6 +73,10 @@
 		B26C9E5715641A5000FFC28B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
+		B27FAD6315B083F8007A4341 /* UILabel+CopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CopyLabel.h"; sourceTree = "<group>"; };
+		B27FAD6415B083F8007A4341 /* UILabel+CopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CopyLabel.m"; sourceTree = "<group>"; };
+		B2969F4015B319F800229E73 /* SmallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallButton.h; sourceTree = "<group>"; };
+		B2969F4115B319F800229E73 /* SmallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallButton.m; sourceTree = "<group>"; };
 		B2997026156BCE8B00BED0D9 /* ColourUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourUnitView.h; sourceTree = "<group>"; };
 		B2997027156BCE8B00BED0D9 /* ColourUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourUnitView.m; sourceTree = "<group>"; };
 		B2A2E85315643354005147FA /* ColorMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorMatrixView.h; path = /Users/Renard/Documents/workspace/colours/Classes/ColorMatrixView.h; sourceTree = "<absolute>"; };
@@ -127,6 +133,10 @@
 				1D3623240D0F684500981E51 /* coloursAppDelegate.h */,
 				1D3623250D0F684500981E51 /* coloursAppDelegate.m */,
 				B26C9E39156419CD00FFC28B /* ColorPicker */,
+				B27FAD6315B083F8007A4341 /* UILabel+CopyLabel.h */,
+				B27FAD6415B083F8007A4341 /* UILabel+CopyLabel.m */,
+				B2969F4015B319F800229E73 /* SmallButton.h */,
+				B2969F4115B319F800229E73 /* SmallButton.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -320,6 +330,8 @@
 				B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */,
 				B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */,
 				B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */,
+				B27FAD6515B083F8007A4341 /* UILabel+CopyLabel.m in Sources */,
+				B2969F4215B319F800229E73 /* SmallButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

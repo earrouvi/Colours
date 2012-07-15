@@ -12,6 +12,7 @@
 @implementation WallpaperViewController
 
 -(id) initWithArrayOfColours:(NSMutableArray*)col {
+    [super init];
 	nbColours = [col count];
 	colours = [col retain];
 	coloursView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
@@ -200,7 +201,7 @@
 	[alert setMessage:@"You will then be able to set is as wallpaper."];
 	[alert setDelegate:self];
 	[alert addButtonWithTitle:@"Yes"];
-	[alert addButtonWithTitle:@"No"];
+	[alert addButtonWithTitle:@"Cancel"];
 	[alert show];
 	[alert release];
 }
