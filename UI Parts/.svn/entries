@@ -60,6 +60,20 @@ has-props
 
 10803
 
+refresh_butt.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
 crosshair.png
 file
 
@@ -93,6 +107,48 @@ has-props
 
 
 530
+
+refresh_butt2.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+hue_butt.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+hue_butt2.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 bar_select.png
 file
@@ -161,6 +217,20 @@ has-props
 
 
 11757
+
+suppr_butt.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 Icon.png
 file

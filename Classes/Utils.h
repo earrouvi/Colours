@@ -11,6 +11,20 @@
 
 #define ARC4RANDOM_MAX      0x100000000
 
+enum {
+    ColourSettingsBlackBG = 0,
+    ColourSettingsWhiteBG,
+    ColourSettingsGreyBG
+};
+typedef NSUInteger ColourSettings;
+
+enum {
+    ColourTypeBG = 0,
+    ColourTypeFont
+};
+typedef NSUInteger ColourType;
+
+static ColourSettings settings;
 
 @interface Utils : NSObject {
 
@@ -23,5 +37,6 @@
 +(int) screenWidth;
 +(int) screenHeight;
 +(UIColor*) slateBlue;
++(UIColor*) getColorFor:(ColourType)type;
 
 @end

@@ -10,8 +10,9 @@
 #import "Utils.h"
 #import "WallpaperViewController.h"
 #import "ColourUnitView.h"
+#import "SavedViewController.h"
 
-@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate> {
+@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate,SavedViewControllerDelegate> {
 	
 	int nbColours;
 	UIView *comboView;
@@ -20,14 +21,21 @@
     UIView *pickButtons;
     ColourUnitView *colourReceiver;
     
+    // view controllers - made attributes so they won't cause a memory leak
+    WallpaperViewController *wvc;
+    SavedViewController *pvc;
+    
 }
 
 -(void) addSaveButton;
 -(void) addNewButton;
--(void) newButtonPressed;
 -(void) addPlusButton;
+//---
+-(void) newButtonPressed;
 -(void) plusButtonPressed;
+-(void) chargeButtonPressed;
 -(void) alert;
+-(void) alertInput;
 //---
 -(void) generateCombo;
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height;

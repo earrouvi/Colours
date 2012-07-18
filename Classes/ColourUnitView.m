@@ -21,6 +21,7 @@
         // init buttons and block colour
         colourBlock = [[UIView alloc] initWithFrame:CGRectMake(0, height*0.05, 280, height*0.9)];
         colourBlock.backgroundColor = [Utils convertHexToRGB:hexString];
+
         [self addSubview:colourBlock];
         hexCode = [hexString copy];
         [self addButtons];
@@ -30,41 +31,42 @@
 
 -(void) addButtons {
     int height = colourBlock.frame.size.height;
-    int bottom = colourBlock.frame.origin.y+colourBlock.frame.size.height;
     
     // change button
-    UIButton *change = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    change.frame = CGRectMake(100, height*0.2, 80, 20);
-    [change setTitle:@"Change" forState:UIControlStateNormal];
+    UIButton *change = [UIButton buttonWithType:UIButtonTypeCustom];
+    change.frame = CGRectMake(200, height*0.1, 30, 30);
     [change addTarget:self action:@selector(changeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [change setImage:[UIImage imageNamed:@"refresh_butt2.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:change];
     
     // minus button
     UIButton *minus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    minus.frame = CGRectMake(30, height*0.2, 20, 20);
+    minus.frame = CGRectMake(160, height*0.1, 20, 20);
     [minus setTitle:@"-" forState:UIControlStateNormal];
     [minus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [colourBlock addSubview:minus];
     
     // picker button
-    UIButton *pick = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    pick.frame = CGRectMake(230, height*0.2, 20, 20);
-    [pick setTitle:@"P" forState:UIControlStateNormal];
+    UIButton *pick = [UIButton buttonWithType:UIButtonTypeCustom];
+    pick.frame = CGRectMake(240, height*0.1, 30, 30);
     [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
+    [pick setImage:[UIImage imageNamed:@"hue_butt2.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:pick];
     
     // hex code
-    code = [[UITextField alloc] initWithFrame:CGRectMake(0, bottom-19, 70, 15)];
-//    code.editable = NO;
-//    code.scrollEnabled = NO;
-//    BOOL luc = [code canBecomeFirstResponder];
-//    NSLog(@"%d",luc);
+    code = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 70, 20)];
     NSString *sharp = [NSString stringWithFormat:@"%@%@", @" #", hexCode];
     code.text = sharp;
-    code.font = [UIFont systemFontOfSize:14];
+    code.font = [UIFont systemFontOfSize:10];
     code.inputView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
-    code.backgroundColor = [UIColor viewFlipsideBackgroundColor];
-    code.textColor = [UIColor whiteColor];
+    code.backgroundColor = [UIColor underPageBackgroundColor];
+    code.textColor = [UIColor blackColor];
+    // 90° rotation
+    CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI_2);
+    code.transform = transform;
+    CGRect frame = CGRectMake(0, -1, 20, height+2);
+    code.frame = frame;
+    code.textAlignment = UITextAlignmentCenter;
     [colourBlock addSubview:code];
 }
 
@@ -75,13 +77,12 @@
     self.frame = CGRectMake(20, 0+rank*height, 280, height);
     colourBlock.frame = CGRectMake(0, height*0.05, 280, height*0.9);
     
-    int bottom = colourBlock.frame.origin.y+colourBlock.frame.size.height;
     for (int i=0;i<3;i++) {
         UIView *v = [[colourBlock subviews] objectAtIndex:i];
-        [v setFrame:CGRectMake(v.frame.origin.x, height*0.2, v.frame.size.width, 20)];
+        [v setFrame:CGRectMake(v.frame.origin.x, height*0.1, v.frame.size.width, v.frame.size.height)];
     }
     UIView *v = [[colourBlock subviews] objectAtIndex:3];
-    [v setFrame:CGRectMake(0, bottom-19, 70, 15)];
+    [v setFrame:CGRectMake(0, -1, 20, height+2)];
 }
 
 -(void) changeColour:(NSString*)hexString {

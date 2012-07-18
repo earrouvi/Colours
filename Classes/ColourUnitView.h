@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Utils.h"
 #import "ColorPickerViewController.h"
-#import "UILabel+CopyLabel.h"
 
 @class ColourUnitView;
 

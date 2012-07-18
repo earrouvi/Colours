@@ -20,6 +20,8 @@
 		B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D01599DA2000CA9CF1 /* horizontal.png */; };
 		B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D11599DA2000CA9CF1 /* mosaic.png */; };
 		B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D21599DA2000CA9CF1 /* vertical.png */; };
+		B254A8B615B43E6300DF08D3 /* PaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B515B43E6300DF08D3 /* PaletteView.m */; };
+		B254A8B915B57E6200DF08D3 /* SavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B815B57E6200DF08D3 /* SavedViewController.m */; };
 		B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262184A1547E4C80078D4C5 /* WallpaperViewController.m */; };
 		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
 		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
@@ -27,8 +29,13 @@
 		B26C9E5C15641A5000FFC28B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Default.png */; };
 		B26C9E5D15641A5000FFC28B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Icon.png */; };
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
-		B27FAD6515B083F8007A4341 /* UILabel+CopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B27FAD6415B083F8007A4341 /* UILabel+CopyLabel.m */; };
+		B26FDACE15B4327800079C17 /* palettes.xml in Resources */ = {isa = PBXBuildFile; fileRef = B26FDACD15B4327800079C17 /* palettes.xml */; };
 		B2969F4215B319F800229E73 /* SmallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2969F4115B319F800229E73 /* SmallButton.m */; };
+		B2969F4415B335BB00229E73 /* hue_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4315B335BB00229E73 /* hue_butt.png */; };
+		B2969F4615B33BE600229E73 /* hue_butt2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4515B33BE600229E73 /* hue_butt2.png */; };
+		B2969F4915B33D9300229E73 /* refresh_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4715B33D9300229E73 /* refresh_butt.png */; };
+		B2969F4A15B33D9300229E73 /* suppr_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4815B33D9300229E73 /* suppr_butt.png */; };
+		B2969F4C15B340DE00229E73 /* refresh_butt2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4B15B340DE00229E73 /* refresh_butt2.png */; };
 		B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2997027156BCE8B00BED0D9 /* ColourUnitView.m */; };
 		B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85415643354005147FA /* ColorMatrixView.m */; };
 		B2A2E86615643354005147FA /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85815643354005147FA /* ColorPickerView.m */; };
@@ -37,12 +44,17 @@
 		B2A2E86915643354005147FA /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85F15643354005147FA /* GradientView.m */; };
 		B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86115643354005147FA /* UIColor-Expanded.m */; };
 		B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */; };
-		B2BE00E315381DA90096818B /* squares1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2BE00E215381DA90096818B /* squares1.jpg */; };
-		B2BE00E515381DB00096818B /* squares2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2BE00E415381DB00096818B /* squares2.jpg */; };
 		B2D1F24215371FC300B32038 /* ColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D1F24015371FC300B32038 /* ColoursViewController.m */; };
 		B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F24115371FC300B32038 /* ColoursViewController.xib */; };
 		B2D1F2B91537337C00B32038 /* tower_R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F2B81537337C00B32038 /* tower_R.png */; };
 		B2D1F2C71537343300B32038 /* bannierekai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F2C61537343300B32038 /* bannierekai.jpg */; };
+		B2E78A9215B41448000BC4AD /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B2E78A9315B41448000BC4AD /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8815B41448000BC4AD /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B2E78A9415B41448000BC4AD /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8B15B41448000BC4AD /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B2E78A9515B41448000BC4AD /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8D15B41448000BC4AD /* DDXMLElement.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B2E78A9615B41448000BC4AD /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8F15B41448000BC4AD /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B2E78A9915B41476000BC4AD /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A9815B41476000BC4AD /* XMLParser.m */; };
+		B2E78A9F15B420E0000BC4AD /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A9E15B420E0000BC4AD /* Palette.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +76,10 @@
 		B240B0D01599DA2000CA9CF1 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = "UI Parts/horizontal.png"; sourceTree = "<group>"; };
 		B240B0D11599DA2000CA9CF1 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = "UI Parts/mosaic.png"; sourceTree = "<group>"; };
 		B240B0D21599DA2000CA9CF1 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = "UI Parts/vertical.png"; sourceTree = "<group>"; };
+		B254A8B415B43E6300DF08D3 /* PaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteView.h; sourceTree = "<group>"; };
+		B254A8B515B43E6300DF08D3 /* PaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteView.m; sourceTree = "<group>"; };
+		B254A8B715B57E6200DF08D3 /* SavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedViewController.h; sourceTree = "<group>"; };
+		B254A8B815B57E6200DF08D3 /* SavedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedViewController.m; sourceTree = "<group>"; };
 		B26218491547E4C80078D4C5 /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
 		B262184A1547E4C80078D4C5 /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
 		B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WallpaperViewController.xib; path = Classes/WallpaperViewController.xib; sourceTree = "<group>"; };
@@ -73,10 +89,14 @@
 		B26C9E5715641A5000FFC28B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
-		B27FAD6315B083F8007A4341 /* UILabel+CopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CopyLabel.h"; sourceTree = "<group>"; };
-		B27FAD6415B083F8007A4341 /* UILabel+CopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CopyLabel.m"; sourceTree = "<group>"; };
+		B26FDACD15B4327800079C17 /* palettes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palettes.xml; sourceTree = "<group>"; };
 		B2969F4015B319F800229E73 /* SmallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallButton.h; sourceTree = "<group>"; };
 		B2969F4115B319F800229E73 /* SmallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallButton.m; sourceTree = "<group>"; };
+		B2969F4315B335BB00229E73 /* hue_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_butt.png; sourceTree = "<group>"; };
+		B2969F4515B33BE600229E73 /* hue_butt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_butt2.png; sourceTree = "<group>"; };
+		B2969F4715B33D9300229E73 /* refresh_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_butt.png; sourceTree = "<group>"; };
+		B2969F4815B33D9300229E73 /* suppr_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suppr_butt.png; sourceTree = "<group>"; };
+		B2969F4B15B340DE00229E73 /* refresh_butt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_butt2.png; sourceTree = "<group>"; };
 		B2997026156BCE8B00BED0D9 /* ColourUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourUnitView.h; sourceTree = "<group>"; };
 		B2997027156BCE8B00BED0D9 /* ColourUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourUnitView.m; sourceTree = "<group>"; };
 		B2A2E85315643354005147FA /* ColorMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorMatrixView.h; path = /Users/Renard/Documents/workspace/colours/Classes/ColorMatrixView.h; sourceTree = "<absolute>"; };
@@ -94,13 +114,27 @@
 		B2A2E86115643354005147FA /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "Classes/UIColor-Expanded.m"; sourceTree = "<group>"; };
 		B2A2E86215643354005147FA /* UIColor-HSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-HSVAdditions.h"; path = "Classes/UIColor-HSVAdditions.h"; sourceTree = "<group>"; };
 		B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-HSVAdditions.m"; path = "Classes/UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
-		B2BE00E215381DA90096818B /* squares1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = squares1.jpg; path = ../../Elsa/Bamboo/EN_COURS/PRV/squares1.jpg; sourceTree = SOURCE_ROOT; };
-		B2BE00E415381DB00096818B /* squares2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = squares2.jpg; path = ../../Elsa/Bamboo/EN_COURS/PRV/squares2.jpg; sourceTree = SOURCE_ROOT; };
 		B2D1F23F15371FC300B32038 /* ColoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoursViewController.h; sourceTree = "<group>"; };
 		B2D1F24015371FC300B32038 /* ColoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoursViewController.m; sourceTree = "<group>"; };
 		B2D1F24115371FC300B32038 /* ColoursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ColoursViewController.xib; path = Classes/ColoursViewController.xib; sourceTree = "<group>"; };
 		B2D1F2B81537337C00B32038 /* tower_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tower_R.png; path = ../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png; sourceTree = SOURCE_ROOT; };
 		B2D1F2C61537343300B32038 /* bannierekai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bannierekai.jpg; path = ../../Elsa/Bamboo/bannierekai.jpg; sourceTree = SOURCE_ROOT; };
+		B2E78A8415B41448000BC4AD /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		B2E78A8715B41448000BC4AD /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		B2E78A8815B41448000BC4AD /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		B2E78A8915B41448000BC4AD /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		B2E78A8A15B41448000BC4AD /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		B2E78A8B15B41448000BC4AD /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		B2E78A8C15B41448000BC4AD /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		B2E78A8D15B41448000BC4AD /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		B2E78A8E15B41448000BC4AD /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		B2E78A8F15B41448000BC4AD /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		B2E78A9115B41448000BC4AD /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		B2E78A9715B41476000BC4AD /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		B2E78A9815B41476000BC4AD /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		B2E78A9D15B420E0000BC4AD /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		B2E78A9E15B420E0000BC4AD /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +160,8 @@
 				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
 				B26218651547E8330078D4C5 /* Utils.h */,
 				B26218661547E8330078D4C5 /* Utils.m */,
+				B254A8B715B57E6200DF08D3 /* SavedViewController.h */,
+				B254A8B815B57E6200DF08D3 /* SavedViewController.m */,
 				B2997026156BCE8B00BED0D9 /* ColourUnitView.h */,
 				B2997027156BCE8B00BED0D9 /* ColourUnitView.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
@@ -133,10 +169,14 @@
 				1D3623240D0F684500981E51 /* coloursAppDelegate.h */,
 				1D3623250D0F684500981E51 /* coloursAppDelegate.m */,
 				B26C9E39156419CD00FFC28B /* ColorPicker */,
-				B27FAD6315B083F8007A4341 /* UILabel+CopyLabel.h */,
-				B27FAD6415B083F8007A4341 /* UILabel+CopyLabel.m */,
 				B2969F4015B319F800229E73 /* SmallButton.h */,
 				B2969F4115B319F800229E73 /* SmallButton.m */,
+				B2E78A9715B41476000BC4AD /* XMLParser.h */,
+				B2E78A9815B41476000BC4AD /* XMLParser.m */,
+				B2E78A9D15B420E0000BC4AD /* Palette.h */,
+				B2E78A9E15B420E0000BC4AD /* Palette.m */,
+				B254A8B415B43E6300DF08D3 /* PaletteView.h */,
+				B254A8B515B43E6300DF08D3 /* PaletteView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -167,6 +207,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B2E78A8215B41448000BC4AD /* KissXML */,
 				28A0AAE50D9B0CCF005BE974 /* colours_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -176,12 +217,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B26FDACD15B4327800079C17 /* palettes.xml */,
 				B240B0D01599DA2000CA9CF1 /* horizontal.png */,
 				B240B0D11599DA2000CA9CF1 /* mosaic.png */,
 				B240B0D21599DA2000CA9CF1 /* vertical.png */,
 				B26C9E5315641A5000FFC28B /* UI Parts */,
-				B2BE00E215381DA90096818B /* squares1.jpg */,
-				B2BE00E415381DB00096818B /* squares2.jpg */,
 				B2D1F2C61537343300B32038 /* bannierekai.jpg */,
 				B2D1F2B81537337C00B32038 /* tower_R.png */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
@@ -227,6 +267,11 @@
 		B26C9E5315641A5000FFC28B /* UI Parts */ = {
 			isa = PBXGroup;
 			children = (
+				B2969F4B15B340DE00229E73 /* refresh_butt2.png */,
+				B2969F4715B33D9300229E73 /* refresh_butt.png */,
+				B2969F4815B33D9300229E73 /* suppr_butt.png */,
+				B2969F4515B33BE600229E73 /* hue_butt2.png */,
+				B2969F4315B335BB00229E73 /* hue_butt.png */,
 				B21AE66915668B8C004039DF /* bar_select.png */,
 				B21AE66715668B23004039DF /* crosshair.png */,
 				B26C9E5515641A5000FFC28B /* colormap.png */,
@@ -234,6 +279,50 @@
 				B26C9E5815641A5000FFC28B /* Icon.png */,
 			);
 			path = "UI Parts";
+			sourceTree = "<group>";
+		};
+		B2E78A8215B41448000BC4AD /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				B2E78A8315B41448000BC4AD /* Additions */,
+				B2E78A8615B41448000BC4AD /* Categories */,
+				B2E78A8915B41448000BC4AD /* DDXML.h */,
+				B2E78A8A15B41448000BC4AD /* DDXMLDocument.h */,
+				B2E78A8B15B41448000BC4AD /* DDXMLDocument.m */,
+				B2E78A8C15B41448000BC4AD /* DDXMLElement.h */,
+				B2E78A8D15B41448000BC4AD /* DDXMLElement.m */,
+				B2E78A8E15B41448000BC4AD /* DDXMLNode.h */,
+				B2E78A8F15B41448000BC4AD /* DDXMLNode.m */,
+				B2E78A9015B41448000BC4AD /* Private */,
+			);
+			name = KissXML;
+			path = KissXML/KissXML;
+			sourceTree = "<group>";
+		};
+		B2E78A8315B41448000BC4AD /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				B2E78A8415B41448000BC4AD /* DDXMLElementAdditions.h */,
+				B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		B2E78A8615B41448000BC4AD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B2E78A8715B41448000BC4AD /* NSString+DDXML.h */,
+				B2E78A8815B41448000BC4AD /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B2E78A9015B41448000BC4AD /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				B2E78A9115B41448000BC4AD /* DDXMLPrivate.h */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +383,6 @@
 				B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */,
 				B2D1F2B91537337C00B32038 /* tower_R.png in Resources */,
 				B2D1F2C71537343300B32038 /* bannierekai.jpg in Resources */,
-				B2BE00E315381DA90096818B /* squares1.jpg in Resources */,
-				B2BE00E515381DB00096818B /* squares2.jpg in Resources */,
 				B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */,
 				B26C9E5A15641A5000FFC28B /* colormap.png in Resources */,
 				B26C9E5C15641A5000FFC28B /* Default.png in Resources */,
@@ -306,6 +393,12 @@
 				B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */,
 				B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */,
 				B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */,
+				B2969F4415B335BB00229E73 /* hue_butt.png in Resources */,
+				B2969F4615B33BE600229E73 /* hue_butt2.png in Resources */,
+				B2969F4915B33D9300229E73 /* refresh_butt.png in Resources */,
+				B2969F4A15B33D9300229E73 /* suppr_butt.png in Resources */,
+				B2969F4C15B340DE00229E73 /* refresh_butt2.png in Resources */,
+				B26FDACE15B4327800079C17 /* palettes.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +423,16 @@
 				B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */,
 				B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */,
 				B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */,
-				B27FAD6515B083F8007A4341 /* UILabel+CopyLabel.m in Sources */,
 				B2969F4215B319F800229E73 /* SmallButton.m in Sources */,
+				B2E78A9215B41448000BC4AD /* DDXMLElementAdditions.m in Sources */,
+				B2E78A9315B41448000BC4AD /* NSString+DDXML.m in Sources */,
+				B2E78A9415B41448000BC4AD /* DDXMLDocument.m in Sources */,
+				B2E78A9515B41448000BC4AD /* DDXMLElement.m in Sources */,
+				B2E78A9615B41448000BC4AD /* DDXMLNode.m in Sources */,
+				B2E78A9915B41476000BC4AD /* XMLParser.m in Sources */,
+				B2E78A9F15B420E0000BC4AD /* Palette.m in Sources */,
+				B254A8B615B43E6300DF08D3 /* PaletteView.m in Sources */,
+				B254A8B915B57E6200DF08D3 /* SavedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +486,11 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-fobjc-arc",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -397,7 +503,12 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-fobjc-arc",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Release;

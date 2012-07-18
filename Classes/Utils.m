@@ -70,4 +70,48 @@
     return [UIColor colorWithRed:.243 green:.306 blue:.435 alpha:1];
 }
 
++(UIColor*) getColorFor:(ColourType)type {
+    switch (settings) {
+        case ColourSettingsBlackBG:
+            switch (type) {
+                case ColourTypeBG:
+                    return [UIColor viewFlipsideBackgroundColor];
+                    break;
+                case ColourTypeFont:
+                    return [UIColor whiteColor];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case ColourSettingsWhiteBG:
+            switch (type) {
+                case ColourTypeBG:
+                    return [UIColor whiteColor];
+                    break;
+                case ColourTypeFont:
+                    return [UIColor blackColor];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case ColourSettingsGreyBG:
+            switch (type) {
+                case ColourTypeBG:
+                    return [UIColor underPageBackgroundColor];
+                    break;
+                case ColourTypeFont:
+                    return [UIColor blackColor];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        default:
+            break;
+    }
+    return [UIColor whiteColor];
+}
+
 @end
