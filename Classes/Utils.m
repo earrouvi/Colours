@@ -11,6 +11,8 @@
 
 @implementation Utils
 
+#pragma mark Colour generation and conversion
+
 +(NSString*) generateColour {
 	// 16777215 is FFFFFF
 	int baseInt = arc4random() % 16777216;
@@ -48,6 +50,8 @@
 	return hex;
 }
 
+#pragma mark Image and screen
+
 // Generate image and save in Photos Album
 +(void) createImageFromView:(UIView*) view { 
 	CGSize size = [view bounds].size;
@@ -66,19 +70,21 @@
     return [[UIScreen mainScreen] bounds].size.height;
 }
 
+#pragma mark System colours and preferences
+
 +(UIColor*) slateBlue {
     return [UIColor colorWithRed:.243 green:.306 blue:.435 alpha:1];
 }
 
 +(UIColor*) getColorFor:(ColourType)type {
-    switch (settings) {
+    switch ([[NSUserDefaults standardUserDefaults] integerForKey:@"multi"]) {
         case ColourSettingsBlackBG:
             switch (type) {
                 case ColourTypeBG:
                     return [UIColor viewFlipsideBackgroundColor];
                     break;
                 case ColourTypeFont:
-                    return [UIColor whiteColor];
+                    return [UIColor lightTextColor];
                     break;
                 default:
                     break;
@@ -87,10 +93,10 @@
         case ColourSettingsWhiteBG:
             switch (type) {
                 case ColourTypeBG:
-                    return [UIColor whiteColor];
+                    return [UIColor lightTextColor];
                     break;
                 case ColourTypeFont:
-                    return [UIColor blackColor];
+                    return [UIColor darkTextColor];
                     break;
                 default:
                     break;
@@ -102,7 +108,7 @@
                     return [UIColor underPageBackgroundColor];
                     break;
                 case ColourTypeFont:
-                    return [UIColor blackColor];
+                    return [UIColor darkTextColor];
                     break;
                 default:
                     break;
@@ -112,6 +118,10 @@
             break;
     }
     return [UIColor whiteColor];
+}
+
++(void) setSettings:(ColourSettings)set {
+//    settings = set;
 }
 
 @end

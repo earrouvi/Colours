@@ -22,6 +22,7 @@
 		B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D21599DA2000CA9CF1 /* vertical.png */; };
 		B254A8B615B43E6300DF08D3 /* PaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B515B43E6300DF08D3 /* PaletteView.m */; };
 		B254A8B915B57E6200DF08D3 /* SavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B815B57E6200DF08D3 /* SavedViewController.m */; };
+		B254A8BE15B6C6EE00DF08D3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B254A8BD15B6C6EE00DF08D3 /* Settings.bundle */; };
 		B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B262184A1547E4C80078D4C5 /* WallpaperViewController.m */; };
 		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
 		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
@@ -30,6 +31,21 @@
 		B26C9E5D15641A5000FFC28B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Icon.png */; };
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
 		B26FDACE15B4327800079C17 /* palettes.xml in Resources */ = {isa = PBXBuildFile; fileRef = B26FDACD15B4327800079C17 /* palettes.xml */; };
+		B27965CB15B6E13D001F203E /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */; };
+		B27965CC15B6E13D001F203E /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965AF15B6E13D001F203E /* IASKAppSettingsWebViewController.m */; };
+		B27965CD15B6E13D001F203E /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965B115B6E13D001F203E /* IASKSpecifierValuesViewController.m */; };
+		B27965CE15B6E13D001F203E /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965B515B6E13D001F203E /* IASKSettingsReader.m */; };
+		B27965CF15B6E13D001F203E /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965B715B6E13D001F203E /* IASKSettingsStore.m */; };
+		B27965D015B6E13D001F203E /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965B915B6E13D001F203E /* IASKSettingsStoreFile.m */; };
+		B27965D115B6E13D001F203E /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965BB15B6E13D001F203E /* IASKSettingsStoreUserDefaults.m */; };
+		B27965D215B6E13D001F203E /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965BD15B6E13D001F203E /* IASKSpecifier.m */; };
+		B27965D315B6E13D001F203E /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965C015B6E13D001F203E /* IASKPSSliderSpecifierViewCell.m */; };
+		B27965D415B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965C215B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.m */; };
+		B27965D515B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965C415B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.m */; };
+		B27965D615B6E13D001F203E /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965C615B6E13D001F203E /* IASKSlider.m */; };
+		B27965D715B6E13D001F203E /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965C815B6E13D001F203E /* IASKSwitch.m */; };
+		B27965D815B6E13D001F203E /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965CA15B6E13D001F203E /* IASKTextField.m */; };
+		B27965DA15B6E6AF001F203E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27965D915B6E6AF001F203E /* MessageUI.framework */; };
 		B2969F4215B319F800229E73 /* SmallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2969F4115B319F800229E73 /* SmallButton.m */; };
 		B2969F4415B335BB00229E73 /* hue_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4315B335BB00229E73 /* hue_butt.png */; };
 		B2969F4615B33BE600229E73 /* hue_butt2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4515B33BE600229E73 /* hue_butt2.png */; };
@@ -80,6 +96,7 @@
 		B254A8B515B43E6300DF08D3 /* PaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteView.m; sourceTree = "<group>"; };
 		B254A8B715B57E6200DF08D3 /* SavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedViewController.h; sourceTree = "<group>"; };
 		B254A8B815B57E6200DF08D3 /* SavedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedViewController.m; sourceTree = "<group>"; };
+		B254A8BD15B6C6EE00DF08D3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		B26218491547E4C80078D4C5 /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
 		B262184A1547E4C80078D4C5 /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
 		B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WallpaperViewController.xib; path = Classes/WallpaperViewController.xib; sourceTree = "<group>"; };
@@ -90,6 +107,36 @@
 		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		B26FDACD15B4327800079C17 /* palettes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palettes.xml; sourceTree = "<group>"; };
+		B27965AC15B6E13D001F203E /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
+		B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsViewController.m; sourceTree = "<group>"; };
+		B27965AE15B6E13D001F203E /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
+		B27965AF15B6E13D001F203E /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
+		B27965B015B6E13D001F203E /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
+		B27965B115B6E13D001F203E /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
+		B27965B215B6E13D001F203E /* IASKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKViewController.h; sourceTree = "<group>"; };
+		B27965B415B6E13D001F203E /* IASKSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsReader.h; sourceTree = "<group>"; };
+		B27965B515B6E13D001F203E /* IASKSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsReader.m; sourceTree = "<group>"; };
+		B27965B615B6E13D001F203E /* IASKSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStore.h; sourceTree = "<group>"; };
+		B27965B715B6E13D001F203E /* IASKSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStore.m; sourceTree = "<group>"; };
+		B27965B815B6E13D001F203E /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreFile.h; sourceTree = "<group>"; };
+		B27965B915B6E13D001F203E /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreFile.m; sourceTree = "<group>"; };
+		B27965BA15B6E13D001F203E /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
+		B27965BB15B6E13D001F203E /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
+		B27965BC15B6E13D001F203E /* IASKSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifier.h; sourceTree = "<group>"; };
+		B27965BD15B6E13D001F203E /* IASKSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifier.m; sourceTree = "<group>"; };
+		B27965BF15B6E13D001F203E /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
+		B27965C015B6E13D001F203E /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
+		B27965C115B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
+		B27965C215B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
+		B27965C315B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTitleValueSpecifierViewCell.h; sourceTree = "<group>"; };
+		B27965C415B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTitleValueSpecifierViewCell.m; sourceTree = "<group>"; };
+		B27965C515B6E13D001F203E /* IASKSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSlider.h; sourceTree = "<group>"; };
+		B27965C615B6E13D001F203E /* IASKSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSlider.m; sourceTree = "<group>"; };
+		B27965C715B6E13D001F203E /* IASKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSwitch.h; sourceTree = "<group>"; };
+		B27965C815B6E13D001F203E /* IASKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSwitch.m; sourceTree = "<group>"; };
+		B27965C915B6E13D001F203E /* IASKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextField.h; sourceTree = "<group>"; };
+		B27965CA15B6E13D001F203E /* IASKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextField.m; sourceTree = "<group>"; };
+		B27965D915B6E6AF001F203E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B2969F4015B319F800229E73 /* SmallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallButton.h; sourceTree = "<group>"; };
 		B2969F4115B319F800229E73 /* SmallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallButton.m; sourceTree = "<group>"; };
 		B2969F4315B335BB00229E73 /* hue_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_butt.png; sourceTree = "<group>"; };
@@ -142,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27965DA15B6E6AF001F203E /* MessageUI.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -154,6 +202,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B27965AA15B6E13D001F203E /* InAppSettingsKit */,
 				B2D1F23F15371FC300B32038 /* ColoursViewController.h */,
 				B2D1F24015371FC300B32038 /* ColoursViewController.m */,
 				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
@@ -177,6 +226,7 @@
 				B2E78A9E15B420E0000BC4AD /* Palette.m */,
 				B254A8B415B43E6300DF08D3 /* PaletteView.h */,
 				B254A8B515B43E6300DF08D3 /* PaletteView.m */,
+				B254A8BD15B6C6EE00DF08D3 /* Settings.bundle */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -192,6 +242,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B27965D915B6E6AF001F203E /* MessageUI.framework */,
 				B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */,
 				B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */,
 				B2D1F24115371FC300B32038 /* ColoursViewController.xib */,
@@ -279,6 +330,66 @@
 				B26C9E5815641A5000FFC28B /* Icon.png */,
 			);
 			path = "UI Parts";
+			sourceTree = "<group>";
+		};
+		B27965AA15B6E13D001F203E /* InAppSettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				B27965AB15B6E13D001F203E /* Controllers */,
+				B27965B315B6E13D001F203E /* Models */,
+				B27965BE15B6E13D001F203E /* Views */,
+			);
+			path = InAppSettingsKit;
+			sourceTree = "<group>";
+		};
+		B27965AB15B6E13D001F203E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B27965AC15B6E13D001F203E /* IASKAppSettingsViewController.h */,
+				B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */,
+				B27965AE15B6E13D001F203E /* IASKAppSettingsWebViewController.h */,
+				B27965AF15B6E13D001F203E /* IASKAppSettingsWebViewController.m */,
+				B27965B015B6E13D001F203E /* IASKSpecifierValuesViewController.h */,
+				B27965B115B6E13D001F203E /* IASKSpecifierValuesViewController.m */,
+				B27965B215B6E13D001F203E /* IASKViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B27965B315B6E13D001F203E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B27965B415B6E13D001F203E /* IASKSettingsReader.h */,
+				B27965B515B6E13D001F203E /* IASKSettingsReader.m */,
+				B27965B615B6E13D001F203E /* IASKSettingsStore.h */,
+				B27965B715B6E13D001F203E /* IASKSettingsStore.m */,
+				B27965B815B6E13D001F203E /* IASKSettingsStoreFile.h */,
+				B27965B915B6E13D001F203E /* IASKSettingsStoreFile.m */,
+				B27965BA15B6E13D001F203E /* IASKSettingsStoreUserDefaults.h */,
+				B27965BB15B6E13D001F203E /* IASKSettingsStoreUserDefaults.m */,
+				B27965BC15B6E13D001F203E /* IASKSpecifier.h */,
+				B27965BD15B6E13D001F203E /* IASKSpecifier.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B27965BE15B6E13D001F203E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B27965BF15B6E13D001F203E /* IASKPSSliderSpecifierViewCell.h */,
+				B27965C015B6E13D001F203E /* IASKPSSliderSpecifierViewCell.m */,
+				B27965C115B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.h */,
+				B27965C215B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.m */,
+				B27965C315B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.h */,
+				B27965C415B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.m */,
+				B27965C515B6E13D001F203E /* IASKSlider.h */,
+				B27965C615B6E13D001F203E /* IASKSlider.m */,
+				B27965C715B6E13D001F203E /* IASKSwitch.h */,
+				B27965C815B6E13D001F203E /* IASKSwitch.m */,
+				B27965C915B6E13D001F203E /* IASKTextField.h */,
+				B27965CA15B6E13D001F203E /* IASKTextField.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B2E78A8215B41448000BC4AD /* KissXML */ = {
@@ -399,6 +510,7 @@
 				B2969F4A15B33D9300229E73 /* suppr_butt.png in Resources */,
 				B2969F4C15B340DE00229E73 /* refresh_butt2.png in Resources */,
 				B26FDACE15B4327800079C17 /* palettes.xml in Resources */,
+				B254A8BE15B6C6EE00DF08D3 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +545,20 @@
 				B2E78A9F15B420E0000BC4AD /* Palette.m in Sources */,
 				B254A8B615B43E6300DF08D3 /* PaletteView.m in Sources */,
 				B254A8B915B57E6200DF08D3 /* SavedViewController.m in Sources */,
+				B27965CB15B6E13D001F203E /* IASKAppSettingsViewController.m in Sources */,
+				B27965CC15B6E13D001F203E /* IASKAppSettingsWebViewController.m in Sources */,
+				B27965CD15B6E13D001F203E /* IASKSpecifierValuesViewController.m in Sources */,
+				B27965CE15B6E13D001F203E /* IASKSettingsReader.m in Sources */,
+				B27965CF15B6E13D001F203E /* IASKSettingsStore.m in Sources */,
+				B27965D015B6E13D001F203E /* IASKSettingsStoreFile.m in Sources */,
+				B27965D115B6E13D001F203E /* IASKSettingsStoreUserDefaults.m in Sources */,
+				B27965D215B6E13D001F203E /* IASKSpecifier.m in Sources */,
+				B27965D315B6E13D001F203E /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				B27965D415B6E13D001F203E /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				B27965D515B6E13D001F203E /* IASKPSTitleValueSpecifierViewCell.m in Sources */,
+				B27965D615B6E13D001F203E /* IASKSlider.m in Sources */,
+				B27965D715B6E13D001F203E /* IASKSwitch.m in Sources */,
+				B27965D815B6E13D001F203E /* IASKTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

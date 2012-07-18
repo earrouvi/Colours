@@ -26,6 +26,11 @@
     self.window.rootViewController = self.navigationController;
     //[self.window addSubview:pickerController.view];
     [self.window makeKeyAndVisible];
+    
+    // Register the preference defaults early.
+    NSDictionary *appDefaults = [NSDictionary
+                                 dictionaryWithObject:[NSNumber numberWithInt:0] forKey:@"multi"];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
 
     return YES;
 }

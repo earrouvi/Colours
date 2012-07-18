@@ -24,8 +24,6 @@ enum {
 };
 typedef NSUInteger ColourType;
 
-static ColourSettings settings;
-
 @interface Utils : NSObject {
 
 }
@@ -33,10 +31,13 @@ static ColourSettings settings;
 +(NSString*) generateColour;
 +(UIColor*) convertHexToRGB:(NSString*)hexString;
 +(NSString*) convertRed:(float)r green:(float)g blue:(float)b;
+
 +(void) createImageFromView:(UIView*)view;
 +(int) screenWidth;
 +(int) screenHeight;
+
 +(UIColor*) slateBlue;
 +(UIColor*) getColorFor:(ColourType)type;
++(void) setSettings:(ColourSettings)set;
 
 @end

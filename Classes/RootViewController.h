@@ -11,8 +11,12 @@
 #import "WallpaperViewController.h"
 #import "ColourUnitView.h"
 #import "SavedViewController.h"
+// in app settings kit
+#import "IASKAppSettingsViewController.h"
+#import "IASKSpecifier.h"
+#import "IASKSettingsReader.h"
 
-@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate,SavedViewControllerDelegate> {
+@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate,SavedViewControllerDelegate,IASKSettingsDelegate> {
 	
 	int nbColours;
 	UIView *comboView;
@@ -24,6 +28,8 @@
     // view controllers - made attributes so they won't cause a memory leak
     WallpaperViewController *wvc;
     SavedViewController *pvc;
+    
+    IASKAppSettingsViewController *appSettingsViewController;
     
 }
 
@@ -43,5 +49,8 @@
 //---
 -(void) writeEmail;
 -(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body;
+//---
+- (IASKAppSettingsViewController*)appSettingsViewController;
+- (void)settingDidChange:(NSNotification*)notification;
 
 @end

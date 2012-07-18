@@ -38,6 +38,7 @@
 
 -(void) changeRank:(int)rank andHeight:(int)height;
 -(void) changeColour:(NSString*)hexString;
+-(void) update;
 -(void) changeButtonPressed;
 -(void) minusButtonPressed;
 -(void) pickColour;

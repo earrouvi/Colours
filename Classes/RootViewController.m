@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"Colourandom"];
-    [self.view setBackgroundColor:[UIColor underPageBackgroundColor]];
+    [self.view setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
     
     nbColours = 3;
     comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, 320, 316)];
@@ -39,7 +39,7 @@
 #pragma mark -
 #pragma mark Adding subviews
 
-// Button for saving image
+// Buttons for saving image, charging palette and settings
 -(void) addSaveButton {
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	button.frame = CGRectMake(60, 376, 80, 30);
@@ -52,6 +52,12 @@
 	[charge setTitle:@"Charge..." forState:UIControlStateNormal];
 	[charge addTarget:self action:@selector(chargeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:charge];
+    
+    UIButton *settings = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    settings.frame = CGRectMake(260, 10, 50, 30);
+    [settings setTitle:@"Settings" forState:UIControlStateNormal];
+    [settings addTarget:self action:@selector(showSettingsPush:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:settings];
 }
 
 // Button for new colour combo
@@ -292,6 +298,45 @@
 }
 
 #pragma mark -
+#pragma mark IASK
+
+- (IASKAppSettingsViewController*)appSettingsViewController {
+    if (!appSettingsViewController) {
+        appSettingsViewController = [[IASKAppSettingsViewController alloc] init];
+        appSettingsViewController.delegate = self;
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(settingDidChange:) name:kIASKAppSettingChanged object:nil];
+        
+        BOOL enabled = [[NSUserDefaults standardUserDefaults] boolForKey:@"AutoConnect"];
+        appSettingsViewController.hiddenKeys = enabled ? nil : [NSSet setWithObjects:@"AutoConnectLogin", @"AutoConnectPassword", nil];
+    }
+    return appSettingsViewController;
+}
+
+- (void)showSettingsPush:(id)sender {
+    //[viewController setShowCreditsFooter:NO]; // Uncomment to not display InAppSettingsKit credits for creators.
+    // But we encourage you no to uncomment. Thank you!
+    self.appSettingsViewController.showDoneButton = YES;
+    [self.navigationController pushViewController:self.appSettingsViewController animated:YES];
+}
+
+- (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender {
+    [self dismissViewControllerAnimated:YES completion:^{}];
+    // re-configure app
+    [self.view setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
+    for (UIView *v in [comboView subviews]) {
+        [((ColourUnitView*)v) update];
+    }
+}
+
+- (void)settingDidChange:(NSNotification*)notification {
+    if ([notification.object isEqual:@"AutoConnect"]) {
+        BOOL enabled = (BOOL)[[notification.userInfo objectForKey:@"AutoConnect"] intValue];
+        [self.appSettingsViewController setHiddenKeys:enabled ? nil : [NSSet setWithObjects:@"AutoConnectLogin", @"AutoConnectPassword", nil] animated:YES];
+    }
+}
+
+#pragma mark -
 
 /*
  // Override to allow orientations other than the default portrait orientation.
@@ -304,8 +349,11 @@
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
     // Release any cached data, images, etc. that aren't in use.
+    [appSettingsViewController release];
+    [colours release];
+    [pvc release];
+    [wvc release];
 }
 
 - (void)viewDidUnload {
@@ -319,6 +367,7 @@
 
 
 - (void)dealloc {
+    [appSettingsViewController release];
 	[colours release];
     [pvc release];
     [wvc release];

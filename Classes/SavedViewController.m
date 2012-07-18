@@ -22,7 +22,7 @@
     if (self) {
         // Custom initialization
         [self setTitle:@"Saved palettes"];
-        [self.tableView setBackgroundColor:[UIColor underPageBackgroundColor]];
+        [self.tableView setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
         parser = [[XMLParser alloc] init];
     }
     return self;

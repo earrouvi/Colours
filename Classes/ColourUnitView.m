@@ -59,8 +59,8 @@
     code.text = sharp;
     code.font = [UIFont systemFontOfSize:10];
     code.inputView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
-    code.backgroundColor = [UIColor underPageBackgroundColor];
-    code.textColor = [UIColor blackColor];
+    code.backgroundColor = [Utils getColorFor:ColourTypeBG];
+    code.textColor = [Utils getColorFor:ColourTypeFont];
     // 90° rotation
     CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI_2);
     code.transform = transform;
@@ -81,8 +81,7 @@
         UIView *v = [[colourBlock subviews] objectAtIndex:i];
         [v setFrame:CGRectMake(v.frame.origin.x, height*0.1, v.frame.size.width, v.frame.size.height)];
     }
-    UIView *v = [[colourBlock subviews] objectAtIndex:3];
-    [v setFrame:CGRectMake(0, -1, 20, height+2)];
+    [code setFrame:CGRectMake(0, -1, 20, height+2)];
 }
 
 -(void) changeColour:(NSString*)hexString {
@@ -91,6 +90,11 @@
     hexCode = [hexString copy];
     NSString *sharp = [NSString stringWithFormat:@"%@%@", @"#", hexCode];
     code.text = sharp;
+}
+
+-(void) update {
+    [code setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
+    [code setTextColor:[Utils getColorFor:ColourTypeFont]];
 }
 
 -(void) changeButtonPressed {

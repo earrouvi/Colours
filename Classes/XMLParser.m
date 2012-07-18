@@ -28,6 +28,7 @@
     // test
     if (doc == nil) {
         doc = [[DDXMLDocument alloc] initWithXMLString:@"<root></root>" options:DDXMLDocumentXMLKind error:&error];
+        [self write];
     }
     root = [[doc rootElement] retain];
     return self;
