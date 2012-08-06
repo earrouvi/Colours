@@ -36,21 +36,21 @@
     UIButton *change = [UIButton buttonWithType:UIButtonTypeCustom];
     change.frame = CGRectMake(200, height*0.1, 30, 30);
     [change addTarget:self action:@selector(changeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [change setImage:[UIImage imageNamed:@"refresh_butt2.png"] forState:UIControlStateNormal];
+    [change setImage:[UIImage imageNamed:@"refresh_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:change];
     
     // minus button
-    UIButton *minus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    minus.frame = CGRectMake(160, height*0.1, 20, 20);
-    [minus setTitle:@"-" forState:UIControlStateNormal];
+    UIButton *minus = [UIButton buttonWithType:UIButtonTypeCustom];
+    minus.frame = CGRectMake(160, height*0.1, 30, 30);
     [minus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [minus setImage:[UIImage imageNamed:@"suppr_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:minus];
     
     // picker button
     UIButton *pick = [UIButton buttonWithType:UIButtonTypeCustom];
     pick.frame = CGRectMake(240, height*0.1, 30, 30);
     [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
-    [pick setImage:[UIImage imageNamed:@"hue_butt2.png"] forState:UIControlStateNormal];
+    [pick setImage:[UIImage imageNamed:@"hue_bouton904.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:pick];
     
     // hex code
@@ -79,7 +79,7 @@
     
     for (int i=0;i<3;i++) {
         UIView *v = [[colourBlock subviews] objectAtIndex:i];
-        [v setFrame:CGRectMake(v.frame.origin.x, height*0.1, v.frame.size.width, v.frame.size.height)];
+        [v setFrame:CGRectMake(v.frame.origin.x, height*0.1, 30, 30)];
     }
     [code setFrame:CGRectMake(0, -1, 20, height+2)];
 }
@@ -109,18 +109,6 @@
     [delegate didClickOnColorPicker:self];
 }
 
-#pragma mark -
-#pragma mark Color Picker
-
-// useless now
-- (void)colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
-    if (color!=colorSwatch) {
-        [colorSwatch release];
-        colorSwatch = [color retain];
-    }
-    
-    [colorPicker dismissModalViewControllerAnimated:YES];
-}
 #pragma mark -
 
 -(void) dealloc {

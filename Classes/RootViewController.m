@@ -53,10 +53,10 @@
 	[charge addTarget:self action:@selector(chargeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:charge];
     
-    UIButton *settings = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    settings.frame = CGRectMake(260, 10, 50, 30);
-    [settings setTitle:@"Settings" forState:UIControlStateNormal];
+    UIButton *settings = [UIButton buttonWithType:UIButtonTypeCustom];
+    settings.frame = CGRectMake(260, 10, 30, 30);
     [settings addTarget:self action:@selector(showSettingsPush:) forControlEvents:UIControlEventTouchUpInside];
+    [settings setImage:[UIImage imageNamed:@"settings_bouton90.png"] forState:UIControlStateNormal];
     [self.view addSubview:settings];
 }
 
@@ -262,9 +262,8 @@
 
 -(void) didClickOnColorPicker:(ColourUnitView*)unit {
     // Pass the selected object to the color picker view controller
-    ColorPickerViewController *cp = [[ColorPickerViewController alloc] initWithNibName:@"ColorPickerViewController" bundle:nil];
+    ColorPickerViewController *cp = [[ColorPickerViewController alloc] initWithNibName:@"ColorPickerViewController" bundle:nil andColor:[Utils convertHexToRGB:unit.hexCode]];
     cp.delegate = self;
-    cp.defaultsColor = [UIColor redColor];
     colourReceiver = [unit retain];
     [self presentModalViewController:cp animated:YES];
 }
@@ -321,7 +320,7 @@
 }
 
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender {
-    [self dismissViewControllerAnimated:YES completion:^{}];
+    [self.navigationController popViewControllerAnimated:YES];
     // re-configure app
     [self.view setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
     for (UIView *v in [comboView subviews]) {

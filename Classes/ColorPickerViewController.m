@@ -24,6 +24,12 @@ NSString *keyForHue = @"hue";
 NSString *keyForSat = @"sat";
 NSString *keyForBright = @"bright";
 
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andColor:(UIColor*)color {
+    [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    defaultsColor = [color retain];
+    return self;
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];

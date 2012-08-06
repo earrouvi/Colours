@@ -19,7 +19,7 @@
 
 @end
 
-@interface ColourUnitView : UIView <ColorPickerViewControllerDelegate> {
+@interface ColourUnitView : UIView {
 
     id<ColourUnitViewDelegate> delegate;
     
@@ -42,7 +42,5 @@
 -(void) changeButtonPressed;
 -(void) minusButtonPressed;
 -(void) pickColour;
-
--(void) colorPickerViewController:(ColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color;
 
 @end

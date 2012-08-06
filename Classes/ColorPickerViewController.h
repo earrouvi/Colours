@@ -42,7 +42,7 @@
   @property(readwrite,nonatomic,retain) UIColor *defaultsColor;
 #endif
 @property(readwrite,nonatomic,retain) IBOutlet UIButton *chooseButton;
-
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andColor:(UIColor*)color;
 - (IBAction) chooseSelectedColor;
 - (IBAction) cancelColorSelection;
 - (UIColor *) getSelectedColor;
