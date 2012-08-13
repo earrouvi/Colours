@@ -12,14 +12,15 @@
 
 @synthesize delegate;
 @synthesize hexCode;
+@synthesize fix;
 
 #pragma mark Init & building the view
 
 - (id)initWithColour:(NSString*)hexString rank:(int)rank andHeight:(int)height {
-    self = [super initWithFrame:CGRectMake(20, 0+rank*height, 280, height)];
+    self = [super initWithFrame:CGRectMake(10, 0+rank*height, 290, height)];
     if (self) {
         // init buttons and block colour
-        colourBlock = [[UIView alloc] initWithFrame:CGRectMake(0, height*0.05, 280, height*0.9)];
+        colourBlock = [[UIView alloc] initWithFrame:CGRectMake(0, height*0.05, 290, height*0.9)];
         colourBlock.backgroundColor = [Utils convertHexToRGB:hexString];
 
         [self addSubview:colourBlock];
@@ -32,25 +33,31 @@
 -(void) addButtons {
     int height = colourBlock.frame.size.height;
     
+    // transparent button to fix a colour
+    UIButton *fixed = [UIButton buttonWithType:UIButtonTypeCustom];
+    fixed.frame = CGRectMake(20, height*0.05, 290, height*0.9);
+    [fixed addTarget:self action:@selector(fixed) forControlEvents:UIControlEventTouchUpInside];
+    [colourBlock addSubview:fixed];
+    
     // change button
     UIButton *change = [UIButton buttonWithType:UIButtonTypeCustom];
-    change.frame = CGRectMake(200, height*0.1, 30, 30);
+    change.frame = CGRectMake(220, height*0.1, 30, 30);
     [change addTarget:self action:@selector(changeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [change setImage:[UIImage imageNamed:@"refresh_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:change];
     
     // minus button
     UIButton *minus = [UIButton buttonWithType:UIButtonTypeCustom];
-    minus.frame = CGRectMake(160, height*0.1, 30, 30);
+    minus.frame = CGRectMake(185, height*0.1, 30, 30);
     [minus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [minus setImage:[UIImage imageNamed:@"suppr_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:minus];
     
     // picker button
     UIButton *pick = [UIButton buttonWithType:UIButtonTypeCustom];
-    pick.frame = CGRectMake(240, height*0.1, 30, 30);
+    pick.frame = CGRectMake(255, height*0.1, 30, 30);
     [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
-    [pick setImage:[UIImage imageNamed:@"hue_bouton904.png"] forState:UIControlStateNormal];
+    [pick setImage:[UIImage imageNamed:@"hue_bouton905.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:pick];
     
     // hex code
@@ -59,8 +66,8 @@
     code.text = sharp;
     code.font = [UIFont systemFontOfSize:10];
     code.inputView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
-    code.backgroundColor = [Utils getColorFor:ColourTypeBG];
-    code.textColor = [Utils getColorFor:ColourTypeFont];
+    code.backgroundColor = [Utils getColourFor:ColourTypeBG];
+    code.textColor = [Utils getColourFor:ColourTypeFont];
     // 90° rotation
     CGAffineTransform transform = CGAffineTransformMakeRotation(-M_PI_2);
     code.transform = transform;
@@ -74,10 +81,12 @@
 #pragma mark Modifications
 
 -(void) changeRank:(int)rank andHeight:(int)height {
-    self.frame = CGRectMake(20, 0+rank*height, 280, height);
-    colourBlock.frame = CGRectMake(0, height*0.05, 280, height*0.9);
+    self.frame = CGRectMake(10, 0+rank*height, 290, height);
+    colourBlock.frame = CGRectMake(0, height*0.05, 290, height*0.9);
     
-    for (int i=0;i<3;i++) {
+    UIView *fixed = [[colourBlock subviews] objectAtIndex:0];
+    [fixed setFrame:colourBlock.frame];
+    for (int i=1;i<4;i++) {
         UIView *v = [[colourBlock subviews] objectAtIndex:i];
         [v setFrame:CGRectMake(v.frame.origin.x, height*0.1, 30, 30)];
     }
@@ -93,13 +102,29 @@
 }
 
 -(void) update {
-    [code setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
-    [code setTextColor:[Utils getColorFor:ColourTypeFont]];
+    [code setBackgroundColor:[Utils getColourFor:ColourTypeBG]];
+    [code setTextColor:[Utils getColourFor:ColourTypeFont]];
 }
 
 -(void) changeButtonPressed {
-    [self changeColour:[Utils generateColour]];
+    if (!fix) {
+        [self changeColour:[Utils generateColour]];
+    }
 }
+
+-(void) fixed {
+    // set the colour, which won't be modified until the button is pressed again
+    if (!fix) {
+        fix = YES;
+        NSLog(@"fix");
+    } else if (fix) {
+        fix = NO;
+        NSLog(@"unfix");
+    }
+    
+}
+
+#pragma mark Calls to delegate
 
 -(void) minusButtonPressed {
     [delegate didClickOnDelete:self];

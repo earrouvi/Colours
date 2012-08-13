@@ -19,17 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"Colourandom"];
-    [self.view setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
+    [self.view setBackgroundColor:[Utils getColourFor:ColourTypeBG]];
     
     nbColours = 3;
-    comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, 320, 316)];
-    
-    minusButtons = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 316)];
-    pickButtons = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 316)];
+    comboView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, 320, 324)];
     
 	[self.view addSubview:comboView];
-    //[self.view addSubview:pickButtons];
-    //[self.view addSubview:minusButtons];
 	[self addNewButton];
     [self addPlusButton];
     [self addSaveButton];
@@ -63,17 +58,17 @@
 // Button for new colour combo
 -(void) addNewButton {
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	button.frame = CGRectMake(70, 10, 180, 30);
+	button.frame = CGRectMake(80, 10, 160, 30);
 	[button setTitle:@"New combo!" forState:UIControlStateNormal];
 	[button addTarget:self action:@selector(newButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:button];
 }
 
 -(void) addPlusButton {
-    UIButton *plus = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *plus = [UIButton buttonWithType:UIButtonTypeCustom];
     plus.frame = CGRectMake(30, 10, 30, 30);
-    [plus setTitle:@"+" forState:UIControlStateNormal];
     [plus addTarget:self action:@selector(plusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [plus setImage:[UIImage imageNamed:@"plus_bouton90.png"] forState:UIControlStateNormal];
     [self.view addSubview:plus];
 }
 
@@ -81,18 +76,26 @@
 #pragma mark Buttons pressed and alert views
 
 -(void) newButtonPressed {
+    int i = 0,rank = 0;
+    int height = 324/nbColours;
     for (UIView *v in comboView.subviews) {
-        [v removeFromSuperview];
+        if (((ColourUnitView*)v).fix) {
+            rank = i;
+            NSLog(@"colour fixed, rank and colour: %d",rank);
+        } else {
+            [v removeFromSuperview];
+            [self createColourBlock:[Utils generateColour] atIndex:i withHeight:height];
+        }
+        i++;
     }
-	[colours release];
+    [colours release];
 	colours = [[NSMutableArray alloc] init];
-	[self generateCombo];
 }
 
 -(void) plusButtonPressed {
-    if (nbColours<6) {
+    if (nbColours<7) {
         nbColours++;
-        [self createColourBlock:[Utils generateColour] atIndex:nbColours-1 withHeight:316/nbColours];
+        [self createColourBlock:[Utils generateColour] atIndex:nbColours-1 withHeight:324/nbColours];
         [self comboLayout];
     }
 }
@@ -115,7 +118,7 @@
                                                        delegate:self
                                               cancelButtonTitle:@"Cancel"
                                          destructiveButtonTitle:nil
-                                              otherButtonTitles:@"Save palette",@"Make a wallpaper",@"Send by email",nil];
+                                              otherButtonTitles:@"Save palette",@"Make a wallpaper",@"Email hex codes",nil];
     [alert setTag:0];
 	[alert showInView:self.view];
 	[alert release];
@@ -141,6 +144,7 @@
         textField.backgroundColor = [UIColor whiteColor];
         [alert addSubview:textField];
         [alert setFrame:CGRectMake(alert.frame.origin.x, alert.frame.origin.y, alert.frame.size.width, alert.frame.size.height+40)];
+        [textField release];
     }
     [alert show];
     [alert release];
@@ -152,8 +156,7 @@
         [self alertInput];
     } else if (buttonIndex == 1) {
 		// Pass the selected object to the new view controller.
-        [wvc release];
-        wvc = [[WallpaperViewController alloc] initWithArrayOfColours:colours];
+        WallpaperViewController *wvc = [[WallpaperViewController alloc] initWithArrayOfColours:colours];
         [self.navigationController pushViewController:wvc animated:YES];
 	} else if (buttonIndex == 2) {
         [self writeEmail];
@@ -168,7 +171,6 @@
         if([alertView respondsToSelector:@selector(setAlertViewStyle:)]) {
             if (![[[alertView textFieldAtIndex:0] text] isEqualToString:@""]) {
                 name = [[alertView textFieldAtIndex:0] text];
-                NSLog(@"luc: %@",[[alertView textFieldAtIndex:0] text]);
             } else {
                 name = @"Untitled";
             }
@@ -192,25 +194,52 @@
 #pragma mark -
 #pragma mark Combo view
 
+// generation depends on mode (random/rainbow)
 -(void) generateCombo {
-    int height = 316/nbColours;
-	for (int i=0; i<nbColours; i++) {
-		NSString * hexString = [Utils generateColour];
+    int height = 324/nbColours;
+    switch ([[NSUserDefaults standardUserDefaults] integerForKey:@"mode"]) {
+        case 0:
+            for (int i=0; i<nbColours; i++) {
+                NSString *hexString = [Utils generateColour];
+                [self createColourBlock:hexString atIndex:i withHeight:height];
+            }
+            break;
+            
+        case 1: // you cannot declare a variable on the line following a "case". Add a semi-colon or use brackets.
+            ;NSString *hexString = [Utils generateColour];
+            [self createColourBlock:hexString atIndex:0 withHeight:height];
+            for (int i=1; i<nbColours; i++) {
+                NSString *hexString2 = [Utils generateRainbow:hexString totalNumber:nbColours];
+                [self createColourBlock:hexString2 atIndex:i withHeight:height];
+                hexString = [hexString2 retain];
+                [hexString2 release];
+            }
+            break;
+        default:
+            break;
+    }
+	
+}
+
+-(void) generateComboFromRank:(int)rank {
+    int height = 324/nbColours;
+    for (int i=rank; i<(nbColours-rank); i++) {
+        NSString *hexString = [Utils generateColour];
         [self createColourBlock:hexString atIndex:i withHeight:height];
-	}
+    }
 }
 
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height {
     ColourUnitView *unit = [[ColourUnitView alloc] initWithColour:hexString rank:i andHeight:height];
     unit.delegate = self;
-    [comboView addSubview:unit];
+    [comboView insertSubview:unit atIndex:i];
     [unit release];
 }
 
 -(void) comboLayout {
     int i=0;
     for (ColourUnitView *view in [comboView subviews]) {
-        [view changeRank:i andHeight:316/nbColours];
+        [view changeRank:i andHeight:324/nbColours];
         i++;
     }
 }
@@ -322,7 +351,7 @@
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender {
     [self.navigationController popViewControllerAnimated:YES];
     // re-configure app
-    [self.view setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
+    [self.view setBackgroundColor:[Utils getColourFor:ColourTypeBG]];
     for (UIView *v in [comboView subviews]) {
         [((ColourUnitView*)v) update];
     }
@@ -352,7 +381,6 @@
     [appSettingsViewController release];
     [colours release];
     [pvc release];
-    [wvc release];
 }
 
 - (void)viewDidUnload {
@@ -369,7 +397,6 @@
     [appSettingsViewController release];
 	[colours release];
     [pvc release];
-    [wvc release];
     [super dealloc];
 }
 

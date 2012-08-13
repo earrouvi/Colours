@@ -29,6 +29,7 @@ typedef NSUInteger ColourType;
 }
 
 +(NSString*) generateColour;
++(NSString*) generateRainbow:(NSString*)initHex totalNumber:(int)nb;
 +(UIColor*) convertHexToRGB:(NSString*)hexString;
 +(NSString*) convertRed:(float)r green:(float)g blue:(float)b;
 
@@ -37,7 +38,10 @@ typedef NSUInteger ColourType;
 +(int) screenHeight;
 
 +(UIColor*) slateBlue;
-+(UIColor*) getColorFor:(ColourType)type;
-+(void) setSettings:(ColourSettings)set;
++(UIColor*) getColourFor:(ColourType)type;
+
++(NSString*) getColourBeforeMe:(int)me;
++(void) storeColours:(NSArray*)array;
++(int) getColours;
 
 @end

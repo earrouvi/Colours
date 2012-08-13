@@ -24,8 +24,8 @@
         }
         UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width*nb, 20)];
         lab.text = [@" " stringByAppendingString:pal.name];
-        [lab setBackgroundColor:[Utils getColorFor:ColourTypeBG]];
-        lab.textColor = [Utils getColorFor:ColourTypeFont];
+        [lab setBackgroundColor:[Utils getColourFor:ColourTypeBG]];
+        lab.textColor = [Utils getColourFor:ColourTypeFont];
         [self addSubview:lab];
         [lab release];
     }

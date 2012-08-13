@@ -48,14 +48,9 @@
 		B27965DA15B6E6AF001F203E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27965D915B6E6AF001F203E /* MessageUI.framework */; };
 		B288CFEE15D007200090F935 /* settings_bouton90.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFEC15D007200090F935 /* settings_bouton90.png */; };
 		B288CFEF15D007200090F935 /* settings2_bouton90.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFED15D007200090F935 /* settings2_bouton90.png */; };
-		B288CFF315D02AEE0090F935 /* hue_bouton903.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFF115D02AEE0090F935 /* hue_bouton903.png */; };
-		B288CFF515D02C2A0090F935 /* hue_bouton904.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFF415D02C2A0090F935 /* hue_bouton904.png */; };
+		B288CFF915D030F90090F935 /* hue_bouton905.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFF815D030F90090F935 /* hue_bouton905.png */; };
+		B288CFFB15D26F7E0090F935 /* plus_bouton90.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFFA15D26F7E0090F935 /* plus_bouton90.png */; };
 		B2969F4215B319F800229E73 /* SmallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2969F4115B319F800229E73 /* SmallButton.m */; };
-		B2969F4415B335BB00229E73 /* hue_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4315B335BB00229E73 /* hue_butt.png */; };
-		B2969F4615B33BE600229E73 /* hue_butt2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4515B33BE600229E73 /* hue_butt2.png */; };
-		B2969F4915B33D9300229E73 /* refresh_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4715B33D9300229E73 /* refresh_butt.png */; };
-		B2969F4A15B33D9300229E73 /* suppr_butt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4815B33D9300229E73 /* suppr_butt.png */; };
-		B2969F4C15B340DE00229E73 /* refresh_butt2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2969F4B15B340DE00229E73 /* refresh_butt2.png */; };
 		B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2997027156BCE8B00BED0D9 /* ColourUnitView.m */; };
 		B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85415643354005147FA /* ColorMatrixView.m */; };
 		B2A2E86615643354005147FA /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85815643354005147FA /* ColorPickerView.m */; };
@@ -143,15 +138,10 @@
 		B27965D915B6E6AF001F203E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B288CFEC15D007200090F935 /* settings_bouton90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_bouton90.png; sourceTree = "<group>"; };
 		B288CFED15D007200090F935 /* settings2_bouton90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings2_bouton90.png; sourceTree = "<group>"; };
-		B288CFF115D02AEE0090F935 /* hue_bouton903.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_bouton903.png; sourceTree = "<group>"; };
-		B288CFF415D02C2A0090F935 /* hue_bouton904.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_bouton904.png; sourceTree = "<group>"; };
+		B288CFF815D030F90090F935 /* hue_bouton905.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_bouton905.png; sourceTree = "<group>"; };
+		B288CFFA15D26F7E0090F935 /* plus_bouton90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_bouton90.png; sourceTree = "<group>"; };
 		B2969F4015B319F800229E73 /* SmallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallButton.h; sourceTree = "<group>"; };
 		B2969F4115B319F800229E73 /* SmallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallButton.m; sourceTree = "<group>"; };
-		B2969F4315B335BB00229E73 /* hue_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_butt.png; sourceTree = "<group>"; };
-		B2969F4515B33BE600229E73 /* hue_butt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_butt2.png; sourceTree = "<group>"; };
-		B2969F4715B33D9300229E73 /* refresh_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_butt.png; sourceTree = "<group>"; };
-		B2969F4815B33D9300229E73 /* suppr_butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suppr_butt.png; sourceTree = "<group>"; };
-		B2969F4B15B340DE00229E73 /* refresh_butt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_butt2.png; sourceTree = "<group>"; };
 		B2997026156BCE8B00BED0D9 /* ColourUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourUnitView.h; sourceTree = "<group>"; };
 		B2997027156BCE8B00BED0D9 /* ColourUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourUnitView.m; sourceTree = "<group>"; };
 		B2A2E85315643354005147FA /* ColorMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorMatrixView.h; path = /Users/Renard/Documents/workspace/colours/Classes/ColorMatrixView.h; sourceTree = "<absolute>"; };
@@ -326,15 +316,10 @@
 		B26C9E5315641A5000FFC28B /* UI Parts */ = {
 			isa = PBXGroup;
 			children = (
-				B288CFF415D02C2A0090F935 /* hue_bouton904.png */,
-				B288CFF115D02AEE0090F935 /* hue_bouton903.png */,
+				B288CFFA15D26F7E0090F935 /* plus_bouton90.png */,
+				B288CFF815D030F90090F935 /* hue_bouton905.png */,
 				B288CFEC15D007200090F935 /* settings_bouton90.png */,
 				B288CFED15D007200090F935 /* settings2_bouton90.png */,
-				B2969F4B15B340DE00229E73 /* refresh_butt2.png */,
-				B2969F4715B33D9300229E73 /* refresh_butt.png */,
-				B2969F4815B33D9300229E73 /* suppr_butt.png */,
-				B2969F4515B33BE600229E73 /* hue_butt2.png */,
-				B2969F4315B335BB00229E73 /* hue_butt.png */,
 				B21AE66915668B8C004039DF /* bar_select.png */,
 				B21AE66715668B23004039DF /* crosshair.png */,
 				B26C9E5515641A5000FFC28B /* colormap.png */,
@@ -516,17 +501,12 @@
 				B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */,
 				B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */,
 				B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */,
-				B2969F4415B335BB00229E73 /* hue_butt.png in Resources */,
-				B2969F4615B33BE600229E73 /* hue_butt2.png in Resources */,
-				B2969F4915B33D9300229E73 /* refresh_butt.png in Resources */,
-				B2969F4A15B33D9300229E73 /* suppr_butt.png in Resources */,
-				B2969F4C15B340DE00229E73 /* refresh_butt2.png in Resources */,
 				B26FDACE15B4327800079C17 /* palettes.xml in Resources */,
 				B254A8BE15B6C6EE00DF08D3 /* Settings.bundle in Resources */,
 				B288CFEE15D007200090F935 /* settings_bouton90.png in Resources */,
 				B288CFEF15D007200090F935 /* settings2_bouton90.png in Resources */,
-				B288CFF315D02AEE0090F935 /* hue_bouton903.png in Resources */,
-				B288CFF515D02C2A0090F935 /* hue_bouton904.png in Resources */,
+				B288CFF915D030F90090F935 /* hue_bouton905.png in Resources */,
+				B288CFFB15D26F7E0090F935 /* plus_bouton90.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

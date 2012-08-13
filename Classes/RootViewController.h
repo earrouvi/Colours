@@ -26,7 +26,6 @@
     ColourUnitView *colourReceiver;
     
     // view controllers - made attributes so they won't cause a memory leak
-    WallpaperViewController *wvc;
     SavedViewController *pvc;
     
     IASKAppSettingsViewController *appSettingsViewController;
@@ -44,6 +43,7 @@
 -(void) alertInput;
 //---
 -(void) generateCombo;
+-(void) generateComboFromRank:(int)rank;
 -(void) createColourBlock:(NSString*)hexString atIndex:(int)i withHeight:(int)height;
 -(void) comboLayout;
 //---

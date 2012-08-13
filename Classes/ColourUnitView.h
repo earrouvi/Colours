@@ -25,13 +25,15 @@
     
     NSMutableString *hexCode;
     UIView *colourBlock;
-    UIColor *colorSwatch;
     UITextField *code;
+    
+    Boolean fix;
     
 }
 
 @property(assign) id<ColourUnitViewDelegate> delegate;
 @property(retain) NSMutableString *hexCode;
+@property(assign) Boolean fix;
 
 - (id)initWithColour:(NSString*)colour rank:(int)rank andHeight:(int)height;
 -(void) addButtons;
@@ -40,6 +42,8 @@
 -(void) changeColour:(NSString*)hexString;
 -(void) update;
 -(void) changeButtonPressed;
+-(void) fixed;
+
 -(void) minusButtonPressed;
 -(void) pickColour;
 

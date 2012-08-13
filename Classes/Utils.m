@@ -8,8 +8,16 @@
 
 #import "Utils.h"
 
+NSArray *colours = nil;
 
 @implementation Utils
+
++(void) initialize
+{
+    if (!colours)
+        colours = [[NSArray alloc] init];
+}
+
 
 #pragma mark Colour generation and conversion
 
@@ -18,6 +26,54 @@
 	int baseInt = arc4random() % 16777216;
 	NSString *hex = [NSString stringWithFormat:@"%06X", baseInt];
 	return hex;
+}
+
++(NSString*) generateRainbow:(NSString*)initHex totalNumber:(int)nb {
+    UIColor *initCol = [Utils convertHexToRGB:initHex];
+    CGFloat h,s,l,alpha;
+    
+    // handling iOS <5.1 (getHue:saturation:brightness:alpha: not accepted)
+    // iOS >5.1
+    if([UIColor respondsToSelector:@selector(getHue:saturation:brightness:alpha:)]) {
+        [initCol getHue:&h saturation:&s brightness:&l alpha:&alpha];
+        // iOs<5.1
+    } else {
+        const CGFloat *c = CGColorGetComponents(initCol.CGColor);
+        [Utils convertRed:c[0] green:c[1] blue:c[2]];
+        float min, max, delta;
+        min = MIN(c[0], MIN(c[1], c[2]));
+        max = MAX(c[0], MAX(c[1], c[2]));
+        l = max;               // brightness
+        delta = max - min;
+        if( max != 0 )
+            s = delta / max;       // saturation
+        else {
+            // r = g = b = 0
+            s = 0;
+            h = -1;
+        }
+        if( c[0] == max )
+            h = ( c[1] - c[2] ) / delta;     // between yellow & magenta
+        else if( c[1] == max )
+            h = 2 + ( c[2] - c[0] ) / delta; // between cyan & yellow
+        else
+            h = 4 + ( c[0] - c[1] ) / delta; // between magenta & cyan
+        h *= 60;               // degrees
+        if( h < 0 ) {
+            h += 360;
+        }
+        h /= 360;
+    } // end of handling <5.1
+    
+    h += 1.0/nb;
+    if (h>1.0) {
+        h -= 1.0;
+    }
+    CGFloat hue = ((double)arc4random() / ARC4RANDOM_MAX)*0.1 + h-0.05;
+    UIColor *target = [UIColor colorWithHue:hue saturation:s brightness:l alpha:0];
+    const CGFloat *c = CGColorGetComponents(target.CGColor);
+    NSString *hex = [Utils convertRed:c[0] green:c[1] blue:c[2]];
+    return hex;
 }
 
 // Convert hex colour to RGB floats, return UIColor
@@ -76,7 +132,7 @@
     return [UIColor colorWithRed:.243 green:.306 blue:.435 alpha:1];
 }
 
-+(UIColor*) getColorFor:(ColourType)type {
++(UIColor*) getColourFor:(ColourType)type {
     switch ([[NSUserDefaults standardUserDefaults] integerForKey:@"multi"]) {
         case ColourSettingsBlackBG:
             switch (type) {
@@ -93,7 +149,7 @@
         case ColourSettingsWhiteBG:
             switch (type) {
                 case ColourTypeBG:
-                    return [UIColor lightTextColor];
+                    return [UIColor whiteColor];
                     break;
                 case ColourTypeFont:
                     return [UIColor darkTextColor];
@@ -120,8 +176,19 @@
     return [UIColor whiteColor];
 }
 
-+(void) setSettings:(ColourSettings)set {
-//    settings = set;
++(NSString*) getColourBeforeMe:(int)me {
+    return [colours objectAtIndex:me+1];
+}
+
++(void) storeColours:(NSArray*)array {
+    if (colours!=array) {
+        [colours release];
+        colours = [array retain];
+    }
+}
+
++(int) getColours {
+    return [colours count];
 }
 
 @end
