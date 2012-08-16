@@ -18,7 +18,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"Colourandom"];
+    [self setTitle:@"Random Colour Mix"];
     [self.view setBackgroundColor:[Utils getColourFor:ColourTypeBG]];
     
     nbColours = 3;
@@ -81,7 +81,6 @@
     for (UIView *v in comboView.subviews) {
         if (((ColourUnitView*)v).fix) {
             rank = i;
-            NSLog(@"colour fixed, rank and colour: %d",rank);
         } else {
             [v removeFromSuperview];
             [self createColourBlock:[Utils generateColour] atIndex:i withHeight:height];

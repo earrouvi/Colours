@@ -26,6 +26,11 @@
         [self addSubview:colourBlock];
         hexCode = [hexString copy];
         [self addButtons];
+        
+        fixView = [[UIView alloc] initWithFrame:CGRectMake(295, height*0.2, 10, 10)];
+        [fixView setBackgroundColor:[UIColor redColor]];
+        [self addSubview:fixView];
+        [fixView setHidden:YES];
     }
     return self;
 }
@@ -40,22 +45,22 @@
     [colourBlock addSubview:fixed];
     
     // change button
-    UIButton *change = [UIButton buttonWithType:UIButtonTypeCustom];
-    change.frame = CGRectMake(220, height*0.1, 30, 30);
+    UIButton *change = [SmallButton buttonWithFrame:CGRectMake(220, height*0.1, 30, 30)];
+    //change.frame = CGRectMake(220, height*0.1, 30, 30);
     [change addTarget:self action:@selector(changeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [change setImage:[UIImage imageNamed:@"refresh_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:change];
     
     // minus button
-    UIButton *minus = [UIButton buttonWithType:UIButtonTypeCustom];
-    minus.frame = CGRectMake(185, height*0.1, 30, 30);
+    UIButton *minus = [SmallButton buttonWithFrame:CGRectMake(185, height*0.1, 30, 30)];
+    //minus.frame = CGRectMake(185, height*0.1, 30, 30);
     [minus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [minus setImage:[UIImage imageNamed:@"suppr_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:minus];
     
     // picker button
-    UIButton *pick = [UIButton buttonWithType:UIButtonTypeCustom];
-    pick.frame = CGRectMake(255, height*0.1, 30, 30);
+    UIButton *pick = [SmallButton buttonWithFrame:CGRectMake(255, height*0.1, 30, 30)];
+    //pick.frame = CGRectMake(255, height*0.1, 30, 30);
     [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
     [pick setImage:[UIImage imageNamed:@"hue_bouton905.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:pick];
@@ -116,10 +121,10 @@
     // set the colour, which won't be modified until the button is pressed again
     if (!fix) {
         fix = YES;
-        NSLog(@"fix");
+        [fixView setHidden:NO];
     } else if (fix) {
         fix = NO;
-        NSLog(@"unfix");
+        [fixView setHidden:YES];
     }
     
 }
@@ -139,6 +144,7 @@
 -(void) dealloc {
     [code release];
     [colourBlock release];
+    [fixView release];
     [hexCode release];
     [super dealloc];
 }

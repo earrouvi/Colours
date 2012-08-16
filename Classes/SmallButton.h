@@ -13,6 +13,5 @@
 + (id)buttonWithFrame:(CGRect)frame;
 
 -(id) initWithFrame:(CGRect)frame;
--(void) makeButtonOfType:(int)type;
 
 @end

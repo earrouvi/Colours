@@ -17,13 +17,11 @@
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
-				<integer>2</integer>
 			</array>
 			<key>Titles</key>
 			<array>
 				<string>Black</string>
 				<string>White</string>
-				<string>Grey</string>
 			</array>
 		</dict>
 		<dict>

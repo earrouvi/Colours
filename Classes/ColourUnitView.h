@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Utils.h"
 #import "ColorPickerViewController.h"
+#import "SmallButton.h"
 
 @class ColourUnitView;
 
@@ -25,6 +26,7 @@
     
     NSMutableString *hexCode;
     UIView *colourBlock;
+    UIView *fixView;
     UITextField *code;
     
     Boolean fix;

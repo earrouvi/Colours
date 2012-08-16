@@ -21,20 +21,9 @@
     return self;
 }
 
--(void) makeButtonOfType:(int)type {
-    switch (type) {
-        case 0:
-            //do sth
-            break;
-            
-        default:
-            break;
-    }
-}
-
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    int errorMargin = 30;
-    CGRect largerFrame = CGRectMake(0 - errorMargin, 0 - errorMargin, self.frame.size.width + errorMargin, self.frame.size.height + errorMargin);
+    int errorMargin = 10;
+    CGRect largerFrame = CGRectMake(0 - errorMargin, 0 - errorMargin, self.frame.size.width + errorMargin*2, self.frame.size.height + errorMargin*2);
     return (CGRectContainsPoint(largerFrame, point) == 1) ? self : nil;
 }
 
