@@ -26,11 +26,6 @@
         [self addSubview:colourBlock];
         hexCode = [hexString copy];
         [self addButtons];
-        
-        fixView = [[UIView alloc] initWithFrame:CGRectMake(295, height*0.2, 10, 10)];
-        [fixView setBackgroundColor:[UIColor redColor]];
-        [self addSubview:fixView];
-        [fixView setHidden:YES];
     }
     return self;
 }
@@ -38,32 +33,31 @@
 -(void) addButtons {
     int height = colourBlock.frame.size.height;
     
-    // transparent button to fix a colour
-    UIButton *fixed = [UIButton buttonWithType:UIButtonTypeCustom];
-    fixed.frame = CGRectMake(20, height*0.05, 290, height*0.9);
+    // picker button
+    UIButton *pick = [UIButton buttonWithType:UIButtonTypeCustom];
+    // buttonWithFrame:CGRectMake(255, height*0.1, 30, 30)];
+    pick.frame = CGRectMake(20, height*0.05, 290, height*0.9);
+    [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
+    //[pick setImage:[UIImage imageNamed:@"hue_bouton905.png"] forState:UIControlStateNormal];
+    [colourBlock addSubview:pick];
+    
+    // padlock button to fix a colour
+    fixed = [SmallButton buttonWithFrame:CGRectMake(255, height*0.1, 30, 30)];
     [fixed addTarget:self action:@selector(fixed) forControlEvents:UIControlEventTouchUpInside];
+    [fixed setImage:[UIImage imageNamed:@"cadenaso.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:fixed];
     
     // change button
-    UIButton *change = [SmallButton buttonWithFrame:CGRectMake(220, height*0.1, 30, 30)];
-    //change.frame = CGRectMake(220, height*0.1, 30, 30);
+    SmallButton *change = [SmallButton buttonWithFrame:CGRectMake(220, height*0.1, 30, 30)];
     [change addTarget:self action:@selector(changeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [change setImage:[UIImage imageNamed:@"refresh_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:change];
     
     // minus button
-    UIButton *minus = [SmallButton buttonWithFrame:CGRectMake(185, height*0.1, 30, 30)];
-    //minus.frame = CGRectMake(185, height*0.1, 30, 30);
+    SmallButton *minus = [SmallButton buttonWithFrame:CGRectMake(185, height*0.1, 30, 30)];
     [minus addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [minus setImage:[UIImage imageNamed:@"suppr_bouton90.png"] forState:UIControlStateNormal];
     [colourBlock addSubview:minus];
-    
-    // picker button
-    UIButton *pick = [SmallButton buttonWithFrame:CGRectMake(255, height*0.1, 30, 30)];
-    //pick.frame = CGRectMake(255, height*0.1, 30, 30);
-    [pick addTarget:self action:@selector(pickColour) forControlEvents:UIControlEventTouchUpInside];
-    [pick setImage:[UIImage imageNamed:@"hue_bouton905.png"] forState:UIControlStateNormal];
-    [colourBlock addSubview:pick];
     
     // hex code
     code = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 70, 20)];
@@ -89,8 +83,8 @@
     self.frame = CGRectMake(10, 0+rank*height, 290, height);
     colourBlock.frame = CGRectMake(0, height*0.05, 290, height*0.9);
     
-    UIView *fixed = [[colourBlock subviews] objectAtIndex:0];
-    [fixed setFrame:colourBlock.frame];
+    UIView *pick = [[colourBlock subviews] objectAtIndex:0];
+    [pick setFrame:colourBlock.frame];
     for (int i=1;i<4;i++) {
         UIView *v = [[colourBlock subviews] objectAtIndex:i];
         [v setFrame:CGRectMake(v.frame.origin.x, height*0.1, 30, 30)];
@@ -121,10 +115,10 @@
     // set the colour, which won't be modified until the button is pressed again
     if (!fix) {
         fix = YES;
-        [fixView setHidden:NO];
+        [fixed setImage:[UIImage imageNamed:@"cadenasf.png"] forState:UIControlStateNormal];
     } else if (fix) {
         fix = NO;
-        [fixView setHidden:YES];
+        [fixed setImage:[UIImage imageNamed:@"cadenaso.png"] forState:UIControlStateNormal];
     }
     
 }
@@ -144,7 +138,6 @@
 -(void) dealloc {
     [code release];
     [colourBlock release];
-    [fixView release];
     [hexCode release];
     [super dealloc];
 }

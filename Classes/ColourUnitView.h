@@ -26,8 +26,8 @@
     
     NSMutableString *hexCode;
     UIView *colourBlock;
-    UIView *fixView;
     UITextField *code;
+    SmallButton *fixed;
     
     Boolean fix;
     

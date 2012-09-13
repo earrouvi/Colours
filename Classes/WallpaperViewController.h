@@ -16,8 +16,8 @@
 	NSArray * colours;
 	UIView * coloursView;
 	UISegmentedControl * controlV;
-	UISegmentedControl * controlN;
 	UIButton * button;
+    int slideNb;
 
 }
 
@@ -29,6 +29,7 @@
 -(void) controlNumber;
 -(void) addSaveButton;
 -(void) saveButtonPressed;
+-(void) slideListener;
 //---
 -(void) createVerticalView;
 -(void) createHorizontalView;

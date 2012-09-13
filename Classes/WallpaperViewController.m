@@ -37,14 +37,15 @@
 -(void) addViewControl {
 	//create the array of items with images
 	NSArray *items = [NSArray arrayWithObjects:
-					  [UIImage imageNamed:@"vertical.png"],
-					  [UIImage imageNamed:@"horizontal.png"],
-					  [UIImage imageNamed:@"mosaic.png"],
+					  [UIImage imageNamed:@"vertical30.png"],
+					  [UIImage imageNamed:@"horizontal30.png"],
+					  [UIImage imageNamed:@"mosaic30.png"],
 					  nil];	
 	
 	//create the control
 	controlV = [[UISegmentedControl alloc]  initWithItems:items];
-	controlV.frame = CGRectMake(85, 10, 150, 50);
+	//controlV.frame = CGRectMake(115, 10, 90, 30);
+    controlV.frame = CGRectMake(100, 10, 120, 40);
 	
 	// init with first item selected
 	controlV.selectedSegmentIndex = 0;
@@ -75,25 +76,15 @@
 
 // controlling number of loop for colours
 -(void) addNumberControl {
-	//create the array of items with images
-	NSArray *items = [NSArray arrayWithObjects:
-					  [NSString stringWithFormat:@"simple"],
-					  [NSString stringWithFormat:@"double"],
-					  [NSString stringWithFormat:@"triple"],
-					  nil];	
-	
-	//create the control
-	controlN = [[UISegmentedControl alloc]  initWithItems:items];
-	controlN.frame = CGRectMake(50, 70, 220, 50);
-	
-	// init with first item selected
-	controlN.selectedSegmentIndex = 0;
-	
-	//listen for clicks
-	[controlN addTarget:self action:@selector(controlNumber) forControlEvents:UIControlEventValueChanged];
+    UISlider *slide = [[UISlider alloc] init];
+    [slide setMaximumValue:10]; [slide setMinimumValue:1];
+	slide.frame = CGRectMake(50, 60, 220, 30);
+    [slide addTarget:self action:@selector(slideListener) forControlEvents:UIControlEventValueChanged];
+    slide.continuous = YES;
 	
 	//add the control to the view
-	[self.view addSubview:controlN];
+	[self.view addSubview:slide];
+    slideNb = slide.value;
 }
 
 -(void) controlNumber {
@@ -119,11 +110,10 @@
 	button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	
 	//set the position of the button
-	button.frame = CGRectMake(30, 340, 260, 50);
+	button.frame = CGRectMake(80, 350, 160, 30);
 	
 	//set the button's title
 	[button setTitle:@"Save this image!" forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont systemFontOfSize:30];
 	
 	//listen for clicks
 	[button addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -137,11 +127,16 @@
 	[self alert];
 }
 
+-(void) slideListener {
+    slideNb = ((UISlider*)[self.view.subviews objectAtIndex:2]).value;
+    [self controlView];
+}
+
 #pragma mark -
 #pragma mark Views creation
 
 -(void) createVerticalView {
-	int loop = controlN.selectedSegmentIndex+1;
+	int loop = floor(slideNb);
 	double width = 320.0/(nbColours*loop);
 	
 	for (int l=0; l<loop; l++) {
@@ -157,7 +152,7 @@
 }
 
 -(void) createHorizontalView {
-	int loop = controlN.selectedSegmentIndex+1;
+	int loop = floor(slideNb);
 	double height = 460.0/(nbColours*loop);
 	
 	for (int l=0; l<loop; l++) {
@@ -173,7 +168,7 @@
 }
 
 -(void) createMosaicView {
-	int loop = controlN.selectedSegmentIndex+1;
+	int loop = floor(slideNb);
 	double width = 320.0/(nbColours*loop);
 	int plus = (460-320)/width+1;
 	
@@ -242,7 +237,6 @@
 	[colours release];
 	[coloursView release];
 	[controlV release];
-	[controlN release];
 	[button release];
     [super dealloc];
 }

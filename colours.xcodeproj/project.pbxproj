@@ -20,6 +20,13 @@
 		B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D01599DA2000CA9CF1 /* horizontal.png */; };
 		B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D11599DA2000CA9CF1 /* mosaic.png */; };
 		B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D21599DA2000CA9CF1 /* vertical.png */; };
+		B24AE3651601E42B007EF0BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE3641601E42B007EF0BC /* icon.png */; };
+		B24AE36816021454007EF0BC /* cadenasf.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36616021454007EF0BC /* cadenasf.png */; };
+		B24AE36916021454007EF0BC /* cadenaso.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36716021454007EF0BC /* cadenaso.png */; };
+		B24AE36D160223DB007EF0BC /* vertical30.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36A160223DB007EF0BC /* vertical30.png */; };
+		B24AE36E160223DB007EF0BC /* mosaic30.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36B160223DB007EF0BC /* mosaic30.png */; };
+		B24AE36F160223DB007EF0BC /* horizontal30.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36C160223DB007EF0BC /* horizontal30.png */; };
+		B24AE37116022684007EF0BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE37016022684007EF0BC /* Default.png */; };
 		B254A8B615B43E6300DF08D3 /* PaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B515B43E6300DF08D3 /* PaletteView.m */; };
 		B254A8B915B57E6200DF08D3 /* SavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B815B57E6200DF08D3 /* SavedViewController.m */; };
 		B254A8BE15B6C6EE00DF08D3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B254A8BD15B6C6EE00DF08D3 /* Settings.bundle */; };
@@ -27,8 +34,8 @@
 		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
 		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
 		B26C9E5A15641A5000FFC28B /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5515641A5000FFC28B /* colormap.png */; };
-		B26C9E5C15641A5000FFC28B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Default.png */; };
-		B26C9E5D15641A5000FFC28B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Icon.png */; };
+		B26C9E5C15641A5000FFC28B /* Defaultold.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Defaultold.png */; };
+		B26C9E5D15641A5000FFC28B /* Iconold.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Iconold.png */; };
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
 		B26FDACE15B4327800079C17 /* palettes.xml in Resources */ = {isa = PBXBuildFile; fileRef = B26FDACD15B4327800079C17 /* palettes.xml */; };
 		B27965CB15B6E13D001F203E /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */; };
@@ -59,10 +66,7 @@
 		B2A2E86915643354005147FA /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E85F15643354005147FA /* GradientView.m */; };
 		B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86115643354005147FA /* UIColor-Expanded.m */; };
 		B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */; };
-		B2D1F24215371FC300B32038 /* ColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D1F24015371FC300B32038 /* ColoursViewController.m */; };
 		B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F24115371FC300B32038 /* ColoursViewController.xib */; };
-		B2D1F2B91537337C00B32038 /* tower_R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F2B81537337C00B32038 /* tower_R.png */; };
-		B2D1F2C71537343300B32038 /* bannierekai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F2C61537343300B32038 /* bannierekai.jpg */; };
 		B2E78A9215B41448000BC4AD /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B2E78A9315B41448000BC4AD /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8815B41448000BC4AD /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B2E78A9415B41448000BC4AD /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8B15B41448000BC4AD /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -88,9 +92,16 @@
 		8D1107310486CEB800E47090 /* colours-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colours-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B21AE66715668B23004039DF /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 		B21AE66915668B8C004039DF /* bar_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_select.png; sourceTree = "<group>"; };
-		B240B0D01599DA2000CA9CF1 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontal.png; path = "UI Parts/horizontal.png"; sourceTree = "<group>"; };
-		B240B0D11599DA2000CA9CF1 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mosaic.png; path = "UI Parts/mosaic.png"; sourceTree = "<group>"; };
-		B240B0D21599DA2000CA9CF1 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vertical.png; path = "UI Parts/vertical.png"; sourceTree = "<group>"; };
+		B240B0D01599DA2000CA9CF1 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal.png; sourceTree = "<group>"; };
+		B240B0D11599DA2000CA9CF1 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mosaic.png; sourceTree = "<group>"; };
+		B240B0D21599DA2000CA9CF1 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical.png; sourceTree = "<group>"; };
+		B24AE3641601E42B007EF0BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B24AE36616021454007EF0BC /* cadenasf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadenasf.png; sourceTree = "<group>"; };
+		B24AE36716021454007EF0BC /* cadenaso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadenaso.png; sourceTree = "<group>"; };
+		B24AE36A160223DB007EF0BC /* vertical30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical30.png; sourceTree = "<group>"; };
+		B24AE36B160223DB007EF0BC /* mosaic30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mosaic30.png; sourceTree = "<group>"; };
+		B24AE36C160223DB007EF0BC /* horizontal30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal30.png; sourceTree = "<group>"; };
+		B24AE37016022684007EF0BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B254A8B415B43E6300DF08D3 /* PaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteView.h; sourceTree = "<group>"; };
 		B254A8B515B43E6300DF08D3 /* PaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteView.m; sourceTree = "<group>"; };
 		B254A8B715B57E6200DF08D3 /* SavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedViewController.h; sourceTree = "<group>"; };
@@ -102,8 +113,8 @@
 		B26218651547E8330078D4C5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		B26218661547E8330078D4C5 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		B26C9E5515641A5000FFC28B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
-		B26C9E5715641A5000FFC28B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		B26C9E5815641A5000FFC28B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B26C9E5715641A5000FFC28B /* Defaultold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Defaultold.png; sourceTree = "<group>"; };
+		B26C9E5815641A5000FFC28B /* Iconold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconold.png; sourceTree = "<group>"; };
 		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		B26FDACD15B4327800079C17 /* palettes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palettes.xml; sourceTree = "<group>"; };
 		B27965AC15B6E13D001F203E /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
@@ -159,11 +170,7 @@
 		B2A2E86115643354005147FA /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "Classes/UIColor-Expanded.m"; sourceTree = "<group>"; };
 		B2A2E86215643354005147FA /* UIColor-HSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-HSVAdditions.h"; path = "Classes/UIColor-HSVAdditions.h"; sourceTree = "<group>"; };
 		B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-HSVAdditions.m"; path = "Classes/UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
-		B2D1F23F15371FC300B32038 /* ColoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoursViewController.h; sourceTree = "<group>"; };
-		B2D1F24015371FC300B32038 /* ColoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoursViewController.m; sourceTree = "<group>"; };
 		B2D1F24115371FC300B32038 /* ColoursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ColoursViewController.xib; path = Classes/ColoursViewController.xib; sourceTree = "<group>"; };
-		B2D1F2B81537337C00B32038 /* tower_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tower_R.png; path = ../../Elsa/Bamboo/EN_COURS/PRV/tower_R.png; sourceTree = SOURCE_ROOT; };
-		B2D1F2C61537343300B32038 /* bannierekai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bannierekai.jpg; path = ../../Elsa/Bamboo/bannierekai.jpg; sourceTree = SOURCE_ROOT; };
 		B2E78A8415B41448000BC4AD /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B2E78A8715B41448000BC4AD /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -201,8 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				B27965AA15B6E13D001F203E /* InAppSettingsKit */,
-				B2D1F23F15371FC300B32038 /* ColoursViewController.h */,
-				B2D1F24015371FC300B32038 /* ColoursViewController.m */,
 				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
 				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
 				B26218651547E8330078D4C5 /* Utils.h */,
@@ -267,12 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				B26FDACD15B4327800079C17 /* palettes.xml */,
-				B240B0D01599DA2000CA9CF1 /* horizontal.png */,
-				B240B0D11599DA2000CA9CF1 /* mosaic.png */,
-				B240B0D21599DA2000CA9CF1 /* vertical.png */,
 				B26C9E5315641A5000FFC28B /* UI Parts */,
-				B2D1F2C61537343300B32038 /* bannierekai.jpg */,
-				B2D1F2B81537337C00B32038 /* tower_R.png */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* colours-Info.plist */,
@@ -316,15 +316,25 @@
 		B26C9E5315641A5000FFC28B /* UI Parts */ = {
 			isa = PBXGroup;
 			children = (
+				B24AE36A160223DB007EF0BC /* vertical30.png */,
+				B24AE36B160223DB007EF0BC /* mosaic30.png */,
+				B24AE36C160223DB007EF0BC /* horizontal30.png */,
+				B24AE36616021454007EF0BC /* cadenasf.png */,
+				B24AE36716021454007EF0BC /* cadenaso.png */,
+				B24AE3641601E42B007EF0BC /* icon.png */,
+				B240B0D01599DA2000CA9CF1 /* horizontal.png */,
+				B240B0D11599DA2000CA9CF1 /* mosaic.png */,
+				B240B0D21599DA2000CA9CF1 /* vertical.png */,
 				B288CFFA15D26F7E0090F935 /* plus_bouton90.png */,
 				B288CFF815D030F90090F935 /* hue_bouton905.png */,
 				B288CFEC15D007200090F935 /* settings_bouton90.png */,
 				B288CFED15D007200090F935 /* settings2_bouton90.png */,
 				B21AE66915668B8C004039DF /* bar_select.png */,
+				B24AE37016022684007EF0BC /* Default.png */,
 				B21AE66715668B23004039DF /* crosshair.png */,
 				B26C9E5515641A5000FFC28B /* colormap.png */,
-				B26C9E5715641A5000FFC28B /* Default.png */,
-				B26C9E5815641A5000FFC28B /* Icon.png */,
+				B26C9E5715641A5000FFC28B /* Defaultold.png */,
+				B26C9E5815641A5000FFC28B /* Iconold.png */,
 			);
 			path = "UI Parts";
 			sourceTree = "<group>";
@@ -489,12 +499,10 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */,
-				B2D1F2B91537337C00B32038 /* tower_R.png in Resources */,
-				B2D1F2C71537343300B32038 /* bannierekai.jpg in Resources */,
 				B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */,
 				B26C9E5A15641A5000FFC28B /* colormap.png in Resources */,
-				B26C9E5C15641A5000FFC28B /* Default.png in Resources */,
-				B26C9E5D15641A5000FFC28B /* Icon.png in Resources */,
+				B26C9E5C15641A5000FFC28B /* Defaultold.png in Resources */,
+				B26C9E5D15641A5000FFC28B /* Iconold.png in Resources */,
 				B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */,
 				B21AE66815668B23004039DF /* crosshair.png in Resources */,
 				B21AE66A15668B8C004039DF /* bar_select.png in Resources */,
@@ -507,6 +515,13 @@
 				B288CFEF15D007200090F935 /* settings2_bouton90.png in Resources */,
 				B288CFF915D030F90090F935 /* hue_bouton905.png in Resources */,
 				B288CFFB15D26F7E0090F935 /* plus_bouton90.png in Resources */,
+				B24AE3651601E42B007EF0BC /* icon.png in Resources */,
+				B24AE36816021454007EF0BC /* cadenasf.png in Resources */,
+				B24AE36916021454007EF0BC /* cadenaso.png in Resources */,
+				B24AE36D160223DB007EF0BC /* vertical30.png in Resources */,
+				B24AE36E160223DB007EF0BC /* mosaic30.png in Resources */,
+				B24AE36F160223DB007EF0BC /* horizontal30.png in Resources */,
+				B24AE37116022684007EF0BC /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +535,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* coloursAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
-				B2D1F24215371FC300B32038 /* ColoursViewController.m in Sources */,
 				B262184C1547E4C80078D4C5 /* WallpaperViewController.m in Sources */,
 				B26218671547E8330078D4C5 /* Utils.m in Sources */,
 				B2A2E86415643354005147FA /* ColorMatrixView.m in Sources */,

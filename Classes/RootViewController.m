@@ -76,14 +76,28 @@
 #pragma mark Buttons pressed and alert views
 
 -(void) newButtonPressed {
-    int i = 0,rank = 0;
+    int i = 0;//,rank = 0;
     int height = 324/nbColours;
+    NSString *init = [[Utils generateColour] retain];
     for (UIView *v in comboView.subviews) {
         if (((ColourUnitView*)v).fix) {
-            rank = i;
+            //rank = i;
         } else {
+            // big mess for fix + rainbow working together
             [v removeFromSuperview];
-            [self createColourBlock:[Utils generateColour] atIndex:i withHeight:height];
+            switch ([[NSUserDefaults standardUserDefaults] integerForKey:@"mode"]) {
+                case 0:
+                    [self createColourBlock:[Utils generateColour] atIndex:i withHeight:height];
+                    break;
+                case 1:
+                    ;NSString *hexString2 = [Utils generateRainbow:init totalNumber:nbColours];
+                    [self createColourBlock:hexString2 atIndex:i withHeight:height];
+                    [init release];
+                    init = [hexString2 retain];
+                    break;
+                default:
+                    break;
+            }// end of big mess
         }
         i++;
     }
