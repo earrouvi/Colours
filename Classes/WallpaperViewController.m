@@ -17,19 +17,21 @@
 	colours = [col retain];
 	coloursView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
 	[self.view addSubview:coloursView];
+    [self loadMosaics];
 	[self addViewControl];
 	[self addNumberControl];
 	[self addSaveButton];
-	[self createVerticalView];
+    [self createVerticalView];
 	return self;
 }
 
 /*
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
  - (void)viewDidLoad {
- [super viewDidLoad];
+     [super viewDidLoad];
+     
  }
- */
+*/ 
 
 #pragma mark Buttons and controls
 
@@ -77,7 +79,7 @@
 // controlling number of loop for colours
 -(void) addNumberControl {
     UISlider *slide = [[UISlider alloc] init];
-    [slide setMaximumValue:10]; [slide setMinimumValue:1];
+    [slide setMaximumValue:9]; [slide setMinimumValue:1];
 	slide.frame = CGRectMake(50, 60, 220, 30);
     [slide addTarget:self action:@selector(slideListener) forControlEvents:UIControlEventValueChanged];
     slide.continuous = YES;
@@ -107,13 +109,13 @@
 // Button for saving image
 -(void) addSaveButton {
 	//create the button
-	button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	
 	//set the position of the button
 	button.frame = CGRectMake(80, 350, 160, 30);
 	
 	//set the button's title
-	[button setTitle:@"Save this image!" forState:UIControlStateNormal];
+	[button setTitle:@"Save this picture!" forState:UIControlStateNormal];
 	
 	//listen for clicks
 	[button addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -137,53 +139,52 @@
 
 -(void) createVerticalView {
 	int loop = floor(slideNb);
-	double width = 320.0/(nbColours*loop);
-	
-	for (int l=0; l<loop; l++) {
-		for (int i=0; i<nbColours; i++) {
-			NSString * hexString = [colours	objectAtIndex:i];
-			
-			
-			UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake((i+l*nbColours)*width, 0, width, 460)];
-			colourView.backgroundColor = [Utils convertHexToRGB:hexString];
-			[coloursView addSubview:colourView];
-		}		
-	}
+	[coloursView addSubview:[verticals objectAtIndex:loop-1]];
 }
 
 -(void) createHorizontalView {
 	int loop = floor(slideNb);
-	double height = 460.0/(nbColours*loop);
-	
-	for (int l=0; l<loop; l++) {
-		for (int i=0; i<nbColours; i++) {
-			NSString * hexString = [colours	objectAtIndex:i];
-			
-			
-			UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(0, (i+l*nbColours)*height, 320, height)];
-			colourView.backgroundColor = [Utils convertHexToRGB:hexString];
-			[coloursView addSubview:colourView];
-		}
-	}
+    [coloursView addSubview:[horizontals objectAtIndex:loop-1]];
 }
 
 -(void) createMosaicView {
-	int loop = floor(slideNb);
-	double width = 320.0/(nbColours*loop);
-	int plus = (460-320)/width+1;
-	
-	for (int i=0; i<(loop*nbColours+plus); i++) {
-		for (int l=0; l<loop; l++) {
-			for (int j=0; j<nbColours; j++) {
-				NSString * hexString = [colours	objectAtIndex:j];
-				
-				UIView * colourView = [[UIView alloc] initWithFrame:CGRectMake(((i+j)%nbColours+l*nbColours)*width, 
-																			   i*width, width, width)];
-				colourView.backgroundColor = [Utils convertHexToRGB:hexString];
-				[coloursView addSubview:colourView];
-			}
-		}
-	}
+    int loop = floor(slideNb);
+    [coloursView addSubview:[mosaics objectAtIndex:loop-1]];
+}
+
+-(void) loadMosaics {
+    mosaics = [[NSMutableArray alloc] init];
+    verticals = [[NSMutableArray alloc] init];
+    horizontals = [[NSMutableArray alloc] init];
+    
+    for (int i=1;i<11;i++) {
+        int width = ceil(320.0/(nbColours*i));
+        int plus = (460-320)/width+1;
+        NSArray *arr = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:i], [NSNumber numberWithDouble:width], [NSNumber numberWithInt:plus], [NSNumber numberWithInt:nbColours], colours, [NSNumber numberWithInt:2], nil];
+        WallpaperView *wv = [[WallpaperView alloc] initWithParameters:arr];
+        
+        [mosaics addObject:wv];
+        
+        [arr release];
+        arr = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:i], [NSNumber numberWithDouble:width], [NSNumber numberWithInt:plus], [NSNumber numberWithInt:nbColours], colours, [NSNumber numberWithInt:0], nil];
+        WallpaperView *wv2 = [[WallpaperView alloc] initWithParameters:arr];
+        
+        [verticals addObject:wv2];
+        
+        [arr release];
+        arr = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:i], [NSNumber numberWithDouble:width], [NSNumber numberWithInt:plus], [NSNumber numberWithInt:nbColours], colours, [NSNumber numberWithInt:1], nil];
+        WallpaperView *wv3 = [[WallpaperView alloc] initWithParameters:arr];
+        
+        [horizontals addObject:wv3];
+        
+        [arr release];
+        [wv release];
+        [wv2 release];
+        [wv3 release];
+    }
+    for (int i=0;i<5;i++) {
+        [coloursView addSubview:[mosaics objectAtIndex:i]];
+    }
 }
 
 #pragma mark -
@@ -237,7 +238,9 @@
 	[colours release];
 	[coloursView release];
 	[controlV release];
-	[button release];
+    [mosaics release];
+    [verticals release];
+    [horizontals release];
     [super dealloc];
 }
 

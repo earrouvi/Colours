@@ -34,6 +34,7 @@ typedef NSUInteger ColourType;
 +(NSString*) convertRed:(float)r green:(float)g blue:(float)b;
 
 +(void) createImageFromView:(UIView*)view;
++(UIImage*) createUIImageFromView:(UIView*) view;
 +(int) screenWidth;
 +(int) screenHeight;
 

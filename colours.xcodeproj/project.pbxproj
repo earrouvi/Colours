@@ -15,18 +15,22 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
-		B21AE66815668B23004039DF /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66715668B23004039DF /* crosshair.png */; };
 		B21AE66A15668B8C004039DF /* bar_select.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66915668B8C004039DF /* bar_select.png */; };
+		B222277B160B20DF0068103C /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = B222277A160B20DF0068103C /* Icon */; };
+		B222277D160B20F20068103C /* Icon@2x in Resources */ = {isa = PBXBuildFile; fileRef = B222277C160B20F10068103C /* Icon@2x */; };
+		B2222785160B251A0068103C /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B2222784160B25190068103C /* crosshair.png */; };
+		B2222788160B268A0068103C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B2222786160B268A0068103C /* iTunesArtwork */; };
+		B2222789160B268A0068103C /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = B2222787160B268A0068103C /* iTunesArtwork@2x */; };
+		B222278B160B28700068103C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B222278A160B28700068103C /* Default.png */; };
 		B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D01599DA2000CA9CF1 /* horizontal.png */; };
 		B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D11599DA2000CA9CF1 /* mosaic.png */; };
 		B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D21599DA2000CA9CF1 /* vertical.png */; };
-		B24AE3651601E42B007EF0BC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE3641601E42B007EF0BC /* icon.png */; };
 		B24AE36816021454007EF0BC /* cadenasf.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36616021454007EF0BC /* cadenasf.png */; };
 		B24AE36916021454007EF0BC /* cadenaso.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36716021454007EF0BC /* cadenaso.png */; };
 		B24AE36D160223DB007EF0BC /* vertical30.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36A160223DB007EF0BC /* vertical30.png */; };
 		B24AE36E160223DB007EF0BC /* mosaic30.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36B160223DB007EF0BC /* mosaic30.png */; };
 		B24AE36F160223DB007EF0BC /* horizontal30.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE36C160223DB007EF0BC /* horizontal30.png */; };
-		B24AE37116022684007EF0BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B24AE37016022684007EF0BC /* Default.png */; };
+		B24AE374160346D3007EF0BC /* WallpaperView.m in Sources */ = {isa = PBXBuildFile; fileRef = B24AE373160346D3007EF0BC /* WallpaperView.m */; };
 		B254A8B615B43E6300DF08D3 /* PaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B515B43E6300DF08D3 /* PaletteView.m */; };
 		B254A8B915B57E6200DF08D3 /* SavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B254A8B815B57E6200DF08D3 /* SavedViewController.m */; };
 		B254A8BE15B6C6EE00DF08D3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B254A8BD15B6C6EE00DF08D3 /* Settings.bundle */; };
@@ -34,8 +38,6 @@
 		B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */; };
 		B26218671547E8330078D4C5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B26218661547E8330078D4C5 /* Utils.m */; };
 		B26C9E5A15641A5000FFC28B /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5515641A5000FFC28B /* colormap.png */; };
-		B26C9E5C15641A5000FFC28B /* Defaultold.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5715641A5000FFC28B /* Defaultold.png */; };
-		B26C9E5D15641A5000FFC28B /* Iconold.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5815641A5000FFC28B /* Iconold.png */; };
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
 		B26FDACE15B4327800079C17 /* palettes.xml in Resources */ = {isa = PBXBuildFile; fileRef = B26FDACD15B4327800079C17 /* palettes.xml */; };
 		B27965CB15B6E13D001F203E /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */; };
@@ -54,8 +56,6 @@
 		B27965D815B6E13D001F203E /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965CA15B6E13D001F203E /* IASKTextField.m */; };
 		B27965DA15B6E6AF001F203E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27965D915B6E6AF001F203E /* MessageUI.framework */; };
 		B288CFEE15D007200090F935 /* settings_bouton90.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFEC15D007200090F935 /* settings_bouton90.png */; };
-		B288CFEF15D007200090F935 /* settings2_bouton90.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFED15D007200090F935 /* settings2_bouton90.png */; };
-		B288CFF915D030F90090F935 /* hue_bouton905.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFF815D030F90090F935 /* hue_bouton905.png */; };
 		B288CFFB15D26F7E0090F935 /* plus_bouton90.png in Resources */ = {isa = PBXBuildFile; fileRef = B288CFFA15D26F7E0090F935 /* plus_bouton90.png */; };
 		B2969F4215B319F800229E73 /* SmallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2969F4115B319F800229E73 /* SmallButton.m */; };
 		B2997028156BCE8B00BED0D9 /* ColourUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2997027156BCE8B00BED0D9 /* ColourUnitView.m */; };
@@ -67,6 +67,7 @@
 		B2A2E86A15643354005147FA /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86115643354005147FA /* UIColor-Expanded.m */; };
 		B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */; };
 		B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F24115371FC300B32038 /* ColoursViewController.xib */; };
+		B2E651C5160B383600A36398 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E651C4160B383600A36398 /* Default-568h@2x.png */; };
 		B2E78A9215B41448000BC4AD /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B2E78A9315B41448000BC4AD /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8815B41448000BC4AD /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B2E78A9415B41448000BC4AD /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8B15B41448000BC4AD /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -90,18 +91,23 @@
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* colours-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colours-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		B21AE66715668B23004039DF /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 		B21AE66915668B8C004039DF /* bar_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_select.png; sourceTree = "<group>"; };
+		B222277A160B20DF0068103C /* Icon */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icon; sourceTree = "<group>"; };
+		B222277C160B20F10068103C /* Icon@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Icon@2x"; sourceTree = "<group>"; };
+		B2222784160B25190068103C /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
+		B2222786160B268A0068103C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		B2222787160B268A0068103C /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		B222278A160B28700068103C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B240B0D01599DA2000CA9CF1 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal.png; sourceTree = "<group>"; };
 		B240B0D11599DA2000CA9CF1 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mosaic.png; sourceTree = "<group>"; };
 		B240B0D21599DA2000CA9CF1 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical.png; sourceTree = "<group>"; };
-		B24AE3641601E42B007EF0BC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B24AE36616021454007EF0BC /* cadenasf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadenasf.png; sourceTree = "<group>"; };
 		B24AE36716021454007EF0BC /* cadenaso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadenaso.png; sourceTree = "<group>"; };
 		B24AE36A160223DB007EF0BC /* vertical30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical30.png; sourceTree = "<group>"; };
 		B24AE36B160223DB007EF0BC /* mosaic30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mosaic30.png; sourceTree = "<group>"; };
 		B24AE36C160223DB007EF0BC /* horizontal30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal30.png; sourceTree = "<group>"; };
-		B24AE37016022684007EF0BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B24AE372160346D3007EF0BC /* WallpaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperView.h; sourceTree = "<group>"; };
+		B24AE373160346D3007EF0BC /* WallpaperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperView.m; sourceTree = "<group>"; };
 		B254A8B415B43E6300DF08D3 /* PaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteView.h; sourceTree = "<group>"; };
 		B254A8B515B43E6300DF08D3 /* PaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteView.m; sourceTree = "<group>"; };
 		B254A8B715B57E6200DF08D3 /* SavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedViewController.h; sourceTree = "<group>"; };
@@ -113,8 +119,6 @@
 		B26218651547E8330078D4C5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		B26218661547E8330078D4C5 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		B26C9E5515641A5000FFC28B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
-		B26C9E5715641A5000FFC28B /* Defaultold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Defaultold.png; sourceTree = "<group>"; };
-		B26C9E5815641A5000FFC28B /* Iconold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconold.png; sourceTree = "<group>"; };
 		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		B26FDACD15B4327800079C17 /* palettes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palettes.xml; sourceTree = "<group>"; };
 		B27965AC15B6E13D001F203E /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
@@ -148,8 +152,6 @@
 		B27965CA15B6E13D001F203E /* IASKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextField.m; sourceTree = "<group>"; };
 		B27965D915B6E6AF001F203E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B288CFEC15D007200090F935 /* settings_bouton90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_bouton90.png; sourceTree = "<group>"; };
-		B288CFED15D007200090F935 /* settings2_bouton90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings2_bouton90.png; sourceTree = "<group>"; };
-		B288CFF815D030F90090F935 /* hue_bouton905.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hue_bouton905.png; sourceTree = "<group>"; };
 		B288CFFA15D26F7E0090F935 /* plus_bouton90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_bouton90.png; sourceTree = "<group>"; };
 		B2969F4015B319F800229E73 /* SmallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallButton.h; sourceTree = "<group>"; };
 		B2969F4115B319F800229E73 /* SmallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallButton.m; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		B2A2E86215643354005147FA /* UIColor-HSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-HSVAdditions.h"; path = "Classes/UIColor-HSVAdditions.h"; sourceTree = "<group>"; };
 		B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-HSVAdditions.m"; path = "Classes/UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
 		B2D1F24115371FC300B32038 /* ColoursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ColoursViewController.xib; path = Classes/ColoursViewController.xib; sourceTree = "<group>"; };
+		B2E651C4160B383600A36398 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B2E78A8415B41448000BC4AD /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B2E78A8715B41448000BC4AD /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				B27965AA15B6E13D001F203E /* InAppSettingsKit */,
+				B24AE372160346D3007EF0BC /* WallpaperView.h */,
+				B24AE373160346D3007EF0BC /* WallpaperView.m */,
 				B26218491547E4C80078D4C5 /* WallpaperViewController.h */,
 				B262184A1547E4C80078D4C5 /* WallpaperViewController.m */,
 				B26218651547E8330078D4C5 /* Utils.h */,
@@ -245,6 +250,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B2E651C4160B383600A36398 /* Default-568h@2x.png */,
 				B27965D915B6E6AF001F203E /* MessageUI.framework */,
 				B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */,
 				B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */,
@@ -271,6 +277,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B2222786160B268A0068103C /* iTunesArtwork */,
+				B2222787160B268A0068103C /* iTunesArtwork@2x */,
 				B26FDACD15B4327800079C17 /* palettes.xml */,
 				B26C9E5315641A5000FFC28B /* UI Parts */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
@@ -316,25 +324,22 @@
 		B26C9E5315641A5000FFC28B /* UI Parts */ = {
 			isa = PBXGroup;
 			children = (
+				B222278A160B28700068103C /* Default.png */,
+				B222277C160B20F10068103C /* Icon@2x */,
+				B222277A160B20DF0068103C /* Icon */,
 				B24AE36A160223DB007EF0BC /* vertical30.png */,
 				B24AE36B160223DB007EF0BC /* mosaic30.png */,
 				B24AE36C160223DB007EF0BC /* horizontal30.png */,
 				B24AE36616021454007EF0BC /* cadenasf.png */,
 				B24AE36716021454007EF0BC /* cadenaso.png */,
-				B24AE3641601E42B007EF0BC /* icon.png */,
 				B240B0D01599DA2000CA9CF1 /* horizontal.png */,
 				B240B0D11599DA2000CA9CF1 /* mosaic.png */,
 				B240B0D21599DA2000CA9CF1 /* vertical.png */,
 				B288CFFA15D26F7E0090F935 /* plus_bouton90.png */,
-				B288CFF815D030F90090F935 /* hue_bouton905.png */,
 				B288CFEC15D007200090F935 /* settings_bouton90.png */,
-				B288CFED15D007200090F935 /* settings2_bouton90.png */,
 				B21AE66915668B8C004039DF /* bar_select.png */,
-				B24AE37016022684007EF0BC /* Default.png */,
-				B21AE66715668B23004039DF /* crosshair.png */,
+				B2222784160B25190068103C /* crosshair.png */,
 				B26C9E5515641A5000FFC28B /* colormap.png */,
-				B26C9E5715641A5000FFC28B /* Defaultold.png */,
-				B26C9E5815641A5000FFC28B /* Iconold.png */,
 			);
 			path = "UI Parts";
 			sourceTree = "<group>";
@@ -501,10 +506,7 @@
 				B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */,
 				B262184D1547E4C80078D4C5 /* WallpaperViewController.xib in Resources */,
 				B26C9E5A15641A5000FFC28B /* colormap.png in Resources */,
-				B26C9E5C15641A5000FFC28B /* Defaultold.png in Resources */,
-				B26C9E5D15641A5000FFC28B /* Iconold.png in Resources */,
 				B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */,
-				B21AE66815668B23004039DF /* crosshair.png in Resources */,
 				B21AE66A15668B8C004039DF /* bar_select.png in Resources */,
 				B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */,
 				B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */,
@@ -512,16 +514,19 @@
 				B26FDACE15B4327800079C17 /* palettes.xml in Resources */,
 				B254A8BE15B6C6EE00DF08D3 /* Settings.bundle in Resources */,
 				B288CFEE15D007200090F935 /* settings_bouton90.png in Resources */,
-				B288CFEF15D007200090F935 /* settings2_bouton90.png in Resources */,
-				B288CFF915D030F90090F935 /* hue_bouton905.png in Resources */,
 				B288CFFB15D26F7E0090F935 /* plus_bouton90.png in Resources */,
-				B24AE3651601E42B007EF0BC /* icon.png in Resources */,
 				B24AE36816021454007EF0BC /* cadenasf.png in Resources */,
 				B24AE36916021454007EF0BC /* cadenaso.png in Resources */,
 				B24AE36D160223DB007EF0BC /* vertical30.png in Resources */,
 				B24AE36E160223DB007EF0BC /* mosaic30.png in Resources */,
 				B24AE36F160223DB007EF0BC /* horizontal30.png in Resources */,
-				B24AE37116022684007EF0BC /* Default.png in Resources */,
+				B222277B160B20DF0068103C /* Icon in Resources */,
+				B222277D160B20F20068103C /* Icon@2x in Resources */,
+				B2222785160B251A0068103C /* crosshair.png in Resources */,
+				B2222788160B268A0068103C /* iTunesArtwork in Resources */,
+				B2222789160B268A0068103C /* iTunesArtwork@2x in Resources */,
+				B222278B160B28700068103C /* Default.png in Resources */,
+				B2E651C5160B383600A36398 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +574,7 @@
 				B27965D615B6E13D001F203E /* IASKSlider.m in Sources */,
 				B27965D715B6E13D001F203E /* IASKSwitch.m in Sources */,
 				B27965D815B6E13D001F203E /* IASKTextField.m in Sources */,
+				B24AE374160346D3007EF0BC /* WallpaperView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +596,7 @@
 				GCC_PREFIX_HEADER = colours_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "colours-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = colours;
 			};
 			name = Debug;
@@ -608,7 +614,7 @@
 				GCC_PREFIX_HEADER = colours_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "colours-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = colours;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -628,6 +634,8 @@
 					"-fobjc-arc",
 				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -635,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Elsa Arrou (H738MEYBW5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -645,7 +654,10 @@
 					"-lxml2",
 					"-fobjc-arc",
 				);
+				PROVISIONING_PROFILE = "2337929B-EB76-4B9E-84E5-C969F21416CE";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};

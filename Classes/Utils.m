@@ -118,6 +118,15 @@ NSArray *colours = nil;
 	UIImageWriteToSavedPhotosAlbum(newImage,nil,nil,nil);
 }
 
++(UIImage*) createUIImageFromView:(UIView*) view { 
+	CGSize size = [view bounds].size;
+	UIGraphicsBeginImageContext(size);
+	[[view layer] renderInContext:UIGraphicsGetCurrentContext()];
+	UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return newImage;
+}
+
 // screen bounds
 +(int) screenWidth {
     return [[UIScreen mainScreen] bounds].size.width;

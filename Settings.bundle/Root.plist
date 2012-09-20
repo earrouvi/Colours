@@ -25,14 +25,14 @@
 			</array>
 		</dict>
 		<dict>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
 			<key>Title</key>
 			<string>Mode</string>
 			<key>Key</key>
 			<string>mode</string>
 			<key>DefaultValue</key>
 			<integer>0</integer>
+			<key>FooterText</key>
+			<string>Random mode randomly generates all the colours, whereas Rainbow mode generates an assorted set.</string>
 			<key>Values</key>
 			<array>
 				<integer>0</integer>
@@ -43,6 +43,8 @@
 				<string>Random</string>
 				<string>Rainbow</string>
 			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

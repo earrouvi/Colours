@@ -8,16 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "Utils.h"
+#import "WallpaperView.h"
 
 
 @interface WallpaperViewController : UIViewController {
 	
 	int nbColours;
-	NSArray * colours;
-	UIView * coloursView;
-	UISegmentedControl * controlV;
-	UIButton * button;
+	NSArray *colours;
+	UIView *coloursView;
+	UISegmentedControl *controlV;
     int slideNb;
+    NSMutableArray *mosaics,*verticals,*horizontals;
 
 }
 
@@ -34,6 +35,7 @@
 -(void) createVerticalView;
 -(void) createHorizontalView;
 -(void) createMosaicView;
+-(void) loadMosaics;
 //---
 -(void) alert;
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;

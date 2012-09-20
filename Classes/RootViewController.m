@@ -131,7 +131,7 @@
                                                        delegate:self
                                               cancelButtonTitle:@"Cancel"
                                          destructiveButtonTitle:nil
-                                              otherButtonTitles:@"Save palette",@"Make a wallpaper",@"Email hex codes",nil];
+                                              otherButtonTitles:@"Save palette",@"Make a wallpaper",@"E-mail combo",nil];
     [alert setTag:0];
 	[alert showInView:self.view];
 	[alert release];
@@ -153,7 +153,7 @@
     } else {
         //Code for pre-5.1 OSes
         UITextField * textField = [[UITextField alloc] init];
-        textField.frame = CGRectMake(12, 50, 260, 30); //Your properties here
+        textField.frame = CGRectMake(12, 50, 260, 30);
         textField.backgroundColor = [UIColor whiteColor];
         [alert addSubview:textField];
         [alert setFrame:CGRectMake(alert.frame.origin.x, alert.frame.origin.y, alert.frame.size.width, alert.frame.size.height+40)];
@@ -261,21 +261,41 @@
 #pragma mark Sending Emails
 
 -(void) writeEmail {
-    NSMutableString * body = [NSMutableString stringWithFormat:@"Here is a wonderful colour combo I created with Colourapp:\n"];
+    NSMutableString * body = [NSMutableString stringWithFormat:@"Hey, check out this colour combo I created with my Random Colour Mix!\n"];
+    int width = 250;
+    UIView *pal = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
     for (int i=0; i<[colours count]; i++) {
         [body appendString:@"\n#"];
         [body appendString:([colours objectAtIndex:i])];
+        UIView *v = [[UIView alloc] initWithFrame:CGRectMake(i*width/nbColours, 0, width/nbColours+1, 30)];
+        [v setBackgroundColor:[Utils convertHexToRGB:[colours objectAtIndex:i]]];
+        [pal addSubview:v];
+        [v release];
     }
-    [body appendString:@"Get Colourapp on http://www.colourapp.com\n"];
-	[self sendEmailTo:@"" withSubject:@"My colour combo on Colourapp" andBody:body];
+    [body appendString:@"\n\nDon't forget to review this app!\n"];
+    
+    // palette creation
+    UIImage *im = [Utils createUIImageFromView:pal];
+    NSData *data = UIImagePNGRepresentation(im);
+	[self sendEmailTo:@"" withSubject:@"Check out my colour combo!" andBody:body andImage:data];
+    [pal release];
 }
 
--(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body {
-	NSString * mail = [NSString stringWithFormat:@"mailto:?to=%@&subject=%@&body=%@",
-					   [to stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding],
-					   [subject stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding],
-					   [body stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:mail]];
+-(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body andImage:(NSData*)data {
+    MFMailComposeViewController *mfm = [[MFMailComposeViewController alloc] init];
+    mfm.mailComposeDelegate = self;
+    [mfm setSubject:subject];
+    [mfm setMessageBody:body isHTML:NO];
+    [mfm addAttachmentData:data mimeType:@"image/png" fileName:@"my_combo"];
+    [self presentModalViewController:mfm animated:YES];
+    [mfm release];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error 
+{
+    // Called once the email is sent
+    // Remove the email view controller	
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -

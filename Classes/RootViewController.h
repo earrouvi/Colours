@@ -16,7 +16,7 @@
 #import "IASKSpecifier.h"
 #import "IASKSettingsReader.h"
 
-@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate,SavedViewControllerDelegate,IASKSettingsDelegate> {
+@interface RootViewController : UIViewController <ColorPickerViewControllerDelegate, ColourUnitViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate,SavedViewControllerDelegate,IASKSettingsDelegate, MFMailComposeViewControllerDelegate> {
 	
 	int nbColours;
 	UIView *comboView;
@@ -48,7 +48,7 @@
 -(void) comboLayout;
 //---
 -(void) writeEmail;
--(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body;
+-(void) sendEmailTo:(NSString*)to withSubject:(NSString*)subject andBody:(NSString*)body andImage:(NSData*)data;
 //---
 - (IASKAppSettingsViewController*)appSettingsViewController;
 - (void)settingDidChange:(NSNotification*)notification;
