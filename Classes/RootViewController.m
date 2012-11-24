@@ -44,7 +44,7 @@
     
     UIButton *charge = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	charge.frame = CGRectMake(180, 376, 80, 30);
-	[charge setTitle:@"Charge..." forState:UIControlStateNormal];
+	[charge setTitle:@"Load..." forState:UIControlStateNormal];
 	[charge addTarget:self action:@selector(chargeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:charge];
     
@@ -261,18 +261,19 @@
 #pragma mark Sending Emails
 
 -(void) writeEmail {
-    NSMutableString * body = [NSMutableString stringWithFormat:@"Hey, check out this colour combo I created with my Random Colour Mix!\n"];
+    NSMutableString * body = [NSMutableString stringWithFormat:@"Hey, check out this colour combo I created with my Random Colour Mix app!\n"];
+    [body appendString:@"\nDon't forget to review this app!\n\nHex codes:"];
     int width = 250;
     UIView *pal = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
     for (int i=0; i<[colours count]; i++) {
-        [body appendString:@"\n#"];
+        [body appendString:@" #"];
         [body appendString:([colours objectAtIndex:i])];
         UIView *v = [[UIView alloc] initWithFrame:CGRectMake(i*width/nbColours, 0, width/nbColours+1, 30)];
         [v setBackgroundColor:[Utils convertHexToRGB:[colours objectAtIndex:i]]];
         [pal addSubview:v];
         [v release];
     }
-    [body appendString:@"\n\nDon't forget to review this app!\n"];
+    [body appendString:@"\n"];
     
     // palette creation
     UIImage *im = [Utils createUIImageFromView:pal];

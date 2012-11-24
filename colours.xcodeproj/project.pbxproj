@@ -16,12 +16,9 @@
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 		B21AE66A15668B8C004039DF /* bar_select.png in Resources */ = {isa = PBXBuildFile; fileRef = B21AE66915668B8C004039DF /* bar_select.png */; };
-		B222277B160B20DF0068103C /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = B222277A160B20DF0068103C /* Icon */; };
-		B222277D160B20F20068103C /* Icon@2x in Resources */ = {isa = PBXBuildFile; fileRef = B222277C160B20F10068103C /* Icon@2x */; };
 		B2222785160B251A0068103C /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B2222784160B25190068103C /* crosshair.png */; };
 		B2222788160B268A0068103C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B2222786160B268A0068103C /* iTunesArtwork */; };
 		B2222789160B268A0068103C /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = B2222787160B268A0068103C /* iTunesArtwork@2x */; };
-		B222278B160B28700068103C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B222278A160B28700068103C /* Default.png */; };
 		B240B0D31599DA2000CA9CF1 /* horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D01599DA2000CA9CF1 /* horizontal.png */; };
 		B240B0D41599DA2000CA9CF1 /* mosaic.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D11599DA2000CA9CF1 /* mosaic.png */; };
 		B240B0D51599DA2000CA9CF1 /* vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = B240B0D21599DA2000CA9CF1 /* vertical.png */; };
@@ -40,6 +37,8 @@
 		B26C9E5A15641A5000FFC28B /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E5515641A5000FFC28B /* colormap.png */; };
 		B26C9E661564257C00FFC28B /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */; };
 		B26FDACE15B4327800079C17 /* palettes.xml in Resources */ = {isa = PBXBuildFile; fileRef = B26FDACD15B4327800079C17 /* palettes.xml */; };
+		B27900EC160C69C700B61462 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B27900EB160C69C700B61462 /* Default@2x.png */; };
+		B27900EE160C69CB00B61462 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B27900ED160C69CB00B61462 /* Default.png */; };
 		B27965CB15B6E13D001F203E /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */; };
 		B27965CC15B6E13D001F203E /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965AF15B6E13D001F203E /* IASKAppSettingsWebViewController.m */; };
 		B27965CD15B6E13D001F203E /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27965B115B6E13D001F203E /* IASKSpecifierValuesViewController.m */; };
@@ -68,6 +67,8 @@
 		B2A2E86B15643354005147FA /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */; };
 		B2D1F24315371FC300B32038 /* ColoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D1F24115371FC300B32038 /* ColoursViewController.xib */; };
 		B2E651C5160B383600A36398 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E651C4160B383600A36398 /* Default-568h@2x.png */; };
+		B2E651CB160B6CB400A36398 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E651CA160B6CB400A36398 /* Icon@2x.png */; };
+		B2E651CF160B6D3F00A36398 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E651CE160B6D3F00A36398 /* Icon.png */; };
 		B2E78A9215B41448000BC4AD /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B2E78A9315B41448000BC4AD /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8815B41448000BC4AD /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B2E78A9415B41448000BC4AD /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E78A8B15B41448000BC4AD /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -92,12 +93,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* colours-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "colours-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B21AE66915668B8C004039DF /* bar_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_select.png; sourceTree = "<group>"; };
-		B222277A160B20DF0068103C /* Icon */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icon; sourceTree = "<group>"; };
-		B222277C160B20F10068103C /* Icon@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Icon@2x"; sourceTree = "<group>"; };
 		B2222784160B25190068103C /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 		B2222786160B268A0068103C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		B2222787160B268A0068103C /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
-		B222278A160B28700068103C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B240B0D01599DA2000CA9CF1 /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal.png; sourceTree = "<group>"; };
 		B240B0D11599DA2000CA9CF1 /* mosaic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mosaic.png; sourceTree = "<group>"; };
 		B240B0D21599DA2000CA9CF1 /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical.png; sourceTree = "<group>"; };
@@ -121,6 +119,8 @@
 		B26C9E5515641A5000FFC28B /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 		B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		B26FDACD15B4327800079C17 /* palettes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palettes.xml; sourceTree = "<group>"; };
+		B27900EB160C69C700B61462 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B27900ED160C69CB00B61462 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B27965AC15B6E13D001F203E /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
 		B27965AD15B6E13D001F203E /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsViewController.m; sourceTree = "<group>"; };
 		B27965AE15B6E13D001F203E /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
@@ -174,6 +174,8 @@
 		B2A2E86315643354005147FA /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-HSVAdditions.m"; path = "Classes/UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
 		B2D1F24115371FC300B32038 /* ColoursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ColoursViewController.xib; path = Classes/ColoursViewController.xib; sourceTree = "<group>"; };
 		B2E651C4160B383600A36398 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B2E651CA160B6CB400A36398 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B2E651CE160B6D3F00A36398 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B2E78A8415B41448000BC4AD /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B2E78A8515B41448000BC4AD /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B2E78A8715B41448000BC4AD /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -250,7 +252,13 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B27900ED160C69CB00B61462 /* Default.png */,
+				B27900EB160C69C700B61462 /* Default@2x.png */,
 				B2E651C4160B383600A36398 /* Default-568h@2x.png */,
+				B2222786160B268A0068103C /* iTunesArtwork */,
+				B2222787160B268A0068103C /* iTunesArtwork@2x */,
+				B2E651CE160B6D3F00A36398 /* Icon.png */,
+				B2E651CA160B6CB400A36398 /* Icon@2x.png */,
 				B27965D915B6E6AF001F203E /* MessageUI.framework */,
 				B26C9E651564257B00FFC28B /* ColorPickerViewController.xib */,
 				B262184B1547E4C80078D4C5 /* WallpaperViewController.xib */,
@@ -277,8 +285,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B2222786160B268A0068103C /* iTunesArtwork */,
-				B2222787160B268A0068103C /* iTunesArtwork@2x */,
 				B26FDACD15B4327800079C17 /* palettes.xml */,
 				B26C9E5315641A5000FFC28B /* UI Parts */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
@@ -324,9 +330,6 @@
 		B26C9E5315641A5000FFC28B /* UI Parts */ = {
 			isa = PBXGroup;
 			children = (
-				B222278A160B28700068103C /* Default.png */,
-				B222277C160B20F10068103C /* Icon@2x */,
-				B222277A160B20DF0068103C /* Icon */,
 				B24AE36A160223DB007EF0BC /* vertical30.png */,
 				B24AE36B160223DB007EF0BC /* mosaic30.png */,
 				B24AE36C160223DB007EF0BC /* horizontal30.png */,
@@ -520,13 +523,14 @@
 				B24AE36D160223DB007EF0BC /* vertical30.png in Resources */,
 				B24AE36E160223DB007EF0BC /* mosaic30.png in Resources */,
 				B24AE36F160223DB007EF0BC /* horizontal30.png in Resources */,
-				B222277B160B20DF0068103C /* Icon in Resources */,
-				B222277D160B20F20068103C /* Icon@2x in Resources */,
 				B2222785160B251A0068103C /* crosshair.png in Resources */,
 				B2222788160B268A0068103C /* iTunesArtwork in Resources */,
 				B2222789160B268A0068103C /* iTunesArtwork@2x in Resources */,
-				B222278B160B28700068103C /* Default.png in Resources */,
 				B2E651C5160B383600A36398 /* Default-568h@2x.png in Resources */,
+				B2E651CB160B6CB400A36398 /* Icon@2x.png in Resources */,
+				B2E651CF160B6D3F00A36398 /* Icon.png in Resources */,
+				B27900EC160C69C700B61462 /* Default@2x.png in Resources */,
+				B27900EE160C69CB00B61462 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +593,7 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Elsa Arrou Vignod";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -598,6 +603,8 @@
 				INFOPLIST_FILE = "colours-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = colours;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -609,6 +616,8 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Elsa Arrou Vignod";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Elsa Arrou Vignod";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = colours_Prefix.pch;
@@ -616,6 +625,9 @@
 				INFOPLIST_FILE = "colours-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = colours;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -634,7 +646,7 @@
 					"-fobjc-arc",
 				);
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
@@ -656,7 +668,7 @@
 				);
 				PROVISIONING_PROFILE = "2337929B-EB76-4B9E-84E5-C969F21416CE";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
